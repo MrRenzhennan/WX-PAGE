@@ -1,0 +1,14 @@
+<view class='tabBar'>
+  <navigator url='/pages/TheAnswerPage/TheAnswerPage' hover-class='none'>
+    <view class='box left'>
+      <image src='/static/imgs/table_bar_01.png'></image>
+      <text>趣味答题</text>
+    </view>
+  </navigator>
+  <navigator url='/pages/personalCenter/personalCenter'  hover-class='none'>
+    <view class='box right'>
+      <image src='/static/imgs/table_bar_02.png '></image>
+      <text>个人中心</text>
+    </view>
+  </navigator>
+</view>

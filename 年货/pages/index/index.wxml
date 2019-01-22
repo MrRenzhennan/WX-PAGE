@@ -1,0 +1,64 @@
+<!--pages/index/index.wxml-->
+<view class='content'>
+  <image class='bgi' src='/static/imgs/bgi.png'></image>
+  <image class='bgi1' src='/static/imgs/bgi1.png'></image>
+  <image class='bgi2' src='/static/imgs/bgi2.png'></image>
+  <view class='baoxiang'>
+    <image src='{{img_src}}'></image>
+  </view>
+  <view class='open' bindtap='open'>
+    <image src='/static/imgs/open_btn.png'></image>
+  </view>
+  <view class='num'>
+    <view>本日抽奖次数还有XX次</view>
+  </view>
+  <navigator url='/pages/sweepstakesRules/sweepstakesRules' hover-class='none'>
+    <view class='rules'>
+      <text>抽奖规则</text>
+      <image src='/static/imgs/right.png'></image>
+    </view>
+  </navigator>
+
+  <navigator url='/pages/productFigure/productFigure' hover-class='none'>
+    <view class='rules'>
+      <text>奖品一览</text>
+      <image src='/static/imgs/right.png'></image>
+    </view>
+  </navigator>
+
+</view>
+
+<!-- 礼物 -->
+<view class='gift-bg' style='z-index:{{isShow ? "999" : "-10"}}'  bindtap='close'>
+
+  <view class='{{scale ? "ct ct-scale" : "ct"}}' catchtap='stop'>
+    <view class='t-img'>
+      <image src='/static/imgs/winning.png'></image>
+    </view>
+    <view class='t-center'>
+      <view class='tt'>价值3980元吉祥鸟密码锁一个</view>
+      <view class='btn-box'>
+        <image class='s1' src='/static/imgs/Immediately_to_receive.png' catchtap='close'></image>
+        <image class='s2' src='/static/imgs/later_to_receive.png' catchtap='close'></image>
+      </view>
+
+      <view class='input-box'  catchtap='stop'>
+        <input placeholder='请输入收件人姓名' placeholder-style="color:#c6c6c6;"></input>
+        <input placeholder='请输入收件人手机号' placeholder-style="color:#c6c6c6;"></input>
+        <textarea placeholder="{{textarea}}" placeholder-style="color:#c6c6c6;"  fixed='{{true}}' />
+      </view>
+      <view class='txt'>
+        请留下联系方式,以便企业核对领奖者身份
+      </view>
+      <navigator url='/pages/getTheWay/getTheWay' hover-class='none' catchtap='stop'>
+        <view class='bt'>
+          <text>领取方式</text>
+          <image src='/static/imgs/right-c.png'></image>
+        </view>
+      </navigator>
+      
+
+
+    </view>
+  </view>
+</view>

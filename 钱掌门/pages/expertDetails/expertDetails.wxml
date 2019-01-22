@@ -1,0 +1,119 @@
+<!--pages/expertDetails/expertDetails.wxml-->
+<import src="../wxParse/wxParse.wxml" />
+
+<!-- 专家介绍 -->
+<view class='exper-bg'>
+  <view class='left'>
+    <text class='tit'>{{circleFriend.title}}</text>
+    <text class='sub-tit'>东方证券首席财富顾问</text>
+    <text class='sub-tit'>中国注册会计师协会非职业会员</text>
+  </view>
+  <!-- <view class='right' bindtap='questionShow'>
+    <text>向TA提问</text>
+  </view> -->
+</view>
+
+<!-- money -->
+<view class='money'>
+  <view class='left'>
+    <view class='text'>
+      <text class='t'>{{circleFriend.pricelist[0].price_name}}</text>
+      <text class='num' space="nbsp">{{circleFriend.pricelist[0].price}}</text>
+      <text class='t'>元</text>
+    </view>
+      <view bindtap='BuyForThirty' class='button'>
+        <text>立即开通</text>
+      </view>
+  </view>    
+  <view class='right'>
+    <view class='text'>
+      <text class='t'>{{circleFriend.pricelist[1].price_name}}</text>
+      <text class='num' space="nbsp">{{circleFriend.pricelist[1].price}}</text>
+      <text class='t'>元</text>
+    </view>
+      <view bindtap='BuyForNinety'  class='button'>
+        <text>立即开通</text>
+      </view>
+  </view>
+</view>
+
+<!-- 间隔 -->
+<view class='divider'></view>
+
+<!-- 专家介绍 -->
+<view class='new-title'>
+  <view class='left'>
+    <view class='icon'></view>
+    <text>专家介绍</text>
+  </view>
+</view>
+<!-- 正文 -->
+<view class='main-body'>
+  <template is="wxParse" data="{{wxParseData:summary.nodes}}" />
+</view>
+
+<!-- 间隔 -->
+<view class='divider'></view>
+
+<!-- 使用期限 -->
+<view class='new-title'>
+  <view class='left'>
+    <view class='icon'></view>
+    <text>使用期限</text>
+  </view>
+</view>
+<view class='main-body'>
+  <text>{{circleFriend.pricelist[0].price_name}}：{{circleFriend.pricelist[0].price_time}}天/{{circleFriend.pricelist[1].price_name}}：{{circleFriend.pricelist[1].price_time}}天
+  </text>
+</view>
+
+<!-- 间隔 -->
+<view class='divider'></view>
+
+<!-- 服务使用协议 -->
+<view class='new-title'>
+  <view class='left'>
+    <view class='icon'></view>
+    <text>服务使用协议</text>
+  </view>
+</view>
+<view class='main-body'>
+  <text>在购买前，请您查看服务使用协议。如果您已购买，是为您已阅读并同意《投资论道理财师付费/免费服务使用协议》。</text>
+  <view class='btn'>
+    <navigator url='/pages/serviceAgreement/serviceAgreement'>
+      <view>
+        <text>查看协议</text>
+      </view>
+    </navigator>
+
+  </view>
+</view>
+
+<!-- 间隔 -->
+<view class='divider'></view>
+
+<!-- 提问框 -->
+<view class='fixed-cover' wx:if="{{question_state}}">
+  <view class='fixed-btm'>
+    <view class='question-box'>
+      <view class='icon-box'>
+        <icon type="cancel" size='30' color='#cccccc' bindtap='questionClose' />
+      </view>
+      <view class='tit'>向专家提问</view>
+      <view class='textarea-box'>
+        <textarea bindblur="bindTextAreaBlur" fixed="{{true}}" placeholder="内容" show-confirm-bar="{{false}}" />
+      </view>
+      <view>
+        <label class="checkbox">
+          <checkbox checked="{{true}}" />
+          <text class='t1'>只专家可见</text>
+          <text class='t2'>提问此专家需扣除100金币</text>
+        </label>
+      </view>
+      <view class='brn-box'>
+        <text>问问专家</text>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,45 @@
+<!--pages/circleFriends/circleFriends.wxml-->
+<!--引用统一模板-->
+<import src='/pages/templatePage/circleFriend.wxml'></import>
+<import src='/pages/templatePage/subscription.wxml'></import>
+<!--  -->
+<scroll-view scroll-x="true" class="scroll-view-x">
+  <view class="scroll-view-item" wx:for="{{_TabList}}" wx:key="*this">
+    <view class="{{idx == item.num ? 'on' : ''}}" bindtap="currentTab" data-current="{{item.num}}">{{ item.name }}</view>
+  </view>
+</scroll-view>
+
+
+<view class='list-box'>
+  <!-- 朋友圈列表 -->
+  <view class='slider'>
+    <swiper duration="{{ 500 }}" current="{{idx}}" bindchange="currentChange" style="height: {{windowHeight + 35}}rpx">
+      <!-- 未订阅 -->
+      <swiper-item>
+        <view>
+          <!-- 朋友圈列表 -->
+          <block wx:for="{{NoSubscribed}}" wx:for-item="item" wx:for-index="index">
+            <view class="li bg-gray">
+              <view>
+                <template is="tmpCircleFriend" data="{{item}}"></template>
+              </view>
+            </view>
+          </block>
+        </view>
+      </swiper-item>
+      <!-- 已订阅 -->
+      <swiper-item>
+        <view>
+        <!-- 朋友圈列表 -->
+          <block wx:for="{{HaveSubscribed}}" wx:for-item="item" wx:for-index="index">
+            <view class="li bg-gray">
+              <view>
+                <template is="tmpsubscription" data="{{item}}"></template>
+              </view>
+            </view>
+          </block>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

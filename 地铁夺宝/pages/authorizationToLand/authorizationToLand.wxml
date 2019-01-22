@@ -1,0 +1,17 @@
+<!--pages/authorizationToLand/authorizationToLand.wxml-->
+<view class='logo'>
+  <image src='/static/imgs/land_logo.png'></image>
+</view>
+<view class='tit'>
+  <text>地铁夺宝</text>
+</view>
+<view class='tx'>
+  您暂未授权地铁夺宝小程序获取您的信息，将无法正常使用小程序功能。 如需要正常使用，请点击“授权”按钮，打开头像，昵称等信息的授权。
+</view>
+<navigator url='/pages/theWelcomePageRegistered/theWelcomePageRregistered' hover-class='none'>
+  <view class='btn'>
+    <button>
+      授权登陆
+    </button>
+  </view>
+</navigator>

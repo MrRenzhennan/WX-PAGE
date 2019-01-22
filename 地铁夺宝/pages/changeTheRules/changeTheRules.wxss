@@ -1,0 +1,33 @@
+/* pages/changeTheRules/changeTheRules.wxss */
+.logo{
+margin-top: 20rpx;
+margin-left: 30rpx;
+}
+.logo image{
+  width: 90rpx;
+  height: 97rpx;
+}
+
+.box{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30rpx 30rpx 0 30rpx;
+}
+.title{
+  font-size: 33rpx;
+  font-weight: 600;
+  margin-bottom: 10rpx;
+}
+.center{
+  width: 100%;
+  background: #eeeeee;
+  box-sizing: border-box;
+  padding: 30rpx;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  line-height: 50rpx;
+  color: #000;
+  font-size: 30rpx;
+  letter-spacing: 6rpx;
+}

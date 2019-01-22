@@ -1,0 +1,37 @@
+<!--pages/myPoints/myPoints.wxml-->
+<view class='jf-bg'>
+  <image src='/static/imgs/jf_bg.png'></image>
+  <view class='title'>
+    <image src='/static/imgs/picture.png'></image>
+    <text>亲爱的：波波</text>
+  </view>
+</view>
+<view class='current-jf'>
+  <text>积分</text>
+  <text class='num'>1300</text>
+</view>
+<view class='both'>
+  <view class='box b1'>
+    <text>当月积分变动</text>
+    <text>505</text>
+  </view>
+  <view class='box b2'>
+    <text>玩家星级</text>
+    <view class='xx-box'>
+      <view class='bg-ok' style='width:20%'>
+        <image src='/static/imgs/xingxing.png'></image>
+        <image src='/static/imgs/xingxing.png'></image>
+        <image src='/static/imgs/xingxing.png'></image>
+        <image src='/static/imgs/xingxing.png'></image>
+        <image src='/static/imgs/xingxing.png'></image>
+      </view>
+      <view class='bg-ok'>
+        <image src='/static/imgs/xingxing2.png'></image>
+        <image src='/static/imgs/xingxing2.png'></image>
+        <image src='/static/imgs/xingxing2.png'></image>
+        <image src='/static/imgs/xingxing2.png'></image>
+        <image src='/static/imgs/xingxing2.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

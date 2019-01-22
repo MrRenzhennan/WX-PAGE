@@ -1,0 +1,78 @@
+<!--pages/detail[0].dataedQuote/detail[0].dataedQuote.wxml-->
+<view class='title'>
+  {{detail[0].data.gid}} {{detail[0].data.name}}
+</view>
+<view class='sub'>
+  当前价格
+</view>
+<view class='centerList'>
+  <view class='large red'>{{detail[0].data.nowPri}}</view>
+  <view>
+    <text class='tx' space="nbsp">今日最高价</text>
+    <text >{{detail[0].data.todayMax}}</text>
+  </view>
+  <view>
+    <text class='tx' space="nbsp">今日最低价</text>
+    <text >{{detail[0].data.todayMin}}</text>
+  </view>
+  <view class='sm'>
+    <text class="num {{detail[0].data.increase>0? 'red':'green'}}">{{detail[0].data.increase}}</text>
+    <text class="num {{detail[0].data.increase>0? 'red':'green'}}">{{detail[0].data.increPer}}%</text>
+  </view>
+  <view>
+    <text class='tx' space="nbsp">竞买价</text>
+    <text class='num '>{{detail[0].data.competitivePri}}</text>
+  </view>
+  <view>
+    <text class='tx' space="nbsp">竞卖价</text>
+    <text class='num '>{{detail[0].data.reservePri}}</text>
+  </view>
+  <view>
+    <text class='tx' space="nbsp">成交量</text>
+    <text class='num '>{{detail[0].data.traNumber}}</text>
+  </view>
+  <view>
+    <text class='tx' space="nbsp">今日开盘价</text>
+    <text class='num'>{{detail[0].data.todayStartPri}}</text>
+  </view>
+  <view>
+    <text class='tx' space="nbsp">昨日收盘价</text>
+    <text class='num '>{{detail[0].data.yestodEndPri}}</text>
+  </view>
+  <view>
+    <text class='tx' style='width:100%' space="nbsp">成交额</text>
+    <text class='num'>{{detail[0].data.traAmount}}</text>
+  </view>
+</view>
+<view class='divider'></view>
+
+<scroll-view scroll-x="true" class="scroll-view-x">
+  <view class="scroll-view-item" wx:for="{{_TabList}}" wx:key="*this">
+    <view class="{{idx == item.num ? 'on' : ''}}" bindtap="currentTab" data-current="{{item.num}}">{{ item.name }}</view>
+  </view>
+</scroll-view>
+
+
+<view class='list-box'>
+  <!-- 朋友圈列表 -->
+  <view class='slider'>
+    <swiper duration="{{ 500 }}" current="{{idx}}" bindchange="currentChange" style="height: 500rpx">
+      <!-- 未订阅 -->
+      <swiper-item>
+        <view>
+          <image src='{{detail[0].gopicture.minurl}}'></image>
+        </view>
+      </swiper-item>
+      <!-- 已订阅 -->
+      <swiper-item>
+        <view>
+          <image src='{{detail[0].gopicture.dayurl}}'></image>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+
+
+
+</view>

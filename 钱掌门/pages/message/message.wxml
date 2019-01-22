@@ -1,0 +1,10 @@
+<!--引用统一模板-->
+<import src='/pages/templatePage/message.wxml'></import>
+<!-- 消息列表 -->
+<block wx:for="{{message}}" wx:for-item="item" wx:for-index="index">
+  <view class="li bg-gray">
+    <view>
+      <template is="tmpmessage" data="{{item}}"></template>
+    </view>
+  </view>
+</block>

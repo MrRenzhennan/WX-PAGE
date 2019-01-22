@@ -1,0 +1,25 @@
+<!--pages/latestNews/latestNews.wxml-->
+<!--引用统一模板-->
+  <import src='/pages/templatePage/newInformation.wxml'></import>
+  <view class='bgm'>
+    <view>
+   <text class='stit'>最新资讯</text>
+    </view>
+    <view class='eng-lang'>
+        <!-- <text>专家解读</text>
+    <text>实时分析</text>
+    <text>专家解读</text>
+    <text>专家解读</text> -->
+    </view>
+    <!-- <navigator url='/pages/circleFriends/circleFriends'>
+      <view class='brn-box'>
+        <text>查看</text>
+      </view>
+    </navigator> -->
+  </view>
+
+  <!-- 分割线 -->
+  <!-- 最新观点文章列表 -->
+  <block wx:for="{{Articles}}" wx:for-item="item" wx:for-index="index">
+    <template is="tmpInformation" data="{{item}}"></template>
+  </block>

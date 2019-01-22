@@ -1,0 +1,30 @@
+<!--引用统一模板-->
+<import src='/pages/templatePage/balance.wxml'></import>
+<view class='head-box'>
+  <view class='left'>
+    <image class='avatar'  src='{{userInfo.avatarUrl}}'></image>
+    <view class='center'>
+      <text class='num'>{{userInfo.user_name}}</text>
+      <view>
+        <text>余额:</text>
+        <text class='col'>￥{{userInfo.amount}}</text>
+      </view>
+    </view>
+  </view>
+  <navigator url='/pages/Recharge/Recharge'>
+    <view class='btn'>充值</view>
+  </navigator>
+</view>
+
+<view class='divider'></view>
+
+<!-- 充值列表 -->
+<block wx:for="{{AmountLog}}" wx:for-item="item" wx:for-index="index">
+  <view class="li bg-gray">
+    <view>
+      <template is="tmpbalance" data="{{item}}"></template>
+    </view>
+  </view>
+</block>
+
+

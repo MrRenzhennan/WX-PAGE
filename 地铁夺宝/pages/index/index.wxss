@@ -1,0 +1,23 @@
+/* pages/index/index.wxss */
+.box{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background: #5ed0eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bx{
+  width: 100%;
+  height: 769rpx;
+  transform: rotate(45deg)
+}
+.tx{
+  font-size: 34rpx;
+  color: #fff;
+}
+.start-work{
+  width: 300rpx;
+  height: 100rpx;
+}

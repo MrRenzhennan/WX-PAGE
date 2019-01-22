@@ -1,0 +1,112 @@
+<!--pages/unaryTicketDetails/unaryTicketDetails.wxml-->
+<scroll-view scroll-x="true" class="scroll-view-x">
+  <view class="scroll-view-item" wx:for="{{_TabList}}" wx:key="*this">
+    <view class="{{idx == item.num ? 'on' : ''}}" bindtap="currentTab" data-current="{{item.num}}">{{ item.name }}</view>
+  </view>
+</scroll-view>
+
+<view class='box'>
+  <view class='center-box' wx:if="{{idx == 0}}">
+    <view class="container">
+      <image src='{{min30Img}}'></image>
+    </view>
+    <view class='divider'></view>
+    <view class='concept'>
+      <view class='top'>
+        <view class='icon'></view>
+        <text>所属概念</text>
+      </view>
+      <view class='botm'>
+      <block wx:for="{{concept}}" wx:for-item="item" wx:for-index="index">
+          <view>{{item}}</view>
+        </block>
+      </view>
+    </view>
+    <view class='divider'></view>
+    <view class='description'>
+      <view class='top'>
+        <view class='icon'></view>
+        <text>描述</text>
+      </view>
+      <view class='botm'>
+        <text>{{min30Brief}}</text>
+      </view>
+    </view>
+    <view class='divider'></view>
+    <view class='description'>
+      <view class='top'>
+        <view class='icon'></view>
+        <text>详细数据</text>
+      </view>
+      <view class='botm'>
+        <view class="table">
+          <view class="tr">
+            <view class="th">时间</view>
+            <view class="th">机会线</view>
+            <view class="th">风险线</view>
+            <view class="th">雷达信号</view>
+          </view>
+          <view class="tr" wx:for="{{min30}}" wx:for-item="item" wx:for-index="index">
+            <view class="td">{{item.time}}</view>
+            <view class="td">{{item.jihui}}</view>
+            <view class="td">{{item.fengxian}}</view>
+            <view class="td">{{item.yujing}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='center-box' wx:if="{{idx == 1}}">
+    <view class="container">
+     <image src='{{dailyImg}}'></image>
+    </view>
+    <view class='divider'></view>
+    <view class='concept'>
+      <view class='top'>
+        <view class='icon'></view>
+        <text>所属概念</text>
+      </view>
+      <view class='botm'>
+        <block wx:for="{{concept}}" wx:for-item="item" wx:for-index="index">
+          <view>{{item}}</view>
+        </block>
+      </view>
+
+    </view>
+    <view class='divider'></view>
+    <view class='description'>
+      <view class='top'>
+        <view class='icon'></view>
+        <text>描述</text>
+      </view>
+      <view class='botm'>
+        <text>{{dailyBrief}}</text>
+      </view>
+    </view>
+    <view class='divider'></view>
+    <view class='description'>
+      <view class='top'>
+        <view class='icon'></view>
+        <text>详细数据</text>
+      </view>
+      <view class='botm'>
+        <view class="table">
+          <view class="tr">
+            <view class="th">时间</view>
+            <view class="th">机会线</view>
+            <view class="th">风险线</view>
+            <view class="th">雷达信号</view>
+          </view>
+            <view class="tr" wx:for="{{daily}}" wx:for-item="item" wx:for-index="index">
+            <view class="td">{{item.time}}</view>
+            <view class="td">{{item.jihui}}</view>
+            <view class="td">{{item.fengxian}}</view>
+            <view class="td">{{item.yujing}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

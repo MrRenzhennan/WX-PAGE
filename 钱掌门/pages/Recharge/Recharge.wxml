@@ -1,0 +1,45 @@
+<!--pages/Recharge/Recharge.wxml-->
+<view class='top-list'>
+  <text>账户余额:</text>
+  <text class='col icon'>￥</text>
+  <text class='col'>{{userInfo.amount}}</text>
+</view>
+<view class='divider'></view>
+
+<view class='tit'>
+  <text>充值金额</text>
+</view>
+
+<!-- 充值类型 -->
+<view class='recharge-box'>
+  <view data-index="{{0}}" class="{{idx==0?'recharge-box-active':''}}" bindtap='goIndex'>
+    <text>充50元</text>
+  </view>
+  <view data-index="{{1}}" class="{{idx==1?'recharge-box-active':''}}" bindtap='goIndex'>
+    <text>充100元</text>
+  </view>
+  <view data-index="{{2}}" class="{{idx==2?'recharge-box-active':''}}" bindtap='goIndex'>
+    <text>充200元</text>
+    <text class='offer'>送10元</text>
+  </view>
+  <view data-index="{{3}}" class="{{idx==3?'recharge-box-active':''}}" bindtap='goIndex'>
+    <text>充500元</text>
+    <text class='offer'>送50元</text>
+  </view>
+    <view data-index="{{4}}" class="{{idx==4?'recharge-box-active':''}}" bindtap='goIndex'>
+    <text>充1000元</text>
+    <text class='offer'>送100元</text>
+  </view>
+</view>
+<!--  -->
+<view class='bottom'>
+    <view bindtap='OnSubmit' class='btn'>
+      <text >立即充值</text>
+    </view>
+  <view class='ct'>
+    <text>点击立即充值，即表示您已经同意</text>
+    <navigator url='/pages/serviceAgreement/serviceAgreement'>
+      <text class='col'>《用户服务协议》</text>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+<!--pages/latestViewDetails/latestViewDetails.wxml-->
+<import src="../wxParse/wxParse.wxml" />
+<!--  -->
+<view class='t-box'>
+  <text class='tit'>{{Title}}</text>
+  <text class='tim'>{{UpdateTime}}</text>
+</view>
+
+<view class='divider'></view>
+
+<view class='center'>
+  <template is="wxParse" data="{{wxParseData:Article.nodes}}" />
+</view>
+
+
+
+<view class='fix-bot'>
+  <view class='flex-bot'>
+    <view class='bx'>
+      <view class='cc'>
+        <image src='/static/imgs/money-icon.jpg'></image>
+        <!-- <text>首页</text> -->
+        <button bindtap='ToIndex'  plain="{{true}}">首页</button>
+      </view>
+    </view>
+    <!-- <view class='bx'>
+      <view class='cc'>
+        <image src='/static/imgs/pl-icon.jpg'></image>
+        <button plain="{{true}}">发布评论</button>
+      </view>
+    </view> -->
+    <view class='bx'>
+      <view class='cc'>
+        <image src='/static/imgs/wx-icon.jpg'></image>
+        <!-- <text>分享好友</text> -->
+        <button open-type='share'  plain="{{true}}">分享好友</button>
+      </view>
+    </view>
+  </view>
+</view>

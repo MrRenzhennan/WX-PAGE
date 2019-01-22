@@ -1,0 +1,68 @@
+<!--pages/integralWithdrawal/integralWithdrawal.wxml-->
+<view class='my-balance'>
+  <view class='center'>
+    <view>
+      <text>当前余额</text>
+    </view>
+    <view>
+      <text>¥  112.0</text>
+    </view>
+  </view>
+</view>
+
+<view class='txfs'>
+  <text>提现方式</text>
+</view>
+<view class='type-btn'>
+  <view class='{{method_payment == 1? "btn bor-none" : "btn"}}' bindtap='method_payment' data-method_payment="1">
+    <image class='wx' src='/static/imgs/wx.png'></image>
+    <text>微信</text>
+    <image class='active ' wx-if="{{method_payment == 1}}" src='/static/imgs/active-btn.png'></image>
+  </view>
+  <view class='{{method_payment == 2? "btn bor-none" : "btn"}}' bindtap='method_payment' data-method_payment="2">
+    <image class='zfb' src='/static/imgs/zfb.png'></image>
+    <text>支付宝</text>
+    <image class='active ' wx-if="{{method_payment == 2}}" src='/static/imgs/active-btn.png'></image>
+  </view>
+</view>
+
+
+<view class='txfs'>
+  <text>提现金额</text>
+</view>
+
+<view class='money'>
+  <view class='{{choose_money == 1? "box  bor-none" : "box"}}' bindtap='choose_money' data-choose_money="1">10元
+    <image class='active ' wx-if="{{choose_money == 1}}" src='/static/imgs/active_money.png'></image>
+  </view>
+  <view class='{{choose_money == 2? "box  bor-none" : "box"}}' bindtap='choose_money' data-choose_money="2">20元
+    <image class='active ' wx-if="{{choose_money == 2}}" src='/static/imgs/active_money.png'></image>
+  </view>
+  <view class='{{choose_money == 3? "box  bor-none" : "box"}}' bindtap='choose_money' data-choose_money="3">30元
+    <image class='active ' wx-if="{{choose_money == 3}}" src='/static/imgs/active_money.png'></image>
+  </view>
+  <view class='{{choose_money == 4? "box  bor-none" : "box"}}' bindtap='choose_money' data-choose_money="4">40元
+    <image class='active ' wx-if="{{choose_money == 4}}" src='/static/imgs/active_money.png'></image>
+  </view>
+  <view class='{{choose_money == 5? "box  bor-none" : "box"}}' bindtap='choose_money' data-choose_money="5">50元
+    <image class='active ' wx-if="{{choose_money == 5}}" src='/static/imgs/active_money.png'></image>
+  </view>
+  <view class='{{choose_money == 6? "box  bor-none" : "box"}}' bindtap='choose_money' data-choose_money="6">其他
+    <image class='active ' wx-if="{{choose_money == 6}}" src='/static/imgs/active_money.png'></image>
+  </view>
+</view>
+
+
+<view class='txfs zy'>
+  <text>注意事项</text>
+</view>
+
+<view class='tx'>
+  <text>1.首次提现1秒到账，如遇高峰期，可能延迟到账，烦请耐心等待；</text>
+  <text>2.请及时关注“个人中心->兑换体现->兑换记录”查看兑换记录状态；</text>
+  <text>3.提现到账产讯：微信->我->钱包->零钱->零钱明细->,如果有名称为“企业付款-地铁夺宝提现成功”的数据，即提现到账成功！</text>
+</view>
+
+
+<!-- tabbar -->
+<tab-bar></tab-bar>

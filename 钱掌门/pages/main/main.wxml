@@ -1,0 +1,74 @@
+<!--pages/main/main.wxml-->
+<!-- <view class='head-box'>
+  <image></image>
+  <navigator url='/pages/login/login'>
+    <text>授权登陆</text>
+  </navigator>
+</view> -->
+<view class='head-box'>
+  <image class='avatar' src='{{userInfo.avatarUrl}}'></image>
+  <navigator hidden='{{hasUserInfo}}' url='/pages/login/login'>
+    <text>快速登录</text>
+  </navigator>
+  <text hidden="{{!hasUserInfo}}">{{userInfo.user_name}}</text>
+  <navigator hidden='{{!hasUserInfo}}' url='/pages/SignInRecord/SignInRecord'>
+    <view class='btn'>签到</view>
+  </navigator>
+  <image class='right' src='/static/imgs/right-icon.jpg'></image>
+</view>
+<!-- 分区 -->
+<view class='divider'></view>
+<!-- 优惠券 -->
+<navigator hidden='{{!hasUserInfo}}' url='/pages/coupon/coupon'>
+  <view class='list'>
+    <text>优惠券</text>
+    <image class='right' src='/static/imgs/right-icon.jpg'></image>
+  </view>
+</navigator>
+<view class='divider-line'></view>
+<!-- 余额 -->
+<navigator hidden='{{!hasUserInfo}}' url='/pages/Balance/Balance'>
+  <view class='list'>
+    <text>余额</text>
+    <image class='right' src='/static/imgs/right-icon.jpg'></image>
+  </view>
+</navigator>
+<view class='divider-line'></view>
+<!-- 消息 -->
+<navigator hidden='{{!hasUserInfo}}' url='/pages/message/message'>
+  <view class='list'>
+    <text>消息</text>
+    <image class='right' src='/static/imgs/right-icon.jpg'></image>
+  </view>
+</navigator>
+<view class='divider-line'></view>
+<!-- 计划 -->
+<view bindtap='OnPlan' hidden='{{!hasUserInfo}}' class='list'>
+  <text>计划</text>
+  <navigator url=''>
+    <image class='right' src='/static/imgs/right-icon.jpg'></image>
+  </navigator>
+</view>
+<view class='divider-line'></view>
+<!-- 客服 -->
+<navigator hidden='{{!hasUserInfo}}' url='/pages/customerService/customerService'>
+  <view class='list'>
+    <text>客服</text>
+    <image class='right' src='/static/imgs/right-icon.jpg'></image>
+  </view>
+</navigator>
+<view class='divider-line'></view>
+<!-- 系统 -->
+<navigator hidden='{{!hasUserInfo}}' url='/pages/serviceAgreement/serviceAgreement'>
+  <view class='list'>
+    <text>系统</text>
+    <image class='right' src='/static/imgs/right-icon.jpg'></image>
+  </view>
+</navigator>
+<view class='divider-line'></view>
+
+<!-- 退出登录 -->
+<view hidden='{{!hasUserInfo}}' class='list logout'>
+  <text bindtap='loginBtnClick'>退出登录</text>
+  <image class='right' src='/static/imgs/right-icon.jpg'></image>
+</view>

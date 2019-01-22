@@ -1,0 +1,26 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/theWelcomePageUnregistered/theWelcomePageUnregistered",
+    "pages/authorizationToLand/authorizationToLand",
+    "pages/theWelcomePageRegistered/theWelcomePageRregistered",
+    "pages/TheAnswerPage/TheAnswerPage",
+    "pages/funAnswer/funAnswer",
+    "pages/brainPowerRanking/brainPowerRanking",
+    "pages/personalCenter/personalCenter",
+    "pages/myPoints/myPoints",
+    "pages/pointsFor/pointsFor",
+    "pages/integralWithdrawal/integralWithdrawal",
+    "pages/goodsDetails/goodsDetails",
+    "pages/changeTheRules/changeTheRules",
+    "pages/immediatelyChange/immediatelyChange"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#4e84e5",
+    "navigationBarTitleText": "地铁夺宝",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#f7f7f7"
+  }
+}

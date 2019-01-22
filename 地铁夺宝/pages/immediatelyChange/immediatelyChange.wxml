@@ -1,0 +1,41 @@
+<!--pages/immediatelyChange/immediatelyChange.wxml-->
+<view class='box'>
+  <view class='input-box'>
+    <text>收获人:</text>
+    <input />
+    <view class='img-box'>
+      <image class='ren' src='/static/imgs/ren-2.png'></image>
+      <image class='jia' src='/static/imgs/+.png'></image>
+    </view>
+  </view>
+  <view class='input-box'>
+    <text>手机号码:</text>
+    <input />
+  </view>
+  <view class='input-box'>
+    <text>所在区域:</text>
+    <input />
+  </view>
+  <view class='input-box'>
+    <text>详细地址:</text>
+    <input />
+  </view>
+</view>
+
+<view class='btn'>
+  <button bindtap='submit'>提交</button>
+</view>
+
+
+<!-- 弹框 -->
+<view class='model' wx-if="{{isChange}}">
+  <view class='center-box'>
+    <view class='yuan'>
+      <image src='/static/imgs/ziyuanldpi-2.png'></image>
+    </view>
+    <view class='tx'>兑换成功</view>
+    <view class='btn'>
+      <button bindtap='close'>朕知道了</button>
+    </view>
+  </view>
+</view>

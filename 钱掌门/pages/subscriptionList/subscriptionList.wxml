@@ -1,0 +1,52 @@
+<!--引用统一模板-->
+<import src='/pages/templatePage/subscriptionlist.wxml'></import>
+<!-- 朋友圈列表 -->
+<block wx:for="{{posts}}" wx:for-item="item" wx:for-index="index">
+  <template is="tmpsubscriptionlist" data="{{item}}"></template>
+</block>
+
+
+
+<!--  -->
+<!-- <view class='fix-bot'>
+  <view class='flex-bot'>
+    <view class='bx'>
+      <view class='cc'>
+        <image src='/static/imgs/money-icon.jpg'></image>
+        <button plain="{{true}}">首页</button>
+      </view>
+    </view> -->
+    <!-- <view class='bx'>
+      <view class='cc'>
+        <image src='/static/imgs/pl-icon.jpg'></image>
+        <button plain="{{true}}">发布评论</button>
+      </view>
+    </view> -->
+    <!-- <view class='bx'>
+      <view class='cc'>
+        <image src='/static/imgs/wx-icon.jpg'></image>
+        <button plain="{{true}}">分享好友</button>
+      </view>
+    </view>
+  </view>
+</view> -->
+
+
+<!-- 提问框 -->
+<view class='fixed-cover' wx:if="{{question_state}}">
+  <view class='fixed-btm'>
+    <view class='question-box'>
+      <view class='icon-box'>
+        <icon type="cancel" size='30' color='#cccccc' bindtap='questionClose' />
+      </view>
+      <view class='tit'>问问专家</view>
+      <view class='textarea-box'>
+        <textarea bindinput="InputReply" fixed="{{true}}" placeholder="内容" show-confirm-bar="{{false}}" />
+      </view>
+      <view bindtap='OnReply' class='brn-box'>
+        <text>回复</text>
+      </view>
+    </view>
+  </view>
+
+</view>

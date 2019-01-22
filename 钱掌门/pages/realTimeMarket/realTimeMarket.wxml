@@ -1,0 +1,110 @@
+<wxs module="filter" src="../../utils/commont.wxs"></wxs>
+<view class='input-box'>
+  <input bindinput='InputStock' value='{{StockCode}}' placeholder="股票名称/代码/全拼" />
+  <button bindtap='Serach'>+</button>
+</view>
+
+<view class='divider'></view>
+
+<view class='block-box'>
+
+  <block wx:for="{{Title}}" wx:for-item="item" wx:for-index="index">
+    <view class="exponent {{filter.toFixed(item.openPri-item.nowpri)>0?'up':'down' }}">
+      <text>{{item.name}}</text>
+      <text class='num'>{{item.nowpri}}</text>
+      <view class='btm'>
+        <text>{{filter.toFixed(item.openPri-item.nowpri)}}</text>
+        <text>{{filter.Percent(item.openPri,item.nowpri)}}%</text>
+      </view>
+    </view>
+  </block>
+
+  <!-- <view class='exponent down'>
+    <text>上涨指数</text>
+    <text class='num'>2533.09</text>
+    <view class='btm'>
+      <text>+18.22</text>
+      <text>0.72%</text>
+    </view>
+  </view> -->
+  <!-- <view class='exponent up'>
+    <text>上涨指数</text>
+    <text class='num'>2533.09</text>
+    <view class='btm'>
+      <text>+18.22</text>
+      <text>0.72%</text>
+    </view>
+  </view>
+  <view class='exponent down'>
+    <text>上涨指数</text>
+    <text class='num'>2533.09</text>
+    <view class='btm'>
+      <text>+18.22</text>
+      <text>0.72%</text>
+    </view>
+  </view>
+  <view class='exponent stop'>
+    <text>上涨指数</text>
+    <text class='num'>2533.09</text>
+    <view class='btm'>
+      <text>+18.22</text>
+      <text>0.72%</text>
+    </view>
+  </view> -->
+
+</view>
+
+<view class='divider'></view>
+
+<view class='table-title'>
+  <view class='t1'>名称代码</view>
+  <view class='t2'>最新价</view>
+  <view class='t3'>涨跌幅</view>
+</view>
+
+
+<block wx:for="{{List}}" wx:for-item="item" wx:for-index="index">
+  <navigator url="/pages/detailedQuote/detailedQuote?code={{item.symbol}}">
+    <view class='table-list'>
+      <view class='icon'>{{filter.subString(item.symbol,0,2)}}</view>
+      <view class='center'>
+        <view class='type'>
+          <text class='chinese'>{{item.name}}</text>
+          <text class='english'>{{item.symbol}}</text>
+        </view>
+        <view class="trend {{item.changepercent>0?'up':'down'}}">{{item.trade}}</view>
+        <view class='ups-and-downs'>
+          <view class="{{item.changepercent>0?'ups-up':'ups-down'}}">{{item.changepercent}}</view>
+        </view>
+      </view>
+    </view>
+  </navigator>
+</block>
+
+<!-- <view class='table-list'>
+  <view class='icon'>us</view>
+  <view class='center'>
+    <view class='type'>
+      <text class='chinese'>苹果</text>
+      <text class='english'>AAPL</text>
+    </view>
+    <view class="trend down">147.200</view>
+    <view class='ups-and-downs'>
+      <view class='ups-down'>-1.521</view>
+    </view>
+  </view>
+</view>
+
+<view class='table-list'>
+  <view class='icon'>us</view>
+  <view class='center'>
+    <view class='type'>
+      <text class='chinese'>苹果</text>
+      <text class='english'>AAPL</text>
+    </view>
+    <view class="trend stop">147.200</view>
+    <view class='ups-and-downs'>
+      <view class='ups-stop'>-1.521</view>
+    </view>
+  </view>
+</view> -->

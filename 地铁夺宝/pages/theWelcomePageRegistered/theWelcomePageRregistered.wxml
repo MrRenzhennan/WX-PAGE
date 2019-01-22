@@ -1,0 +1,19 @@
+<!--pages/theWelcomePageRegistered/theWelcomePageRregistered.wxml-->
+<view class='box'>
+  <view class='logo'>
+    <image src='/static/imgs/logo_small.png '></image>
+  </view>
+  <navigator url='' hover-class='none'>
+    <view class='center'>
+      <text class='hi'>HI：</text>
+      <text class='tx'>少年，欢迎回家，快快完成</text>
+      <text class='tx'>每日任务赚取积分吧!</text>
+    </view>
+  </navigator>
+  <view class='bottom-img'>
+    <image src='/static/imgs/jinbi.png'></image>
+  </view>
+</view>
+
+<!-- tabbar -->
+<tab-bar></tab-bar>

@@ -1,0 +1,11 @@
+<!--pages/index/index.wxml-->
+
+<view class='box'>
+  <image class='bx' src='/static/imgs/treasure_chest.png'></image>
+  <view class='tx'>答题赢宝箱，一起参与吧</view>
+  <view class='start-work'>
+  </view>
+  <navigator url='/pages/theWelcomePageUnregistered/theWelcomePageUnregistered' hover-class='none'>
+     <image class='start-work' src='/static/imgs/Starting_to_work.png'></image>
+  </navigator>
+</view>

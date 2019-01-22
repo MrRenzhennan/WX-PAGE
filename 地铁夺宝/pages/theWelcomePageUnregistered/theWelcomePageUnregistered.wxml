@@ -1,0 +1,19 @@
+<!--pages/theWelcomePageUnregistered/theWelcomePageUnregistered.wxml-->
+<view class='box'>
+  <view class='logo'>
+    <image src='/static/imgs/logo_small.png '></image>
+  </view>
+  <navigator url='/pages/authorizationToLand/authorizationToLand' hover-class='none'>
+    <view class='center'>
+      <text class='hi'>HI：</text>
+      <text class='tx'>少年，等你很久了，注册会员</text>
+      <text class='tx'>赢取属于你的奖励！</text>
+    </view>
+  </navigator>
+  <view class='bottom-img'>
+    <image src='/static/imgs/people.png'></image>
+  </view>
+</view>
+
+<!-- tabbar -->
+<tab-bar></tab-bar>

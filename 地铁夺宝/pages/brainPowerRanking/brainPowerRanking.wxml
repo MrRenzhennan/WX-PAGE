@@ -1,0 +1,46 @@
+<!--pages/brainPowerRanking/brainPowerRanking.wxml-->
+<view class='box'>
+  <view class='bgc'>
+    <view class='img-box'>
+      <image src='/static/imgs/mental_ranking.png'></image>
+    </view>
+    <view class='list'>
+      <view class='title'>
+        <text>排行</text>
+        <text>|</text>
+        <text>头像</text>
+        <text>|</text>
+        <text>ID</text>
+        <text>|</text>
+        <text>答题积分</text>
+        <text>|</text>
+        <text>荣誉称号</text>
+      </view>
+
+      <view class='li'>
+        <view>1</view>
+        <view class='head-portrait'></view>
+        <view>xxxx</view>
+        <view>1280</view>
+        <view>智多星</view>
+      </view>
+
+      <view class='li'>
+        <view>1</view>
+        <view class='head-portrait'></view>
+        <view>xxxx</view>
+        <view>1280</view>
+        <view>智多星</view>
+      </view>
+
+      <view class='li'>
+        <view>1</view>
+        <view class='head-portrait'></view>
+        <view>xxxx</view>
+        <view>1280</view>
+        <view>智多星</view>
+      </view>
+
+    </view>
+  </view>
+</view>

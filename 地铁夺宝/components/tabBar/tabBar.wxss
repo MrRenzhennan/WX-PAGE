@@ -1,0 +1,34 @@
+.tabBar{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #dcdcdc;
+  padding-top: 6rpx;
+  box-sizing: border-box;
+}
+.tabBar navigator{
+  width: 50%;
+  height: 100%;
+}
+.tabBar .box{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.tabBar .left{
+  border-right: 1px solid #a5a5a5;
+}
+.tabBar image{
+  width: 48rpx;
+  height: 48rpx;
+}
+.tabBar text{
+  font-size: 28rpx;
+  color: #a5a5a5;
+}

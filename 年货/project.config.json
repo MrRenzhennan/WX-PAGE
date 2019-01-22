@@ -1,0 +1,62 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.5.0",
+	"appid": "wxc25575adab39badf",
+	"projectname": "%E5%B9%B4%E8%B4%A7",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "抽奖规则",
+					"pathName": "pages/sweepstakesRules/sweepstakesRules",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "领取方式",
+					"pathName": "pages/getTheWay/getTheWay",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "产品图",
+					"pathName": "pages/productFigure/productFigure"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,78 @@
+<!--pages/detailedQuote/detailedQuote.wxml-->
+<view class='title'>
+  80000000 恒生指数
+</view>
+<view class='sub'>
+  已收盘
+</view>
+<view class='centerList'>
+  <view class='large red'>26521.43</view>
+  <view>
+    <text class='tx' space="nbsp">最    高</text>
+    <text class='num red'>2658.21</text>
+  </view>
+  <view>
+    <text class='tx' space="nbsp">最    低</text>
+    <text class='num green'>2658.21</text>
+  </view>
+  <view class='sm'>
+    <text>+59.11</text>
+    <text>+0.22%</text>
+  </view>
+  <view>
+    <text class='tx' space="nbsp">最    低</text>
+    <text class='num green'>2658.21</text>
+  </view>
+  <view>
+    <text class='tx' space="nbsp">最    低</text>
+    <text class='num green'>2658.21</text>
+  </view>
+  <view>
+    <text class='tx' space="nbsp">成交额</text>
+    <text class='num'>2658.21</text>
+  </view>
+  <view>
+    <text class='tx' space="nbsp">上    涨</text>
+    <text class='num'>2658.21</text>
+  </view>
+  <view>
+    <text class='tx' space="nbsp">最    低</text>
+    <text class='num green'>2658.21</text>
+  </view>
+  <view>
+    <text class='tx' space="nbsp">最    低</text>
+    <text class='num green'>2658.21</text>
+  </view>
+</view>
+<view class='divider'></view>
+
+<scroll-view scroll-x="true" class="scroll-view-x">
+  <view class="scroll-view-item" wx:for="{{_TabList}}" wx:key="*this">
+    <view class="{{idx == item.num ? 'on' : ''}}" bindtap="currentTab" data-current="{{item.num}}">{{ item.name }}</view>
+  </view>
+</scroll-view>
+
+
+<view class='list-box'>
+  <!-- 朋友圈列表 -->
+  <view class='slider'>
+    <swiper duration="{{ 500 }}" current="{{idx}}" bindchange="currentChange" style="height: 500rpx">
+      <!-- 未订阅 -->
+      <swiper-item>
+        <view>
+          <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1547137029358&di=556f1924d3f4e54d0666f04f2d80f528&imgtype=0&src=http%3A%2F%2Fimgsa.baidu.com%2Fexp%2Fw%3D500%2Fsign%3D3dfe5f21dc54564ee565e43983df9cde%2Fb812c8fcc3cec3fd88a9c447d788d43f87942768.jpg'></image>
+        </view>
+      </swiper-item>
+      <!-- 已订阅 -->
+      <swiper-item>
+        <view>
+          <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1547731777&di=9aa4f300802b5892d206183c1e1e6785&imgtype=jpg&er=1&src=http%3A%2F%2Fs4.sinaimg.cn%2Fmw690%2Fcf631779gdd1d4513ef53%26amp%3B690'></image>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+
+
+
+</view>

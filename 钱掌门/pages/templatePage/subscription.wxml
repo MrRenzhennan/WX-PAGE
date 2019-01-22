@@ -1,0 +1,17 @@
+<!-- 朋友圈模板 -->
+<template name='tmpsubscription'>
+  <navigator url='/pages/subscriptionList/subscriptionList?id={{item.id}}'>
+    <view class='circleFriends'>
+      <view class='left'>
+        <image src='https://m.qzmhao.com{{item.img}}'></image>
+        <view>
+          <text class='tit'>{{item.title}}</text>
+          <text class='sub-tit'>首席顾问</text>
+          <text class='center'>{{item.content}}</text>
+          <text class='attention-num'>有效期：{{item.end_time}}</text>
+        </view>
+      </view>
+      <image class='right' src='/static/imgs/right-icon.jpg'></image>
+    </view>
+  </navigator>
+</template>

@@ -1,0 +1,16 @@
+<!--pages/changeTheRules/changeTheRules.wxml-->
+<view class='logo'>
+  <image src='/static/imgs/logo_small.png '></image>
+</view>
+<!--  -->
+<view class='box'>
+  <view class='center'>
+    <text class='title'>积分兑换规则:</text>
+    <text>1.积分已达到一定兑换标准时，地铁夺宝用户可将累积积分按照地铁夺宝相应积分兑换活动标准兑换相应礼品，地铁夺宝将即时从兑换用户名的积分中扣除相应积分。</text>
+    <text>2.所有兑换礼品数量有限，兑完为止，并不得退换及兑换现金，如有损坏或遗失将不会获得补发或不做现金赔偿，地铁夺宝有权调整或变换礼品而不作预先通知。</text>
+    <text>3.用户自己承担运费。</text>
+    <text>4.每个自然人每天最多只能兑换5件自付运费礼品（即只能获得5张coupon）</text>
+    <text>5.每个地址，每天最多兑换5件物品，超出部分不予发送。</text>
+    <text>6.地铁夺宝对本活动有最终解释权。</text>
+  </view>
+</view>

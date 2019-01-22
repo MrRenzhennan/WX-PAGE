@@ -1,0 +1,93 @@
+<!--pages/personalCenter/personalCenter.wxml-->
+<view class='bg'>
+  <image src='/static/imgs/center-bg.png'></image>
+  <view class='qd-box' bindtap='sign'>签到</view>
+</view>
+<!-- 签到进度 -->
+<view class='progress'>
+  <view class='box'>
+    <view class='sm'>
+      <view class='{{progress >=1 ? "selected selectedOk" : "selected"}}'>
+        {{progress >=1 ? '' : '+1'}}
+        <image src='/static/imgs/duihao.png' wx-if='{{progress >=1}}'></image>
+      </view>
+    </view>
+    <view class='sm'>
+      <view class='{{progress >=2 ? "selected selectedOk" : "selected"}}'>
+        {{progress >=2 ? '' : '+2'}}
+        <image src='/static/imgs/duihao.png' wx-if='{{progress >=2}}'></image>
+      </view>
+    </view>
+    <view class='sm'>
+      <view class='{{progress >=3 ? "selected selectedOk" : "selected"}}'>
+        {{progress >=3 ? '' : '+3'}}
+        <image src='/static/imgs/duihao.png' wx-if='{{progress >=3}}'></image>
+      </view>
+    </view>
+    <view class='sm'>
+      <view class='{{progress >=4 ? "selected selectedOk" : "selected"}}'>
+        {{progress >=4 ? '' : '+4'}}
+        <image src='/static/imgs/duihao.png' wx-if='{{progress >=4}}'></image>
+      </view>
+    </view>
+    <view class='sm'>
+      <view class='{{progress >=5 ? "selected selectedOk" : "selected"}}'>
+        {{progress >=5 ? '' : '+5'}}
+        <image src='/static/imgs/duihao.png' wx-if='{{progress >=5}}'></image>
+      </view>
+    </view>
+    <view class='sm'>
+      <view class='{{progress >=6 ? "selected selectedOk" : "selected"}}'>
+        {{progress >=6 ? '' : '+6'}}
+        <image src='/static/imgs/duihao.png' wx-if='{{progress >=6}}'></image>
+      </view>
+    </view>
+    <view class='sm'>
+      <image src='/static/imgs/lipinhe.png'></image>
+    </view>
+    <view class='line'>
+      <view class='progress-line' style='width:{{16.666 * (progress-1)}}%'></view>
+    </view>
+  </view>
+</view>
+<view class='picture'>
+  <image src='/static/imgs/picture.png'></image>
+</view>
+<view class='name'>
+  <text>亲爱的：渤渤</text>
+</view>
+<view class='operation'>
+  <navigator url='/pages/myPoints/myPoints' hover-class='none'>
+    <view class='box'>
+      <image src='/static/imgs/jifen.png'></image>
+      <text>我的积分</text>
+    </view>
+  </navigator>
+  <navigator url='/pages/pointsFor/pointsFor' hover-class='none'>
+    <view class='box'>
+      <image src='/static/imgs/duihuanqingkuang.png'></image>
+      <text>积分兑换</text>
+    </view>
+  </navigator>
+  <navigator url='/pages/integralWithdrawal/integralWithdrawal' hover-class='none'>
+    <view class='box'>
+      <image src='/static/imgs/tixian.png'></image>
+      <text>积分提现</text>
+    </view>
+  </navigator>
+
+</view>
+<!-- 签到弹框 -->
+<view class='sign-modal' wx-if='{{isSign}}' bindtap='close'>
+  <view>
+    <image src='/static/imgs/sign_successfully.png'></image>
+    <view class='text'>
+      <text>已签到{{progress}}天，继续加油</text>
+      <text>签满七天即可领取精美大礼</text>
+    </view>
+  </view>
+</view>
+
+
+<!-- tabbar -->
+<tab-bar></tab-bar>

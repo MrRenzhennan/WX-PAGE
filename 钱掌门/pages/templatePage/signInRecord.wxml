@@ -1,0 +1,8 @@
+<wxs module="filter" src="../../utils/commont.wxs"></wxs>
+<template name='tmpsignInRecord'>
+<view class='list'>
+  <text class='money'>{{item.remark}}</text>
+  <text class='time'>{{filter.FormatToDate(item.add_time)}}</text>
+</view>
+<view class='divider-line'></view>
+</template>

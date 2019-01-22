@@ -1,0 +1,61 @@
+<!--pages/confirmOrder/confirmOrder.wxml-->
+
+<view class='list'>
+  <text>消费项目：{{circleFriendName+projectName}}</text>
+</view>
+<view class='divider-line'></view>
+<view class='list'>
+  <view>
+    <text>金额:</text>
+    <text class='icon clo'>￥ </text>
+    <text class='clo num'>{{price}}</text>
+  </view>
+</view>
+<view class='divider'></view>
+<view  bindtap='model' class='list'>
+  <text>{{CouponName}}</text>
+  <view class='right'>
+    <!-- <text>暂无可用</text> -->
+    <image class='img' src='/static/imgs/right-icon.jpg'></image>
+  </view>
+</view>
+<view class='divider-line'></view>
+<view class='list'>
+  <view>
+    <text>使用金额:</text>
+    <text class='icon clo'>￥ </text>
+    <text class='clo num'>{{userInfo.amount}}</text>
+  </view>
+  <checkbox-group bindchange='UseMoneyChange'>
+    <checkbox  disabled='{{disableUserMoney}}' value="{{useMoney}}" checked="{{useMoney}}" />
+  </checkbox-group>
+</view>
+<view class='divider-line'></view>
+<view class='list'>
+  <view>
+    <text>还需支付:</text>
+    <text class='icon clo'>￥ </text>
+    <text class='clo num'>{{paymentMoney}}</text>
+  </view>
+
+</view>
+
+<!--  -->
+<view class='botm'>
+  <view>
+    <label class="checkbox">
+      <checkbox-group bindchange='ConfirmChange'>
+      <checkbox value="{{confirm}}" checked="{{confirm}}" />
+      </checkbox-group>
+      <text class='t1'>已阅读并同意</text>
+      <text class='t2'>《购买协议》</text>
+    </label>
+  </view>
+  <view bindtap='ConfirmPayment' class='brn-box'>
+    <text >确认支付</text>
+  </view>
+  <view class='tx'>
+    温馨提示：如果您无法完成付款，您需要先去我的账户-我 我的余额中
+    <text>充值余额</text>,在使用余额支付完成付款。
+  </view>
+</view>

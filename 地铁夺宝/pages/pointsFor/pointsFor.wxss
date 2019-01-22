@@ -1,0 +1,85 @@
+/* pages/pointsFor/pointsFor.wxss */
+.swiper-box{
+  position: relative;
+}
+.search{
+  position: absolute;
+  top: 25rpx;
+  right: 25rpx;
+  width: 130rpx;
+  height: 50rpx;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+ box-sizing: border-box;
+ padding-left: 20rpx;
+  border-radius: 50rpx 0 50rpx 50rpx;
+  transition: width 0.5s;
+}
+.input-placeholder{
+  color: #fff;
+}
+swiper{
+  width: 100%;
+  height: 263rpx;
+}
+swiper swiper-item image{
+  width: 100%;
+  height: 263rpx;
+}
+
+.classify{
+  width: 100%;
+  height: 190rpx;
+  display: flex;
+}
+.classify .cld{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.classify .cld image{
+  width: 72rpx;
+  height: 74rpx;
+  margin-top: 10rpx;
+}
+.classify .cld text{
+  font-size: 28rpx;
+  color: #b7b7b7;
+}
+
+.shop-list{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30rpx 40rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.shop-list navigator{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  width: 30%;
+  margin-bottom: 20rpx;
+}
+.shop-list navigator image{
+  width: 100%;
+  height: 175rpx;
+  border: 1px solid #e5e5e5;
+}
+.shop-list navigator .t1{
+  font-size: 24rpx;
+    color: #b7b7b7;
+    margin-top: 10rpx;
+}
+.shop-list navigator .t2{
+  font-size: 24rpx;
+  color: #f40000;
+  margin-top: 10rpx;
+}

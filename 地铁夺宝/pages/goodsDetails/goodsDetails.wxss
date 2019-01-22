@@ -1,0 +1,85 @@
+/* pages/goodsDetails/goodsDetails.wxss */
+
+swiper {
+  width: 100%;
+  height: 478rpx;
+}
+
+swiper swiper-item image {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-box {
+  position: relative;
+}
+
+.progress {
+  position: absolute;
+  bottom: 10rpx;
+  right: 30rpx;
+  width: 80rpx;
+  height: 35rpx;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 35rpx;
+  color: #fff;
+  font-size: 24rpx;
+  text-align: center;
+}
+
+.introduce {
+  font-size: 32rpx;
+  color: #000;
+  font-weight: 600;
+  box-sizing: border-box;
+  padding: 40rpx 20rpx;
+  letter-spacing: 10rpx;
+  line-height: 55rpx;
+}
+
+.num {
+  font-size: 42rpx;
+  color: #dc0404;
+  font-weight: 600;
+  letter-spacing: 5rpx;
+  margin-left: 60rpx;
+}
+
+.jf-t {
+  font-size: 28rpx;
+  color: #dc0404;
+  letter-spacing: 5rpx;
+  margin-left: 10rpx;
+}
+
+.sc {
+  margin-left: 65rpx;
+  font-size: 28rpx;
+  color: #737272;
+  letter-spacing: 5rpx;
+}
+
+.gz {
+  font-size: 28rpx;
+  color: #4e84e5;
+  font-weight: 600;
+  letter-spacing: 5rpx;
+  margin-left: 60rpx;
+  margin-top: 60rpx;
+}
+
+.btn{
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+.btn button{
+  width: 100%;
+  color: #fff;
+  font-size: 32rpx;
+  height: 90rpx;
+  background: #4e84e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

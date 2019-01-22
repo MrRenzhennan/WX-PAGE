@@ -1,0 +1,85 @@
+<!--pages/pointsFor/pointsFor.wxml-->
+<view class='swiper-box'>
+  <swiper 
+  indicator-dots="{{true}}" 
+  autoplay="{{true}}" 
+  interval="{{5000}}" 
+  duration="{{500}}"
+  indicator-color="#0d1c2d"
+  indicator-active-color="#fff"
+  >
+    <block>
+      <swiper-item>
+        <image src="http://www.pptok.com/wp-content/uploads/2012/08/xunguang-4.jpg" />
+      </swiper-item>
+    </block>
+    <block>
+      <swiper-item>
+        <image src="http://img.zcool.cn/community/01ca2857e4ea7b0000012e7eb2e752.jpg@900w_1l_2o_100sh.jpg" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <input class='search' style='width:{{search_width}}' placeholder="搜索" bindfocus='bindfocus' bindblur='bindblur'/>
+</view>
+
+<!-- 分类 -->
+<view class='classify'>
+  <view class='cld'>
+    <image src='/static/imgs/shizhuangyufuzhuang--2.png'></image>
+    <text>服装</text>
+  </view>
+  <view class='cld'>
+    <image src='/static/imgs/hufupin-2.png'></image>
+    <text>美妆</text>
+  </view>
+  <view class='cld'>
+    <image src='/static/imgs/dianqi-2.png'></image>
+    <text>家用电器</text>
+  </view>
+  <view class='cld'>
+    <image src='/static/imgs/jiaju.png'></image>
+    <text>家纺家饰</text>
+  </view>
+</view>
+
+<!-- 商品列表 -->
+<view class='shop-list'>
+
+  <navigator url='/pages/goodsDetails/goodsDetails' hover-class='none'>
+      <image src='/static/imgs/shop.png'></image>
+      <text class='t1'>苏泊尔电压力锅智能6L高压饭锅</text>
+      <text class='t2'>5888积分</text>
+  </navigator>
+
+  <navigator url='/pages/goodsDetails/goodsDetails' hover-class='none'>
+      <image src='/static/imgs/shop.png'></image>
+      <text class='t1'>苏泊尔电压力锅智能6L高压饭锅</text>
+      <text class='t2'>5888积分</text>
+  </navigator>
+
+  <navigator url='/pages/goodsDetails/goodsDetails' hover-class='none'>
+      <image src='/static/imgs/shop.png'></image>
+      <text class='t1'>苏泊尔电压力锅智能6L高压饭锅</text>
+      <text class='t2'>5888积分</text>
+  </navigator>
+
+  <navigator url='/pages/goodsDetails/goodsDetails' hover-class='none'>
+      <image src='/static/imgs/shop.png'></image>
+      <text class='t1'>苏泊尔电压力锅智能6L高压饭锅</text>
+      <text class='t2'>5888积分</text>
+  </navigator>
+
+  <navigator url='/pages/goodsDetails/goodsDetails' hover-class='none'>
+      <image src='/static/imgs/shop.png'></image>
+      <text class='t1'>苏泊尔电压力锅智能6L高压饭锅</text>
+      <text class='t2'>5888积分</text>
+  </navigator>
+
+  <navigator url='/pages/goodsDetails/goodsDetails' hover-class='none'>
+      <image src='/static/imgs/shop.png'></image>
+      <text class='t1'>苏泊尔电压力锅智能6L高压饭锅</text>
+      <text class='t2'>5888积分</text>
+  </navigator>
+  
+
+</view>

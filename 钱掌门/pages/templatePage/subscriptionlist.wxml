@@ -1,0 +1,44 @@
+<template name='tmpsubscriptionlist'>
+
+
+  <view class='t-box'>
+    <view class='left' style="background-image: url('https://m.qzmhao.com{{item.headimg}}')">
+    </view>
+    <view class='right'>
+      <text class='tit'>{{item.nickname}}</text>
+      <view class='btm'>
+        <text class='tim'>{{item.create_time}}</text>
+        <view class='operation'>
+          <view bindtap='OnLike' data-postId='{{item.id}}' class='like'></view>
+          <view bindtap='questionShow' data-postId='{{item.id}}' class='comment'></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 详情 -->
+  <view class='details detailsAll'>
+    {{item.content}}
+  </view>
+  <!-- 评论 -->
+  <view hidden='{{item.comments.length==0}}' class='comment-num'>
+    <view class='left-border'></view>
+    <text>评论数</text>
+    <text>{{item.comments.length}}</text>
+  </view>
+  <view class='comment-box'>
+    <block wx:for="{{item.comments}}" wx:for-item="key" wx:for-index="idx">
+      <view class='comment-list'>
+        <view wx:if="{{key.type==2}}" class='Avatar' style="background-image: url('https://m.qzmhao.com{{key.headimg}}')"></view>
+        <view wx:elif="{{key.type==1}}" class='Avatar' style="background-image: url('{{key.headimg}}')"></view>
+        <view class='center'>
+          <text wx:if="{{key.type==2}}" class='num'>{{key.nickname}}回复{{key.cnickname}}</text>
+          <text wx:elif="{{key.type==1}}" class='num'>{{key.nickname}}</text>
+          <text class='text'>{{key.content}}</text>
+          <view class='time'>
+            <text>{{key.created_at}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</template>

@@ -1,0 +1,52 @@
+<!--pages/funAnswer/funAnswer.wxml-->
+<view class='video-box'>
+  <video src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+    controls="{{true}}" show-fullscreen-btn="{{false}}"></video>
+</view>
+<view class='answer'>
+  <view class='center'>
+    <view class='title'>1.视频中展示的是奥迪家族哪年款车型？</view>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio" wx:for="{{items}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}" /> {{item.value}}
+      </label>
+    </radio-group>
+  </view>
+</view>
+
+<view class='submit'>
+  <button bindtap='submit'>提交</button>
+</view>
+
+<!-- 正确弹框 -->
+<view class='correct-modal' wx-if="{{correct}}">
+  <view class='box'>
+    <view>
+      <image class='songshu' src='/static/imgs/songshu.png'></image>
+    </view>
+
+    <view class='tx'>
+      <text>小主，您对奥迪知识了解已经淋漓尽致,快快截图分享领取积分吧。</text>
+    </view>
+    <view class='btn'>
+      <button bindtap='share'>分享</button>
+    </view>
+    <view>
+      <image class='QR_code' src='/static/imgs/QR_code.png'></image>
+    </view>
+  </view>
+</view>
+
+<!-- 错误弹框 -->
+<view class='error-modal' wx-if="{{error}}">
+  <view class='box'>
+  <view class='close' bindtap='again_watch'>X</view>
+    <view class='tx'>
+      <text>很遗憾，您未填写正确，请仔细观看视频内容。</text>
+    </view>
+    <view class='btn'>
+      <button bindtap='again_watch'>重新观看</button>
+    </view>
+    
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/getTheWay/getTheWay.wxml-->
+<view class='content'>
+  <image class='bgi' src='/static/imgs/bgi.png'></image>
+  <image class='bgi1' src='/static/imgs/bgi1.png'></image>
+  <image class='bgi2' src='/static/imgs/bgi2.png'></image>
+  <view class='title'>领取方式</view>
+  <view class='rules'>
+    <image class='rules-img' src='/static/imgs/rules.png'></image>
+    <view class='center'>
+      <view class='img-box'>
+        <image src='/static/imgs/text.png'></image>
+      </view>
+      <text>
+      我们已通过推送信息将奖券发送给您。请在中奖页面留下您的手机话,并输入收到的验证码,以便领取奖品。
+      马上领取,可点击“马上领取”按钮,前往企业店铺领取。
+      稍后领取,可点击“稍后领取”按钮,可在公众号“我的”菜单查询奖券信息
+      </text>
+    </view>
+  </view>
+</view>

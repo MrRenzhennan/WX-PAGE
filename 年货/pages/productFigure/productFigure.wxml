@@ -1,0 +1,39 @@
+<!--pages/productFigure/productFigure.wxml-->
+<view class='content'>
+  <image class='bgi' src='/static/imgs/bgi-large.png'></image>
+  <image class='bgi1' src='/static/imgs/fix-top.png'></image>
+  <image class='bgi2' src='/static/imgs/bgi2-large.png'></image>
+  <image class='bgi4' src='/static/imgs/bgi3.png'></image>
+
+  <view class='tx-bg'>
+    <image src='/static/imgs/tx-bg.png'></image>
+  </view>
+
+  <view class='c-bg'>
+    <view class='b-x b-x-1'>免单礼</view>
+    <text class='t t1'>获得指定产品免单券,请按照规则获取,无任何隐藏消费</text>
+    <view class='b-x b-x-2'>优惠礼</view>
+    <text class='t t2'>获得指定产品优惠券,请按照提示领取</text>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+    <image src='/static/imgs/figure.png'></image>
+  </view>
+  <image class='bgi3' src='/static/imgs/fex-bottom.png'></image>
+</view>

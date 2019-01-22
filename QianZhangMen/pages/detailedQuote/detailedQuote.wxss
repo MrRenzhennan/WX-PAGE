@@ -1,0 +1,78 @@
+/* pages/detailedQuote/detailedQuote.wxss */
+.title{
+  width: 100%;
+  padding: 20rpx 30rpx 10rpx 30rpx;
+  font-size: 32rpx;
+  background: #fff;
+}
+.sub{
+  width: 100%;
+  padding: 0rpx 30rpx 10rpx 30rpx;
+  font-size: 24rpx;
+  background: #fff;
+  color: #999;
+}
+.centerList{
+  width: 100%;
+  background: #fff;
+  padding: 0 30rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.centerList view{
+  width: 33.33%;
+  font-size: 24rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  align-items: center;
+}
+.centerList .sm{
+  display: flex;
+  font-size: 20rpx;
+  color: red;
+}
+.centerList .sm text{
+  margin-right: 10rpx;
+}
+.centerList .large{
+  font-size: 36rpx;
+}
+.tx{
+  color: #999;
+  margin-right: 10rpx;
+}
+.centerList .red{
+  color: red;
+}
+.centerList .green{
+  color: green;
+}
+
+.scroll-view-x{
+  background-color: #fff;
+  white-space: nowrap;
+  border: 1px solid #f1f1f1;
+  box-sizing: border-box;
+  padding: 0 70rpx;
+}
+.scroll-view-x .scroll-view-item{
+  display:inline-block;
+  line-height: 33px;
+  cursor: pointer;
+  font-size: 28rpx;
+  color: #999;
+  width: 50%;
+  text-align: center;
+}
+.scroll-view-x .scroll-view-item view{
+  padding: 0 10rpx;
+}
+.on{
+  border-bottom: 2rpx solid blue;
+  color: blue
+}
+.slider image{
+  width: 100%;
+  height: 500rpx;
+}

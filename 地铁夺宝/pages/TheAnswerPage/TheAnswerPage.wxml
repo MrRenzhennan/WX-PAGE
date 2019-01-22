@@ -1,0 +1,29 @@
+<!--pages/TheAnswerPage/TheAnswerPage.wxml-->
+<view class='logo-s'>
+  <image src='/static/imgs/logo_small.png '></image>
+</view>
+<view class='answer_index'>
+  <image src='/static/imgs/answer_index.png '></image>
+</view>
+<view class='slogan'>
+  <image src='/static/imgs/slogan.png'></image>
+  <view class='center'>
+    <text>这里没有国界只有无数的求知者</text>
+    <text>这里没有权限只有开放的知识库</text>
+    <text>这里没有利益只有免费的荣誉品</text>
+    <text>这里是求知者的天堂</text>
+    <text>这里是闲暇时的小思</text>
+    <text>这里是地铁趣味问答秀</text>
+  </view>
+</view>
+<view class='start-answer'>
+  <navigator url='/pages/funAnswer/funAnswer' hover-class='none'>
+    <button>开始答题</button>
+  </navigator>
+</view>
+
+<view class='ranking'>
+  <navigator url='/pages/brainPowerRanking/brainPowerRanking' hover-class='none'>
+    脑力排行榜
+  </navigator>
+</view>

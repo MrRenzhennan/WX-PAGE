@@ -1,0 +1,10 @@
+<!--引用统一模板-->
+<import src='/pages/templatePage/subscription.wxml'></import>
+<!-- 朋友圈列表 -->
+<block wx:for="{{circleFriends}}" wx:for-item="item" wx:for-index="index">
+  <view class="li bg-gray">
+    <view>
+      <template is="tmpsubscription" data="{{item}}"></template>
+    </view>
+  </view>
+</block>

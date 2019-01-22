@@ -1,0 +1,21 @@
+<!--pages/sweepstakesRules/sweepstakesRules.wxml-->
+<view class='content'>
+  <image class='bgi' src='/static/imgs/bgi.png'></image>
+  <image class='bgi1' src='/static/imgs/bgi1.png'></image>
+  <image class='bgi2' src='/static/imgs/bgi2.png'></image>
+  <view class='title'>抽奖规则</view>
+  <view class='rules'>
+  <image src='/static/imgs/rules.png'></image>
+  <view class='center'>
+    <view class='box'>见面礼</view>
+    <text>扫码获得当日3次抽奖机会,</text>
+    <view class='box'>结交礼</view>
+    <text>关注公众号每日获得3次抽奖机会,</text>
+    <view class='box'>分享礼</view>
+    <text>转发朋友圈获得当日2次抽奖机会,</text>
+    <view class='box'>伴手礼</view>
+    <text>通过个人转发的二维码加入活动,每增加一人,
+    获得一次额外抽奖机会；</text>
+  </view>
+  </view>
+</view>

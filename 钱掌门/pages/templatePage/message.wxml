@@ -1,0 +1,9 @@
+<wxs module="filter" src="../../utils/commont.wxs"></wxs>
+<template name='tmpmessage'>
+  <view class='list'>
+    <text class='money'>
+    {{item.title+':'+item.content}}</text>
+    <text class='time'>{{filter.FormatToDate(item.post_time)}}</text>
+  </view>
+  <view class='divider-line'></view>
+</template>

@@ -1,0 +1,12 @@
+<template name='tmpInformation'>
+  <!-- 分割线 -->
+  <view class='line'></view>
+  <!-- 资讯列表 -->
+  <navigator url='/pages/latestNewsDetails/latestNewsDetails?id={{item.id}}'>
+    <view class='messages-list'>
+      <text class='title'>{{item.title}}</text>
+      <text class='sub-tit'>发布时间</text>
+      <text class='center ell'>{{item.updated_at}}</text>
+    </view>
+  </navigator>
+</template>

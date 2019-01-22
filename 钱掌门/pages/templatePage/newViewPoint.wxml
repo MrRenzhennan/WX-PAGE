@@ -1,0 +1,14 @@
+<template name='tmpNewViewPoint'>
+  <!-- 分割线 -->
+  <view class='line'></view>
+  <!-- 新闻列表 -->
+  <navigator url='/pages/latestViewDetails/latestViewDetails?id={{item.id}}'>
+    <view class='new-list'>
+      <image src='https://m.qzmhao.com{{item.thumbnail}}' mode="aspectFill"></image>
+      <view>
+        <text class='title ell'>{{item.title}}</text>
+        <text class='center'>{{item.updated_at}}</text>
+      </view>
+    </view>
+  </navigator>
+</template>

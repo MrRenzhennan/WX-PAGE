@@ -1,0 +1,29 @@
+<!--引用统一模板-->
+<import src='/pages/templatePage/signInRecord.wxml'></import>
+
+<view class='head-box'>
+  <view class='left'>
+    <image class='avatar' src='{{userInfo.avatarUrl}}'></image>
+    <view class='center'>
+      <text class='num'>{{userInfo.user_name}}</text>
+      <view>
+        <text>余额:￥{{userInfo.amount}}</text>
+        <text class='col'></text>
+      </view>
+    </view>
+  </view>
+  <view  class='btn'>{{msg}}</view>
+</view>
+
+<view class='divider'></view>
+
+<!-- 签到列表 -->
+<block wx:for="{{SignlnRecord}}" wx:for-item="item" wx:for-index="index">
+  <view class="li bg-gray">
+    <view>
+      <template is="tmpsignInRecord" data="{{item}}"></template>
+    </view>
+  </view>
+</block>
+
+

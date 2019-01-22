@@ -1,0 +1,38 @@
+<!--pages/goodsDetails/goodsDetails.wxml-->
+<view class='swiper-box'>
+  <swiper indicator-dots="{{false}}" autoplay="{{false}}" interval="{{5000}}" duration="{{500}}" indicator-color="#0d1c2d" indicator-active-color="#fff" bindchange="swiper_change">
+    <block>
+      <swiper-item>
+        <image src="/static/imgs/goods.png" />
+      </swiper-item>
+    </block>
+    <block>
+      <swiper-item>
+        <image src="/static/imgs/goods.png" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='progress'>{{progress}}/6</view>
+</view>
+
+
+<!--  -->
+<view class='introduce'>
+  <text>托盘舍得 品味舍得 浓香型白酒 52度 500ml 但瓶装</text>
+</view>
+<!--  -->
+<view>
+  <text class='num'>6888</text>
+  <text class='jf-t'>积分</text>
+  <text class='sc'>市场价：428元</text>
+</view>
+<!--  -->
+<view class='gz'>
+  <navigator url='/pages/changeTheRules/changeTheRules' hover-class='none'>兑换规则>>></navigator>
+</view>
+
+<view class='btn'>
+  <navigator url='/pages/immediatelyChange/immediatelyChange' hover-class='none'>
+    <button>立即兑换</button>
+  </navigator>
+</view>

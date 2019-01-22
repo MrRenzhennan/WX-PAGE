@@ -1,0 +1,36 @@
+/* pages/authorizationToLand/authorizationToLand.wxss */
+.logo{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 115rpx;
+}
+.logo image{
+  width: 172rpx;
+  height: 186rpx;
+}
+.tit{
+  margin-top: 30rpx;
+  color: #000;
+  font-size: 40rpx;
+  text-align: center;
+  margin-bottom: 40rpx;
+  font-weight: 600;
+}
+.tx{
+  width: 630rpx;
+  font-size: 28rpx;
+  color: #8d8d8d;
+  margin: 0 auto;
+  line-height: 45rpx;
+}
+.btn{
+  margin-top: 70rpx;
+}
+.btn button{
+  width: 500rpx;
+  height: 80rpx;
+  background: #24b623;
+  color: #fff;
+  font-size: 32rpx;
+}
