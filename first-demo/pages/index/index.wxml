@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class='slider'>
+  <swiper indicator-dots="{{ true }}"
+  autoplay="{{ true }}" interval="3000" duration="{{ 1000 }}" circular="{{ true }}">
+    <swiper-item wx:for="{{ swiperList }}" wx:key="{{ id }}">
+      <image src="{{ item.image }}" lazy-load />
+    </swiper-item>
+</swiper>
+</view>
+<view class='index-nav'>
+  <navigator class='nav-item bgr' url="/pages/shopList/shopList?cat={{ item.id }}&title={{ item.name }}" wx:for="{{ navList }}" wx:key="{{ id }}">
+    <image src='{{ item.icon }}' lazy-load></image>
+    <text>{{ item.name }}</text>
+  </navigator> 
+</view>
+<view class='divider'></view>
+<view class='index-enter'>
+  <navigator class='index-item'>
+    <image src='https://image2.suning.cn/uimg/MFS/show/152039158077782611.jpg_0-75-781-521a'></image>
+  </navigator>
+   <navigator class='index-item'>
+    <image src='https://image4.suning.cn/uimg/MFS/show/152030971490057743.jpg_73-0-1920-1280a'></image>
+  </navigator>
+</view>

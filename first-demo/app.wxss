@@ -1,0 +1,98 @@
+page{
+  background-color: #fff;
+}
+
+/* 分区间隔  */
+.divider{
+  height: 20rpx;
+  background-color: #f1f1f1;
+  box-shadow: 0 10rpx 10rpx rgba(0, 0, 0, .1) inset;
+}
+/* 细线边框 */
+.bgr{
+  position: relative;
+}
+.bgr::after{
+  content: "";
+  width: 1rpx;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* 箭头 */
+.arrow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow::after{
+  content: "";
+  width:20rpx;
+  height: 20rpx;
+  transform: rotate(45deg);
+  border-top: 3rpx solid #ddd;
+  border-right: 3rpx solid #ddd;
+  display: block;
+  margin-right: 5rpx;
+}
+/* 水平垂直居中 */
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 列表 */
+.cell{
+  font-size: 16px;
+  background-color: #fff;
+}
+.cell-item{
+  border-bottom: 1rpx solid #ddd;
+  padding: 20rpx 30rpx;
+}
+/* 星星 */
+.start-before{
+	color: #e2e2e2;
+}
+.start-after{
+	color: #f19e38;
+	position: absolute;
+	top: 0;
+	left: 0;
+  overflow: hidden;
+}
+/* 省略号 */
+.ell{
+   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* 加载更过loading */
+.loadmore{
+  color: #888;
+  font-size: 14px;
+  line-height: 100rpx;
+  text-align: center;
+}
+.loadmore.loading::before{
+  content: '';
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: -10rpx;
+  margin-right: 10rpx;
+  display: inline-block;
+  vertical-align: middle;
+  animation: loading 1s steps(12) infinite;
+  background: url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1581569508,904692226&fm=27&gp=0.jpg);
+  background-size: 100% 100%;
+}
+@keyframes loading{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(-360deg);
+  }
+}

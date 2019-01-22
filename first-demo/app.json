@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/message/message",
+    "pages/profile/profile",
+    "pages/contact/contact",
+    "pages/shopList/shopList",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#f60",
+    "navigationBarTitleText": "本地宝",
+    "navigationBarTextStyle":"white",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "backgroundColor":"#fff",
+    "color":"#000",
+    "selectedColor":"#f60",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/static/imgs/icon_01.jpg",
+      "selectedIconPath": "/static/imgs/icon_01.jpg"
+    },{
+      "pagePath": "pages/message/message",
+      "text": "消息",
+      "iconPath": "/static/imgs/icon_02.jpg",
+      "selectedIconPath": "/static/imgs/icon_02.jpg"
+    },
+    {
+      "pagePath": "pages/profile/profile",
+      "text": "个人中心",
+      "iconPath": "/static/imgs/icon_03.jpg",
+      "selectedIconPath": "/static/imgs/icon_03.jpg"
+    },
+    {
+      "pagePath": "pages/contact/contact",
+      "text": "联系我",
+      "iconPath": "/static/imgs/icon_04.jpg",
+      "selectedIconPath": "/static/imgs/icon_04.jpg"
+    }]
+  }
+}

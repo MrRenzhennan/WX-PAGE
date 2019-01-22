@@ -1,0 +1,14 @@
+<view class='card'>
+<text class='card-title'>标题</text>
+<text class='card-date'>2020-20-20</text>
+<image class='card-img' src='/static/imgs/xingzuo.jpg' mode="aspectFill"></image>
+<text class='card-desc'>越努力，越幸运</text>
+<text class='card-read arrow'>查看详情</text>
+</view>
+<view class='card'>
+<text class='card-title'>标题</text>
+<text class='card-date'>2020-20-20</text>
+<image class='card-img' src='/static/imgs/xingzuo.jpg' mode="aspectFill"></image>
+<text class='card-desc'>越努力，越幸运</text>
+<text class='card-read arrow'>查看详情</text>
+</view>
