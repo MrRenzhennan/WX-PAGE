@@ -1,11 +1,23 @@
 <!--pages/index/index.wxml-->
 
 <view class='box'>
-  <image class='bx' src='/static/imgs/treasure_chest.png'></image>
+  <view class='bx'>
+    <view class='bg'>
+      <image id='object_bg' src='/static/imgs/treasure_chest.png'></image>
+    </view>
+    <view class='baoxiang'>
+      <image class='baoxiang' id='' src='{{baoxiang_src}}'></image>
+    </view>
+    <view wx-if='{{baoxiang}}'>
+      <image wx:for='{{animation}}' class='bizi' id='bizi-{{index}}' src='/static/imgs/bizi.png' style='left: {{260 + index*10}}rpx;bottom: 400rpx;animation: bizi{{index}} 1s ease {{index*0.1}}s infinite normal;z-index:-1'></image>
+    </view>
+
+  </view>
+
   <view class='tx'>答题赢宝箱，一起参与吧</view>
   <view class='start-work'>
   </view>
-  <navigator url='/pages/theWelcomePageUnregistered/theWelcomePageUnregistered' hover-class='none'>
-     <image class='start-work' src='/static/imgs/Starting_to_work.png'></image>
-  </navigator>
+  <!-- <navigator url='/pages/theWelcomePageUnregistered/theWelcomePageUnregistered' hover-class='none'> -->
+  <image class='start-work' src='/static/imgs/Starting_to_work.png' bindtap='open'></image>
+  <!-- </navigator> -->
 </view>

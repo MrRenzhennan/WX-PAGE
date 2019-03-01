@@ -2,7 +2,8 @@
 <view class='jf-bg'>
   <image src='/static/imgs/jf_bg.png'></image>
   <view class='title'>
-    <image src='/static/imgs/picture.png'></image>
+    <!-- <image src='/static/imgs/picture.png'></image> -->
+    <open-data type="userAvatarUrl"></open-data>
     <text>亲爱的：波波</text>
   </view>
 </view>

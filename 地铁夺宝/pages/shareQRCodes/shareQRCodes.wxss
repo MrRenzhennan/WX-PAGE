@@ -1,0 +1,19 @@
+/* pages/shareQRCodes/shareQRCodes.wxss */
+
+.digon{
+  width: 90%;
+  height: 800rpx;
+  margin: 10vh auto 0 auto;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 0 0 20rpx 20rpx;
+}
+.digon .btn{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.digon .btn button{
+  background: #4e84e5;
+  color: #fff;
+}

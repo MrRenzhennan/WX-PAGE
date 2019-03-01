@@ -1,0 +1,9 @@
+<!--pages/shareQRCodes/shareQRCodes.wxml-->
+
+
+<view class='digon'>
+  <canvas style="width: 100%; height: 80%;" canvas-id="firstCanvas" class='firstCanvas'></canvas>
+  <view class='btn'>
+    <button bindtap='createImg'>保存图片 分享到朋友圈</button>
+  </view>
+</view>

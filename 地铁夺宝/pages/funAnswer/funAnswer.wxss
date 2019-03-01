@@ -66,6 +66,7 @@
   left: 0;
   box-sizing: border-box;
   padding: 50rpx 20rpx 20rpx 20rpx;
+  overflow: visible;
 }
 
 .correct-modal .box {
@@ -77,12 +78,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: visible;
+  z-index: 9999;
+}
+.correct-modal .box .close{
+  position: absolute;
+  top: 47rpx;
+  right: 14rpx;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  /* border: 1px solid #9b9b9b; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  color: #9b9b9b;
+  background: #fff
 }
 
 .correct-modal .box .songshu {
-  width: 670rpx;
+  width: 640rpx;
   height: 560rpx;
-  margin-top: 10rpx;
+  margin-top: 40rpx;
 }
 
 .correct-modal .box  .tx {
@@ -96,7 +114,7 @@
   margin-top: 50rpx;
 }
 
-.correct-modal .box .btn button {
+.correct-modal .box .btn cover-view {
   width: 295rpx;
   height: 85rpx;
   color: #fff;
@@ -124,6 +142,7 @@
   left: 0;
   box-sizing: border-box;
   padding: 50rpx 20rpx 20rpx 20rpx;
+  overflow: visible;
 }
 
 
@@ -137,6 +156,8 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  overflow: visible;
+  z-index: 9999;
 }
 
 .error-modal .box .close{
@@ -159,13 +180,14 @@
   font-size: 34rpx;
   margin-top: 100rpx;
   line-height: 60rpx;
+  text-align: center;
 }
 
 .error-modal .box .btn {
   margin-top: 120rpx;
 }
 
-.error-modal .box .btn button {
+.error-modal .box .btn cover-view {
   width: 295rpx;
   height: 85rpx;
   color: #fff;

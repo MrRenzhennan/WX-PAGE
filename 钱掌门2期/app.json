@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/realTimeMarket/realTimeMarket",
+    "pages/marketDetails/marketDetails",
+    "pages/realTimeQuotation/realTimeQuotation",
+    "pages/optional/optional",
+    "pages/purchased/purchased",
+    "pages/main/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#9b1d32",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "#ffffff"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#bfbfbf",
+    "selectedColor": "#9b1d32",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/imgs/tab1.png",
+        "selectedIconPath": "/static/imgs/tab1_act.png"
+      },
+      {
+        "pagePath": "pages/optional/optional",
+        "text": "自选",
+        "iconPath": "/static/imgs/tab2.jpg",
+        "selectedIconPath": "/static/imgs/tab2_act.jpg"
+      },
+      {
+        "pagePath": "pages/purchased/purchased",
+        "text": "已购",
+        "iconPath": "/static/imgs/tab3.jpg",
+        "selectedIconPath": "/static/imgs/tab3_act.jpg"
+      },
+      {
+        "pagePath": "pages/main/main",
+        "text": "我的",
+        "iconPath": "/static/imgs/tab4.jpg",
+        "selectedIconPath": "/static/imgs/tab4_act.jpg"
+      }
+    ]
+  }
+}

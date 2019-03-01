@@ -19,8 +19,8 @@
   margin-bottom: 10rpx;
 }
 .slogan{
-  width: 434rpx;
-  height: 454rpx;
+  width: 525rpx;
+  height: 525rpx;
   margin: 0 auto;
   position: relative;
   margin-top: 20rpx;

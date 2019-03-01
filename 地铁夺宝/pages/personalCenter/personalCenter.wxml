@@ -51,7 +51,8 @@
   </view>
 </view>
 <view class='picture'>
-  <image src='/static/imgs/picture.png'></image>
+  <!-- <image src='/static/imgs/picture.png'></image> -->
+  <open-data type="userAvatarUrl"></open-data>
 </view>
 <view class='name'>
   <text>亲爱的：渤渤</text>

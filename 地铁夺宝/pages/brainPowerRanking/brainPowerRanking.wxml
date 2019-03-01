@@ -6,41 +6,348 @@
     </view>
     <view class='list'>
       <view class='title'>
-        <text>排行</text>
-        <text>|</text>
-        <text>头像</text>
-        <text>|</text>
-        <text>ID</text>
-        <text>|</text>
-        <text>答题积分</text>
-        <text>|</text>
-        <text>荣誉称号</text>
+        <text class='t1'>排行</text>
+        <text class='tt'>|</text>
+        <text class='t2'>头像</text>
+        <text class='tt'>|</text>
+        <text class='t3'>ID</text>
+        <text class='tt'>|</text>
+        <text class='t4'>答题积分</text>
+        <text class='tt'>|</text>
+        <text class='t5'>荣誉称号</text>
       </view>
 
       <view class='li'>
-        <view>1</view>
-        <view class='head-portrait'></view>
-        <view>xxxx</view>
-        <view>1280</view>
-        <view>智多星</view>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
       </view>
 
       <view class='li'>
-        <view>1</view>
-        <view class='head-portrait'></view>
-        <view>xxxx</view>
-        <view>1280</view>
-        <view>智多星</view>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
       </view>
 
       <view class='li'>
-        <view>1</view>
-        <view class='head-portrait'></view>
-        <view>xxxx</view>
-        <view>1280</view>
-        <view>智多星</view>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
       </view>
+
+      <view class='li'>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
+      </view>
+
+      <view class='li'>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
+      </view>
+
+      <view class='li'>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
+      </view>
+
+      <view class='li'>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
+      </view>
+
+      <view class='li'>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
+      </view>
+
+      <view class='li'>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
+      </view>
+
+      <view class='li'>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
+      </view>
+
+      <view class='li'>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
+      </view>
+
+      <view class='li'>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
+      </view>
+
+      <view class='li'>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
+      </view>
+
+      <view class='li'>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
+      </view>
+
+      <view class='li'>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
+      </view>
+
+      <view class='li'>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
+      </view>
+
+      <view class='li'>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
+      </view>
+      <view class='li'>
+        <view class='l1'>
+          <view>1</view>
+        </view>
+        <view class='l2'>
+          <view class='head-portrait'></view>
+        </view>
+        <view class='l3'>
+          <view>xxxx</view>
+        </view>
+        <view class='l4'>
+          <view>1280</view>
+        </view>
+        <view class='l5'>
+          <view>智多星</view>
+        </view>
+      </view>
+
+     
 
     </view>
+
+    <view class='btn'>
+      <button>分享</button>
+    </view>
+
+
   </view>
 </view>

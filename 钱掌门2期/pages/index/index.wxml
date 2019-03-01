@@ -1,0 +1,95 @@
+<!--pages/index/index.wxml-->
+<!--pages/index/index.wxml-->
+<view class='slider'>
+  <swiper 
+    indicator-dots="{{ true }}" 
+    autoplay="{{ true }}" 
+    interval="3000" 
+    duration="{{ 1000 }}" 
+    circular="{{ true }}" 
+    indicator-color="#fff"
+    indicator-active-color="rgba(255,255,255,0.5)"
+    >
+    <swiper-item wx:for="{{ swiperList }}" wx:key="{{ id }}">
+      <image src="{{ item }}" lazy-load />
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- 分区 -->
+<view class='Partition'>
+  <navigator url='' hover-class="none">
+    <image src='/static/imgs/partition01.png'></image>
+    <text>财富公开课</text>
+  </navigator>
+  <navigator url='' hover-class="none">
+    <image src='/static/imgs/partition02.png'></image>
+    <text>财富私密圈</text>
+  </navigator>
+  <navigator url='/pages/realTimeMarket/realTimeMarket' hover-class="none">
+    <image src='/static/imgs/partition03.png'></image>
+    <text>一元解票</text>
+  </navigator>
+</view>
+
+<!-- 间隔 -->
+<view class='divider'></view>
+
+<!-- 牛人SHOW -->
+<view class='new-title'>
+  <view class='left'>
+    <text>牛人SHOW</text>
+  </view>
+  <navigator url='' hover-class="none">
+    <view>
+      <image src='/static/imgs/more.png'></image>
+    </view>
+  </navigator>
+</view>
+
+<!-- 分割线 -->
+<view class='line'></view>
+
+<view class='nr'>
+ <navigator url='' hover-class="none">
+  <image src='/static/imgs/nr1.png'></image>
+ </navigator>
+ <navigator url='' hover-class="none">
+  <image src='/static/imgs/nr2.png'></image>
+ </navigator>
+ <navigator url='' hover-class="none">
+  <image src='/static/imgs/nr1.png'></image>
+ </navigator>
+</view>
+
+
+<!-- 间隔 -->
+<view class='divider'></view>
+
+<!-- 财经千百问 -->
+<view class='new-title'>
+  <view class='left'>
+    <text>财经千百问</text>
+  </view>
+  <navigator url='' hover-class="none">
+    <view>
+      <image src='/static/imgs/more.png'></image>
+    </view>
+  </navigator>
+</view>
+
+<!-- 分割线 -->
+<view class='line'></view>
+
+<view class='qbw'>
+<navigator url='' hover-class="none">
+  <image src='/static/imgs/qbw1.png'></image>
+</navigator>
+<navigator url='' hover-class="none">
+  <image src='/static/imgs/qbw2.png'></image>
+</navigator>
+</view>
+
+
+<!-- 间隔 -->
+<view class='divider'></view>

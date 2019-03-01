@@ -1,0 +1,70 @@
+/* pages/realTimeMarket/realTimeMarket.wxss */
+.search-box{
+  width: 100%;
+  height: 105rpx;
+  background: #9b1d32;
+  box-sizing: border-box;
+  padding-top: 20rpx;
+}
+.search-box .input-box{
+  width: 580rpx;
+  height: 64rpx;
+  margin-left: 30rpx;
+  position: relative;
+}
+.search-icon-box{
+  width: 60rpx;
+  height: 64rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 70rpx;
+}
+.search-icon-box image{
+  width: 30rpx;
+  height: 32rpx;
+}
+.search-box input{
+  width: 100%;
+  height: 64rpx;
+  background: #fff;
+  font-size: 30rpx;
+  border-radius: 6rpx;
+  box-sizing: border-box;
+  padding-left: 60rpx;
+  letter-spacing: 2rpx;
+}
+.search-box .clean{
+  position: absolute;
+  top: 0;
+  right: -90rpx;
+  font-size: 32rpx;
+  color: #fff;
+  height: 64rpx;
+  line-height: 64rpx;
+}
+
+.center-box-none{
+  width: 100%;
+  margin-top: 260rpx;
+}
+.center-box-none .img-add{
+  width: 100%;
+  text-align: center;
+}
+.center-box-none .img-add image{
+  width: 123rpx;
+  height: 123rpx;
+}
+.center-box-none .tx{
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+  color: #888;
+  letter-spacing: 3rpx;
+  margin-bottom: 5rpx;
+}
+.center-box-none .tx .col{
+  color: #9b1d32;
+}

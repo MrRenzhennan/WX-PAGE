@@ -19,7 +19,7 @@
 </view>
 
 <!-- 正确弹框 -->
-<view class='correct-modal' wx-if="{{correct}}">
+<!-- <view class='correct-modal' wx-if="{{correct}}">
   <view class='box'>
     <view>
       <image class='songshu' src='/static/imgs/songshu.png'></image>
@@ -35,10 +35,32 @@
       <image class='QR_code' src='/static/imgs/QR_code.png'></image>
     </view>
   </view>
-</view>
+</view> -->
+
+<cover-view class='correct-modal' wx-if="{{correct}}">
+  <cover-view class='box'>
+    <cover-view class='close' bindtap='share'>
+      <cover-view>X</cover-view>
+    </cover-view>
+    <!-- <cover-view> -->
+      <cover-image class='songshu' src='/static/imgs/songshu.png'></cover-image>
+    <!-- </cover-view> -->
+
+    <cover-view class='tx'>
+      <cover-view>小主，您对奥迪知识了解已经淋漓尽致,</cover-view>
+      <cover-view>快快截图分享领取积分吧。</cover-view>
+    </cover-view>
+    <cover-view class='btn'>
+      <button bindtap='share'><cover-view>分享</cover-view></button>
+    </cover-view>
+    <cover-view>
+      <cover-image class='QR_code' src='/static/imgs/QR_code.png'></cover-image>
+    </cover-view>
+  </cover-view>
+</cover-view>
 
 <!-- 错误弹框 -->
-<view class='error-modal' wx-if="{{error}}">
+<!-- <view class='error-modal' wx-if="{{error}}">
   <view class='box'>
   <view class='close' bindtap='again_watch'>X</view>
     <view class='tx'>
@@ -49,4 +71,20 @@
     </view>
     
   </view>
-</view>
+</view> -->
+
+<cover-view class='error-modal' wx-if="{{error}}">
+  <cover-view class='box'>
+    <cover-view class='close' bindtap='again_watch'>
+      <cover-view>X</cover-view>
+    </cover-view>
+    <cover-view class='tx'>
+      <cover-view>很遗憾，您未填写正确，</cover-view>
+      <cover-view>请仔细观看视频内容。</cover-view>
+    </cover-view>
+    <cover-view class='btn'>
+      <button bindtap='again_watch'><cover-view>重新观看</cover-view></button>
+    </cover-view>
+
+  </cover-view>
+</cover-view>

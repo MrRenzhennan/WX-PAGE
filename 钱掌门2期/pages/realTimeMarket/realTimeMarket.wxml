@@ -1,0 +1,25 @@
+<!--pages/realTimeMarket/realTimeMarket.wxml-->
+<view class='search-box'>
+  <view class='input-box'>
+    <view class='search-icon-box'>
+      <image src="/static/imgs/search.png"></image>
+    </view>
+    <input placeholder="请输入股票代码/名称/首字母" />
+    <text class='clean'>取消</text>
+  </view>
+</view>
+
+<!-- 无内容展示 -->
+<view class='center-box-none'>
+  <view class='img-add'>
+    <image src='/static/imgs/add_icon.png'></image>
+  </view>
+  <view class='tx'>
+    <text>空空荡荡, 添加感兴趣的股票吧</text>
+  </view>
+  <view class='tx'>
+    <navigator url='/pages/marketDetails/marketDetails' hover-class='none'>
+      <text class='col'>添加股票</text>
+    </navigator>
+  </view>
+</view>

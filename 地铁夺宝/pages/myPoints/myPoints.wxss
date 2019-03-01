@@ -23,10 +23,12 @@
   color: #fff;
 }
 
-.title image {
+.title open-data {
   width: 144rpx;
   height: 144rpx;
   margin-bottom: 10rpx;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .current-jf {

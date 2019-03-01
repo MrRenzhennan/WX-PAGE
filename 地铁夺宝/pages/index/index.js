@@ -5,14 +5,41 @@ Page({
    * 页面的初始数据
    */
   data: {
+    baoxiang_src:'/static/imgs/baoxiang1.png',
+    baoxiang:false,
+    animation:[]
+  },
+  open:function(){
+    this.setData({
+      baoxiang_src:'/static/imgs/baoxiang3.png',
+      baoxiang:true
+    })
 
+    setTimeout(()=>{
+      wx.navigateTo({
+        url: '/pages/theWelcomePageUnregistered/theWelcomePageUnregistered'
+      })
+    },5000)
+    setTimeout(()=>{
+      this.setData({
+        baoxiang_src: '/static/imgs/baoxiang1.png',
+        baoxiang: false
+      })
+    },6000)
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var ayyr = [];
+    for(var i = 0;i<30;i++){
+      ayyr.push(i);
+      this.setData({
+        animation: ayyr
+      })
+    };
+    console.log(this.data.animation)
   },
 
   /**

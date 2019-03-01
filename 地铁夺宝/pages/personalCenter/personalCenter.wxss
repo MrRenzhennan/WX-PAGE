@@ -97,9 +97,11 @@
   display: flex;
   justify-content: center;
 }
-.picture image{
+.picture open-data{
   width: 144rpx;
   height: 144rpx;
+  border-radius: 50%;
+  overflow:hidden;
 }
 .name{
   margin-top: 55rpx;

@@ -13,7 +13,8 @@
     "pages/integralWithdrawal/integralWithdrawal",
     "pages/goodsDetails/goodsDetails",
     "pages/changeTheRules/changeTheRules",
-    "pages/immediatelyChange/immediatelyChange"
+    "pages/immediatelyChange/immediatelyChange",
+    "pages/shareQRCodes/shareQRCodes"
   ],
   "window":{
     "navigationBarBackgroundColor": "#4e84e5",
