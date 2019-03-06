@@ -37,7 +37,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -54,7 +54,13 @@
 				{
 					"id": -1,
 					"name": "行情详情列表页",
-					"pathName": "pages/realTimeQuotation/realTimeQuotation"
+					"pathName": "pages/realTimeQuotation/realTimeQuotation",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "自选",
+					"pathName": "pages/optional/optional"
 				}
 			]
 		}

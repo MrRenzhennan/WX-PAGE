@@ -1,2 +1,165 @@
 <!--pages/optional/optional.wxml-->
-<text>pages/optional/optional.wxml</text>
+
+<view class='top-change'>
+  <view class='choose-box'>
+    <view class="{{idx == 0 ? 'item itemon' : 'item ' }}" bindtap="currentTab" data-current='0'>自选</view>
+    <view class="{{idx == 1 ? 'item itemon' : 'item ' }}" bindtap="currentTab" data-current='1'>行情</view>
+  </view>
+  <view class='search-icon-box-click'>
+    <image src='/static/imgs/search_ff.png' bindtap="isSearchChange"></image>
+  </view>
+  <view class='refresh-box'>
+    <image src='/static/imgs/refresh.png'></image>
+  </view>
+</view>
+
+
+<!-- 搜索框 -->
+<view class='search-box' wx:if="{{isSearch}}">
+  <view class='input-box'>
+    <view class='search-icon-box'>
+      <image src="/static/imgs/search.png"></image>
+    </view>
+    <input placeholder="请输入股票代码/名称/首字母" />
+    <text class='clean'>搜索</text>
+  </view>
+</view>
+
+<view class='slider'>
+  <swiper duration="{{ 500 }}" current="{{idx}}" bindchange="currentChange" style="height: 100%">
+    <!-- 自选 -->
+    <swiper-item catchtouchmove='catchTouchMove'>
+      <!-- 有数据展示 -->
+      <view class='isdata' wx:if="{{!isData}}">
+        <view class='table-title'>
+          <view class='t1'>
+            <text>名称代码</text>
+            <view class='img-box'>
+              <image class='up' src='/static/imgs/up_active_none.png'></image>
+              <image class='down' src='/static/imgs/down_active.png'></image>
+            </view>
+          </view>
+          <view class='t2'>
+            <text>最新价</text>
+            <view class='img-box'>
+              <image class='up' src='/static/imgs/up_active_none.png'></image>
+              <image class='down' src='/static/imgs/down_active.png'></image>
+            </view>
+          </view>
+          <view class='t3'>
+            <text>涨跌幅</text>
+            <view class='img-box'>
+              <image class='up' src='/static/imgs/up_active_none.png'></image>
+              <image class='down' src='/static/imgs/down_active.png'></image>
+            </view>
+          </view>
+        </view>
+        <scroll-view scroll-y style="height: calc(100% - 60rpx)">
+          <navigator url="/pages/marketDetails/marketDetails" wx:for="{{list}}" wx:key="*this">
+            <view class='table-list'>
+              <view class='t1'>
+                <view class='t1-top'>乐视网</view>
+                <view class='t1-bot'>
+                  <view class='t1-icon'>SZ</view>
+                  <text>300104</text>
+                </view>
+              </view>
+              <view class='t2'>
+                2.77
+              </view>
+              <view class='t3'>
+                <view class='tx-bx'>+0.73%</view>
+              </view>
+            </view>
+          </navigator>
+        </scroll-view>
+      </view>
+      <!-- 无数据展示 -->
+      <view class='isdata' wx:if="{{isData}}">
+        <view class='center-box-none'>
+          <view class='img-add'>
+            <image src='/static/imgs/add_icon.png'></image>
+          </view>
+          <view class='tx'>
+            <text>空空荡荡, 添加感兴趣的股票吧</text>
+          </view>
+        </view>
+      </view>
+
+    </swiper-item>
+    <!-- 行情 -->
+    <swiper-item catchtouchmove='catchTouchMove'>
+      <scroll-view scroll-x="true" class="scroll-view-x">
+        <view class="scroll-view-item" wx:for="{{_TabList}}" wx:key="*this" style="width:calc(100% / {{_TabList.length}})">
+          <view class="{{hq_idx == item.num ? 'on' : ''}}" bindtap="hq_currentTab" data-current="{{item.num}}">{{ item.name }}</view>
+        </view>
+      </scroll-view>
+      <swiper duration="{{ 500 }}" style="height: 210rpx;">
+        <!-- 自选 -->
+        <swiper-item>
+          <view class="exponent-scroll">
+            <view class="exponent green" wx:for="{{exponent}}" wx:key="*this">
+              <text class='tt'>上证指数</text>
+              <text class='tc'>2570.269</text>
+              <text class='tb'>-10.09(-12.03%)</text>
+            </view>
+          </view>
+        </swiper-item>
+
+        <swiper-item>
+          <view class="exponent-scroll">
+            <view class="exponent red" wx:for="{{exponent}}" wx:key="*this">
+              <text class='tt'>上证指数</text>
+              <text class='tc'>2570.269</text>
+              <text class='tb'>-10.09(-12.03%)</text>
+            </view>
+          </view>
+        </swiper-item>
+      </swiper>
+
+      <view class='table-title'>
+        <view class='t1'>
+          <text>名称代码</text>
+          <view class='img-box'>
+            <image class='up' src='/static/imgs/up_active_none.png'></image>
+            <image class='down' src='/static/imgs/down_active.png'></image>
+          </view>
+        </view>
+        <view class='t2'>
+          <text>最新价</text>
+          <view class='img-box'>
+            <image class='up' src='/static/imgs/up_active_none.png'></image>
+            <image class='down' src='/static/imgs/down_active.png'></image>
+          </view>
+        </view>
+        <view class='t3'>
+          <text>涨跌幅</text>
+          <view class='img-box'>
+            <image class='up' src='/static/imgs/up_active_none.png'></image>
+            <image class='down' src='/static/imgs/down_active.png'></image>
+          </view>
+        </view>
+      </view>
+      <scroll-view scroll-y style="height: calc(100% - 60rpx - 210rpx - 90rpx)">
+        <navigator url="/pages/marketDetails/marketDetails" wx:for="{{list}}" wx:key="*this">
+          <view class='table-list'>
+            <view class='t1'>
+              <view class='t1-top'>乐视网</view>
+              <view class='t1-bot'>
+                <view class='t1-icon'>SZ</view>
+                <text>300104</text>
+              </view>
+            </view>
+            <view class='t2 col'>
+              2.77
+            </view>
+            <view class='t3'>
+              <view class='tx-bx col'>+0.73%</view>
+            </view>
+          </view>
+        </navigator>
+      </scroll-view>
+
+    </swiper-item>
+  </swiper>
+</view>
