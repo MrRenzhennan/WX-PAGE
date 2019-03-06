@@ -26,7 +26,7 @@
     <image src='/static/imgs/partition02.png'></image>
     <text>财富私密圈</text>
   </navigator>
-  <navigator url='/pages/realTimeMarket/realTimeMarket' hover-class="none">
+  <navigator url='' hover-class="none">
     <image src='/static/imgs/partition03.png'></image>
     <text>一元解票</text>
   </navigator>
