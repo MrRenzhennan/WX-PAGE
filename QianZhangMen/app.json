@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/subscription/subscription",
     "pages/main/main",
@@ -57,5 +57,6 @@
         "selectedIconPath": "/static/imgs/selectme.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }
