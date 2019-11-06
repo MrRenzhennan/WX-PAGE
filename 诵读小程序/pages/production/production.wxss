@@ -1,0 +1,150 @@
+/* pages/production/production.wxss */
+
+.top {
+  width: 100%;
+  padding: 30rpx;
+  background: #f5f5f5;
+  box-sizing: border-box;
+}
+
+.input-box {
+  width: 100%;
+  height: 80rpx;
+  background: #fff;
+  border-radius: 80rpx;
+  display: flex;
+  align-items: center;
+}
+
+.input-box image {
+  width: 28rpx;
+  height: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+}
+
+.input-box input {
+  flex-grow: 1;
+  font-size: 30rpx;
+}
+
+.button-group {
+  width: 100%;
+  margin: 40rpx 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-group view {
+  width: 160rpx;
+  height: 72rpx;
+  font-size: 30rpx;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8rpx;
+  background: rgb(231, 230, 230);
+}
+
+.button-group view.active {
+  background: #c4232b;
+  color: rgb(254, 254, 254);
+}
+
+.tab-box {
+  widows: 100%;
+  background: #f5f5f5;
+  box-sizing: border-box;
+}
+
+.tab-sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tab-item {
+  width: 125rpx;
+  letter-spacing: 1rpx;
+  height: 60rpx;
+  font-size: 30rpx;
+  color: #000;
+  box-sizing: border-box;
+  border-bottom: 4rpx solid #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tab-item.active {
+  font-weight: 600;
+  color: rgb(196, 35, 43);
+  border-bottom: 4rpx solid rgb(196, 35, 43);
+}
+
+.tab-item image {
+  width: 31rpx;
+  height: 30rpx;
+}
+
+.list .list-item {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30rpx;
+}
+
+.list .list-item.flex {
+  display: flex;
+  align-items: center;
+}
+
+.new-text {
+  font-size: 30rpx;
+  color: #000;
+  letter-spacing: 1rpx;
+  line-height: 30rpx;
+  font-weight: 600;
+  font-family: PingFang-SC-Bold;
+}
+
+.bottom-line {
+  border-bottom: 10rpx solid #f5f5f5;
+}
+
+.rt-tp {
+  width: 180rpx;
+  height: 116rpx;
+  border-radius: 5rpx;
+  border: 1px solid rgb(196, 35, 43);
+   margin-left: 30rpx;
+}
+
+.rt-tp view {
+  width: 100%;
+  height: 58rpx;
+  font-size: 24rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rt-tp .tp {
+  background: rgb(196, 35, 43);
+  color: rgb(254, 254, 254);
+}
+
+.rt-tp .num {
+  color: rgb(153, 153, 153);
+}
+
+.list-item .btm {
+  font-family: PingFang-SC-Medium;
+  font-size: 24rpx;
+  color: rgb(153, 153, 153);
+  margin-top: 20rpx;
+}
+.list-item .btm text {
+  margin-right: 30rpx;
+}

@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/activity/activity",
     "pages/resource/resource",
-    "pages/main/main"
+    "pages/main/main",
+    "pages/production/production"
   ],
   "window": {
     "navigationBarBackgroundColor": "#c4232b",

@@ -72,8 +72,6 @@
       </view>
     </navigator>
     <navigator url='' hover-class="none">
-
-
       <!-- 图片靠左 -->
       <view class="list-item bottom-line flex">
         <view>

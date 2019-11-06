@@ -37,12 +37,15 @@
       </view>
       <text>我要报名</text>
     </view>
-    <view class="sub">
-      <view class="img-bg c4">
-        <image src="/static/imgs/activity-tab4.png" class="i4" />
+    <navigator url='/pages/production/production' hover-class="none">
+      <view class="sub">
+        <view class="img-bg c4">
+          <image src="/static/imgs/activity-tab4.png" class="i4" />
+        </view>
+        <text>奖品一览</text>
       </view>
-      <text>奖品一览</text>
-    </view>
+    </navigator>
+
   </view>
 
 
