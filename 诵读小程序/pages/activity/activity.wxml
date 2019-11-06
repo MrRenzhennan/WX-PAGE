@@ -1,24 +1,51 @@
-<!--index.wxml-->
-<view class="container">
-  <!-- swiper -->
-  <view class="swip-top">
-    <view class="swiper-box">
-      <swiper indicator-dots="{{ true }}" autoplay="{{ true }}" interval="3000" duration="{{ 1000 }}" circular="{{ true }}" indicator-color="#fff" indicator-active-color="rgba(255,255,255,0.5)">
-        <swiper-item wx:for="{{ swiperList }}" wx:key="{{ id }}">
-          <image src="{{ item }}" lazy-load />
-        </swiper-item>
-      </swiper>
-    </view>
-  </view>
+<!--pages/activity.wxml-->
+<view class="contain">
   <!-- tab -->
   <view class="tab-box">
     <view class="tab-sub">
-      <view class="tab-item active">综合推荐</view>
-      <view class="tab-item">官方公告</view>
-      <view class="tab-item">消息公告</view>
-      <view class="tab-item">精品资源</view>
+      <view class="tab-item active">中华经典诵读</view>
+      <view class="tab-item">我用统编版</view>
+      <view class="tab-item">中小学读书梦</view>
     </view>
   </view>
+
+  <!-- swiper -->
+  <view class="swiper-box">
+    <swiper indicator-dots="{{ true }}" autoplay="{{ true }}" interval="3000" duration="{{ 1000 }}" circular="{{ true }}" indicator-color="#fff" indicator-active-color="rgba(255,255,255,0.5)">
+      <swiper-item wx:for="{{ swiperList }}" wx:key="{{ id }}">
+        <image src="{{ item }}" lazy-load />
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- tab-bottom -->
+  <view class="tab-bottom">
+    <view class="sub">
+      <view class="img-bg c1">
+        <image src="/static/imgs/activity-tab1.png" class="i1" />
+      </view>
+      <text>参赛须知</text>
+    </view>
+    <view class="sub">
+      <view class="img-bg c2">
+        <image src="/static/imgs/activity-tab2.png" class="i2" />
+      </view>
+      <text>赛事资讯</text>
+    </view>
+    <view class="sub">
+      <view class="img-bg c3">
+        <image src="/static/imgs/activity-tab3.png" class="i3" />
+      </view>
+      <text>我要报名</text>
+    </view>
+    <view class="sub">
+      <view class="img-bg c4">
+        <image src="/static/imgs/activity-tab4.png" class="i4" />
+      </view>
+      <text>奖品一览</text>
+    </view>
+  </view>
+
+
   <!-- list -->
   <view class="list">
 
@@ -110,6 +137,8 @@
       </view>
     </navigator>
   </view>
+
+
 
 
 </view>

@@ -1,13 +1,48 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/activity/activity",
+    "pages/resource/resource",
+    "pages/main/main"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#c4232b",
+    "navigationBarTitleText": "中华经典诵读",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#f7f7f7"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#000",
+    "selectedColor": "#c4232b",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/imgs/tab_index.png",
+        "selectedIconPath": "/static/imgs/tab_index_selected.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "活动",
+        "iconPath": "/static/imgs/tab_activity.png",
+        "selectedIconPath": "/static/imgs/tab_activity_selected.png"
+      },
+      {
+        "pagePath": "pages/resource/resource",
+        "text": "资源",
+        "iconPath": "/static/imgs/tab_resource.png",
+        "selectedIconPath": "/static/imgs/tab_resource_selected.png"
+      },
+      {
+        "pagePath": "pages/main/main",
+        "text": "我的",
+        "iconPath": "/static/imgs/tab_main.png",
+        "selectedIconPath": "/static/imgs/tab_main_selected.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }
