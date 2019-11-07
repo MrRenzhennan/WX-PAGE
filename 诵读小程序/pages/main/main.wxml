@@ -1,2 +1,135 @@
 <!--pages/main/main.wxml-->
-<text>pages/main/main.wxml</text>
+<view class="contain">
+
+  <!-- user -->
+  <view class="user-card" style="background-image:url(/static/imgs/main_bg.png)">
+    <view class="card-t">
+      <image class="heard" src="{{userInfo.avatarUrl}}"></image>
+      <image class="card-icon" src="/static/imgs/icon_code.png"></image>
+    </view>
+    <view class="card-b">
+      <navigator url='' hover-class="none">
+        <text>修改个人信息</text>
+        <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="col">
+    <view class="col-item right-line">
+      <text>5</text>
+      <text>消息通知</text>
+    </view>
+    <view class="col-item right-line">
+      <text>100</text>
+      <text>我的积分</text>
+    </view>
+    <view class="col-item">
+      <text>28</text>
+      <text>作品管理</text>
+    </view>
+  </view>
+
+  <!-- line -->
+  <view class="line-blod"></view>
+
+  <!-- list -->
+  <view class="list-box">
+    <navigator url='' hover-class="none">
+      <view class="list-item">
+        <text class="item-label">参赛资格申请</text>
+        <view class="item-right">
+          <text>未申请</text>
+          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url='' hover-class="none">
+      <view class="list-item">
+        <text class="item-label">报名参赛</text>
+        <view class="item-right">
+          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url='' hover-class="none">
+      <view class="list-item">
+        <text class="item-label">作品管理</text>
+        <view class="item-right">
+          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url='' hover-class="none">
+      <view class="list-item">
+        <text class="item-label">投票记录</text>
+        <view class="item-right">
+          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="line-blod"></view>
+  <view class="list-box">
+    <navigator url='' hover-class="none">
+      <view class="list-item">
+        <text class="item-label">我的积分</text>
+        <view class="item-right">
+          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url='' hover-class="none">
+      <view class="list-item">
+        <text class="item-label">知识测试</text>
+        <view class="item-right">
+          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="line-blod"></view>
+  <view class="list-box">
+    <navigator url='' hover-class="none">
+      <view class="list-item">
+        <text class="item-label">常见问题</text>
+        <view class="item-right">
+          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url='' hover-class="none">
+      <view class="list-item">
+        <text class="item-label">联系客服</text>
+        <view class="item-right">
+          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+        </view>
+      </view>
+    </navigator>
+    <navigator url='' hover-class="none">
+      <view class="list-item">
+        <text class="item-label">添加到我的小程序</text>
+        <view class="item-right">
+          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+        </view>
+      </view>
+    </navigator>
+  </view>
+
+  <!-- 技术支持 -->
+  <view class="foot">
+    <image class="icon-right" src="/static/imgs/icon_slt-main.png"></image>
+    <view class="te">
+      <text>由</text>
+      <view class="kh">
+        <image class="icon-right" src="/static/imgs/icon_kuo.png "></image>
+        集合天成
+        <image class="icon-right" src="/static/imgs/icon_kuo.png "></image>
+      </view>
+      <text>提供技术支持</text>
+    </view>
+  </view>
+
+
+
+</view>

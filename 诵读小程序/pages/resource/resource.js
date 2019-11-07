@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    swiperList: ["/static/imgs/swiper-02.png", "/static/imgs/swiper-02.png"]
   },
 
   /**

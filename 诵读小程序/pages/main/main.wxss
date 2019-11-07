@@ -1,1 +1,145 @@
 /* pages/main/main.wxss */
+.contain{
+  background: #fff;
+  width: 100%;
+}
+
+.user-card{
+  width: 690rpx;
+  height: 340rpx;
+  background-size: 100% 100%;
+  margin: 30rpx auto 0rpx auto;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+  padding: 50rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.user-card .card-t{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-card .card-t .heard{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  border: 4rpx solid #fff;
+}
+.user-card .card-t .card-icon{
+  width: 50rpx;
+  height: 50rpx;
+}
+.user-card .card-b text{
+  font-size: 30rpx;
+  margin-right: 15rpx;
+  color: rgb(1,1,1);
+}
+
+.col{
+  width: 100%;
+  display: flex;
+}
+
+.col .col-item{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60rpx 0;
+}
+.right-line{
+  position: relative;
+}
+.right-line::before{
+  content: '';
+  width: 4rpx;
+  height: 60rpx;
+  background: #f5f5f5;
+  position: absolute;
+  right: 0px;
+  top: calc(50% - 30rpx);
+}
+.col .col-item text{
+  letter-spacing: 2rpx;
+}
+.col .col-item text:first-child{
+  font-size: 48rpx;
+  color: rgb(196,35,43);
+  font-weight: 600;
+}
+.col .col-item text:last-child{
+  font-size: 26rpx;
+  color: rgb(153,153,153);
+  margin-top: 5rpx;
+}
+.list-box{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+.list-box .list-item{
+  padding: 30rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f5f5f5;
+}
+.item-label{
+  font-size: 30rpx;
+  color: #000;
+  letter-spacing: 2rpx;
+  font-family: PingFang-SC-Medium;
+}
+.item-right text{
+  font-size: 26rpx;
+  color: rgb(153,153,153);
+  margin-right: 10rpx;
+}
+.foot{
+  width: 100%;
+  height: 240rpx;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+}
+.foot image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.foot .te{
+  display: flex;
+}
+.foot .kh{
+  position: relative;
+  margin: 0 10rpx 0 8rpx;
+  padding: 0 8rpx;
+}
+.foot image{
+  width: 8rpx;
+  height: 15rpx;
+  position: absolute;
+}
+.foot image:first-child{
+  top: 4rpx;
+  left: 0px;
+}
+.foot image:last-child{
+  bottom: 4rpx;
+  right: -3rpx;
+  transform: rotate(-180deg);
+}
+
+.line-blod{
+  width: 100%;
+  height: 20rpx;
+  background: #f5f5f5;
+}
+.icon-right{
+  width: 13rpx;
+  height: 22rpx;
+}

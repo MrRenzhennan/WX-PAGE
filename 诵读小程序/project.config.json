@@ -57,6 +57,20 @@
 					"id": -1,
 					"name": "pages/production/production",
 					"pathName": "pages/production/production",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/resource/resource",
+					"pathName": "pages/resource/resource",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/main/main",
+					"pathName": "pages/main/main",
 					"scene": null
 				}
 			]

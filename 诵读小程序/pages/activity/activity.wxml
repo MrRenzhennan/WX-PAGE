@@ -1,12 +1,17 @@
 <!--pages/activity.wxml-->
 <view class="contain">
+
   <!-- tab -->
   <view class="tab-box">
-    <view class="tab-sub">
+    <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex">
       <view class="tab-item active">中华经典诵读</view>
       <view class="tab-item">我用统编版</view>
       <view class="tab-item">中小学读书梦</view>
-    </view>
+      <view class="tab-item">中小学读书梦</view>
+      <view class="tab-item">中小学读书梦</view>
+      <view class="tab-item">中小学读书梦</view>
+      <view class="tab-item">中小学读书梦</view>
+    </scroll-view>
   </view>
 
   <!-- swiper -->
@@ -42,7 +47,7 @@
         <view class="img-bg c4">
           <image src="/static/imgs/activity-tab4.png" class="i4" />
         </view>
-        <text>奖品一览</text>
+        <text>作品一览</text>
       </view>
     </navigator>
 
