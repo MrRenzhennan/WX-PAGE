@@ -118,7 +118,7 @@
 
   <!-- 技术支持 -->
   <view class="foot">
-    <image class="icon-right" src="/static/imgs/icon_slt-main.png"></image>
+    <image class="icon_slt-main" src="/static/imgs/icon_slt-main.png"></image>
     <view class="te">
       <text>由</text>
       <view class="kh">

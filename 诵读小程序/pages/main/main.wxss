@@ -107,30 +107,31 @@
   align-items: center;
   font-size: 26rpx;
 }
-.foot image{
+.foot .icon_slt-main{
   width: 40rpx;
   height: 40rpx;
 }
 .foot .te{
   display: flex;
+  margin-top: 10rpx;
 }
 .foot .kh{
   position: relative;
   margin: 0 10rpx 0 8rpx;
   padding: 0 8rpx;
 }
-.foot image{
+.foot .kh image{
   width: 8rpx;
   height: 15rpx;
   position: absolute;
 }
-.foot image:first-child{
+.foot .kh image:first-child{
   top: 4rpx;
   left: 0px;
 }
-.foot image:last-child{
+.foot .kh image:last-child{
   bottom: 4rpx;
-  right: -3rpx;
+  right: -1rpx;
   transform: rotate(-180deg);
 }
 
