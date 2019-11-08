@@ -90,8 +90,36 @@
 				},
 				{
 					"id": -1,
-					"name": "作品标题",
-					"pathName": "pages/titleOfwork/titleOfwork",
+					"name": "参赛资格申请",
+					"pathName": "pages/applicationEligibility/applicationEligibility",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "参赛资格信息修改",
+					"pathName": "pages/changeEligibility/changeEligibility",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "参赛资格审核",
+					"pathName": "pages/reviewEligibility/reviewEligibility",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "常见问题",
+					"pathName": "pages/commonProblems/commonProblems",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "修改个人信息",
+					"pathName": "pages/changeUserInfo/changeUserInfo",
 					"query": "",
 					"scene": null
 				}

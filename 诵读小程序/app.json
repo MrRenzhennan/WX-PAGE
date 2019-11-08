@@ -7,7 +7,11 @@
     "pages/production/production",
     "pages/eligibility/eligibility",
     "pages/editContent/editContent",
-    "pages/titleOfwork/titleOfwork"
+    "pages/applicationEligibility/applicationEligibility",
+    "pages/changeEligibility/changeEligibility",
+    "pages/reviewEligibility/reviewEligibility",
+    "pages/commonProblems/commonProblems",
+    "pages/changeUserInfo/changeUserInfo"
   ],
   "window": {
     "navigationBarBackgroundColor": "#c4232b",

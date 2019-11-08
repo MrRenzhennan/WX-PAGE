@@ -1,4 +1,7 @@
 /* pages/editContent/editContent.wxss */
+page{
+  background: #f5f5f5;
+}
 .line-blod {
   width: 100%;
   height: 20rpx;
@@ -12,6 +15,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 0 30rpx;
+  background: #fff;
 }
 
 .list-box .list-item {
@@ -26,4 +30,75 @@
   color: #000;
   letter-spacing: 2rpx;
   font-family: PingFang-SC-Medium;
+}
+.bt-input{
+  flex-grow: 1;
+  font-size: 30rpx;
+  box-sizing: border-box;
+  padding-left: 10rpx;
+}
+.text-area-box{
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.text-area-box textarea{
+  width: 100%;
+  height: 310rpx;
+  margin-top: 10rpx;
+  font-size: 24rpx;
+}
+.upload-box{
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.label-sm{
+  font-size: 30rpx;
+  color: #999999;
+  margin-left: 10rpx;
+}
+.image-box{
+  margin-top: 60rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-box view{
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+.up-add{
+  width: 90rpx;
+  height: 90rpx;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.up-add image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.up-img{
+  width: 90rpx;
+  height: 90rpx;
+  background-size: 100% 100%;
+}
+.foot-btn{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 36rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c4232b;
+  height: 90rpx;
+  padding-bottom: 60rpx;
+  letter-spacing: 2rpx;
+  font-family: PingFangSC-Medium;
 }

@@ -1,4 +1,4 @@
-// pages/titleOfwork/titleOfwork.js
+// pages/reviewEligibility/reviewEligibility.js
 Page({
 
   /**

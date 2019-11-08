@@ -2,13 +2,36 @@
 <!-- line -->
 <view class="line-blod"></view>
 <view class="list-box">
-  <navigator url='/pages/titleOfwork/titleOfwork' hover-class="none">
-    <view class="list-item">
-      <text class="item-label">作品标题</text>
-      <view class="item-right">
-        <image class="icon-right" src="/static/imgs/icon_right.png"></image>
-      </view>
-    </view>
-  </navigator>
+  <view class="list-item">
+    <text class="item-label">作品标题</text>
+    <input class="bt-input" />
+  </view>
 </view>
 <view class="line-blod"></view>
+<view class="text-area-box">
+  <text class="item-label">作品内容</text>
+  <view>
+    <textarea placeholder="不超过2000字内容" maxlength="2000" />
+  </view>
+</view>
+<view class="line-blod"></view>
+<view class="upload-box">
+  <text class="item-label">上传作品相关图片</text>
+  <text class="label-sm">{{'(单张<=3M,限6张)'}}</text>
+  <view class="image-box">
+    <view class="up-add">
+      <image src="/static/imgs/icon_plus.png"></image>
+    </view>
+    <view class="up-img" style="background-image:url(https://img.tuguaishou.com/ips_templ_preview/35/a8/e1/lg_2413014_1571464222_5daaa41eaa5c8.jpg!w1024_w?auth_key=2205676114-0-0-1ec40450469d4f1a4b0c9a4ab66c8b57)"></view>
+    <view class="up-img" style="background-image:url(https://img.tuguaishou.com/ips_templ_preview/35/a8/e1/lg_2413014_1571464222_5daaa41eaa5c8.jpg!w1024_w?auth_key=2205676114-0-0-1ec40450469d4f1a4b0c9a4ab66c8b57)"></view>
+    <view class="up-img" style="background-image:url(https://img.tuguaishou.com/ips_templ_preview/35/a8/e1/lg_2413014_1571464222_5daaa41eaa5c8.jpg!w1024_w?auth_key=2205676114-0-0-1ec40450469d4f1a4b0c9a4ab66c8b57)"></view>
+    <view class="up-img" style="background-image:url(https://img.tuguaishou.com/ips_templ_preview/35/a8/e1/lg_2413014_1571464222_5daaa41eaa5c8.jpg!w1024_w?auth_key=2205676114-0-0-1ec40450469d4f1a4b0c9a4ab66c8b57)"></view>
+    <view class="up-img" style="background-image:url(https://img.tuguaishou.com/ips_templ_preview/35/a8/e1/lg_2413014_1571464222_5daaa41eaa5c8.jpg!w1024_w?auth_key=2205676114-0-0-1ec40450469d4f1a4b0c9a4ab66c8b57)"></view>
+  </view>
+</view>
+
+<navigator url="/pages/eligibility/eligibility" hover-class="none">
+  <view class="foot-btn">
+    立即保存
+  </view>
+</navigator>
