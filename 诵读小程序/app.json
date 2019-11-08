@@ -4,7 +4,10 @@
     "pages/activity/activity",
     "pages/resource/resource",
     "pages/main/main",
-    "pages/production/production"
+    "pages/production/production",
+    "pages/eligibility/eligibility",
+    "pages/editContent/editContent",
+    "pages/titleOfwork/titleOfwork"
   ],
   "window": {
     "navigationBarBackgroundColor": "#c4232b",

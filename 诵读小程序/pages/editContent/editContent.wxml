@@ -1,0 +1,14 @@
+<!--pages/editContent/editContent.wxml-->
+<!-- line -->
+<view class="line-blod"></view>
+<view class="list-box">
+  <navigator url='/pages/titleOfwork/titleOfwork' hover-class="none">
+    <view class="list-item">
+      <text class="item-label">作品标题</text>
+      <view class="item-right">
+        <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </view>
+    </view>
+  </navigator>
+</view>
+<view class="line-blod"></view>

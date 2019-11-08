@@ -36,12 +36,14 @@
       </view>
       <text>赛事资讯</text>
     </view>
-    <view class="sub">
-      <view class="img-bg c3">
-        <image src="/static/imgs/activity-tab3.png" class="i3" />
+    <navigator url='/pages/eligibility/eligibility' hover-class="none">
+      <view class="sub">
+        <view class="img-bg c3">
+          <image src="/static/imgs/activity-tab3.png" class="i3" />
+        </view>
+        <text>我要报名</text>
       </view>
-      <text>我要报名</text>
-    </view>
+    </navigator>
     <navigator url='/pages/production/production' hover-class="none">
       <view class="sub">
         <view class="img-bg c4">

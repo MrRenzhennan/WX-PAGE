@@ -1,0 +1,141 @@
+<!--pages/eligibility/eligibility.wxml-->
+<!-- 初次参赛 -->
+<view class="first-join">
+  <view class="left">
+    <image class="icon_notice" src="/static/imgs/icon_notice.png "></image>
+    <text>初次参赛者必读</text>
+    <navigator url='' hover-class="none">《参赛规则及注意事项》</navigator>
+  </view>
+  <image class="icon_guanbi" src="/static/imgs/icon_guanbi.png  "></image>
+</view>
+<!-- line -->
+<view class="line-blod"></view>
+<view class="list-box">
+  <navigator url='' hover-class="none">
+    <view class="list-item">
+      <view class="user">
+        <image class="heard" src="{{userInfo.avatarUrl}}"></image>
+        <view class="info">
+          <text>郭老师</text>
+          <text>身份证：230302198212156888</text>
+        </view>
+      </view>
+      <view class="item-right">
+        <text>未申请</text>
+        <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </view>
+    </view>
+  </navigator>
+  <navigator url='' hover-class="none">
+    <view class="list-item">
+      <text class="item-label">选择赛事</text>
+      <view class="item-right">
+        <text>中华经典诵读评选大赛</text>
+        <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </view>
+    </view>
+  </navigator>
+  <navigator url='' hover-class="none">
+    <view class="list-item">
+      <text class="item-label">选择赛事组别</text>
+      <view class="item-right">
+        <text>小学组</text>
+        <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </view>
+    </view>
+  </navigator>
+  <navigator url='' hover-class="none">
+    <view class="list-item">
+      <text class="item-label">选择作品类型</text>
+      <view class="item-right">
+        <text>课文朗诵</text>
+        <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </view>
+    </view>
+  </navigator>
+</view>
+<!-- line -->
+<view class="line-blod"></view>
+<view class="list-box">
+  <navigator url='/pages/editContent/editContent' hover-class="none">
+    <view class="list-item">
+      <text class="item-label">编辑作品内容</text>
+      <view class="item-right">
+        <text>未完成</text>
+        <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </view>
+    </view>
+  </navigator>
+</view>
+<!-- line -->
+<view class="line-blod"></view>
+<view class="list-box">
+  <navigator url='' hover-class="none">
+    <view class="list-item">
+      <text class="item-label">上传音频</text>
+      <view class="item-right">
+        <text>0012_参赛朗读.mp3</text>
+        <text style="color:#c4232b">100%</text>
+        <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </view>
+    </view>
+  </navigator>
+  <navigator url='' hover-class="none">
+    <view class="list-item">
+      <text class="item-label">上传视频</text>
+      <view class="item-right">
+        <text>0012_参赛朗读.mp3</text>
+        <text style="color:#c4232b">100%</text>
+        <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </view>
+    </view>
+  </navigator>
+</view>
+<!-- line -->
+<view class="line-blod"></view>
+<view class="list-box">
+  <navigator url='' hover-class="none">
+    <view class="list-item">
+      <text class="item-label">指导教师姓名</text>
+      <view class="item-right">
+        <text>银行一</text>
+        <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </view>
+    </view>
+  </navigator>
+  <navigator url='' hover-class="none">
+    <view class="list-item">
+      <text class="item-label">联系电话</text>
+      <view class="item-right">
+        <text>187****0077</text>
+        <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </view>
+    </view>
+  </navigator>
+  <navigator url='' hover-class="none">
+    <view class="list-item">
+      <text class="item-label">所在院校</text>
+      <view class="item-right">
+        <text>北京大学附中</text>
+        <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </view>
+    </view>
+  </navigator>
+</view>
+<!-- foot -->
+<view class="foot">
+  <checkbox-group bindchange="checkboxChange">
+    <label class="checkbox">
+      <checkbox value="1" checked="true" color="#c4232b" />
+      <navigator url='' hover-class="none">
+        我已经阅读并同意《中华经典诵读评选大赛》参赛规则
+      </navigator>
+    </label>
+  </checkbox-group>
+</view>
+<!-- btn -->
+<navigator url='' hover-class="none">
+  <view class="foot-btn">
+    提交作品
+  </view>
+</navigator>
