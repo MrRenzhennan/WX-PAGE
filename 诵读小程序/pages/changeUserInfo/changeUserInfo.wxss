@@ -1,1 +1,58 @@
 /* pages/changeUserInfo/changeUserInfo.wxss */
+page{
+  background: #f5f5f5;
+}
+.list-box{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  background: #fff;
+}
+.list-box .list-item{
+  padding: 30rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f5f5f5;
+}
+.item-label{
+  font-size: 30rpx;
+  color: #000;
+  letter-spacing: 2rpx;
+  font-family: PingFang-SC-Medium;
+}
+.list-box .list-item .weui-input {
+  font-size: 30rpx;
+  color: rgb(153, 153, 153);
+  text-align: right;
+  padding-right: 10rpx;
+}
+.item-right{
+  display: flex;
+  align-items: center;
+}
+.user-head{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+.wx-card{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
+}
+.item-right text{
+  font-size: 26rpx;
+  color: rgb(153,153,153);
+  margin-right: 10rpx;
+}
+.line-blod{
+  width: 100%;
+  height: 20rpx;
+  background: #f5f5f5;
+}
+.icon-right{
+  width: 13rpx;
+  height: 22rpx;
+}

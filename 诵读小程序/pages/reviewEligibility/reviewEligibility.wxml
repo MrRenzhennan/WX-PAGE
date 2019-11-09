@@ -1,2 +1,6 @@
 <!--pages/reviewEligibility/reviewEligibility.wxml-->
-<text>pages/reviewEligibility/reviewEligibility.wxml</text>
+<view class="bx">
+    <image src="/static/imgs/ico-dfkdd.png " />
+    <text>系统正在审核中</text>
+    <text>参赛资格将在48小时内审核完成,请耐心等待!</text>
+</view>
