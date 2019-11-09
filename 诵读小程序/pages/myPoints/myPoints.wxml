@@ -1,0 +1,64 @@
+<!--pages/myPoints/myPoints.wxml-->
+<view class="user-top">
+  <image src="{{userInfo.avatarUrl}}"></image>
+  <text>郭老师</text>
+  <view>
+    <text>您当前积分为</text>
+    <text>100</text>
+  </view>
+</view>
+
+<view class="title">
+  积分明细
+</view>
+<view class="list-box">
+  <view class="list">
+    <view>
+      <view>【参与投票】小河淌水诗朗诵</view>
+      <view>2019.09.09</view>
+    </view>
+    <view>+5</view>
+  </view>
+  <view class="list">
+    <view>
+      <view>【参与投票】小河淌水诗朗诵</view>
+      <view>2019.09.09</view>
+    </view>
+    <view>+5</view>
+  </view>
+  <view class="list">
+    <view>
+      <view>【参与投票】小河淌水诗朗诵</view>
+      <view>2019.09.09</view>
+    </view>
+    <view>+5</view>
+  </view>
+  <view class="list">
+    <view>
+      <view>【参与投票】小河淌水诗朗诵</view>
+      <view>2019.09.09</view>
+    </view>
+    <view>+5</view>
+  </view>
+  <view class="list">
+    <view>
+      <view>【参与投票】小河淌水诗朗诵</view>
+      <view>2019.09.09</view>
+    </view>
+    <view>+5</view>
+  </view>
+  <view class="list">
+    <view>
+      <view>【参与投票】小河淌水诗朗诵</view>
+      <view>2019.09.09</view>
+    </view>
+    <view>+5</view>
+  </view>
+  <view class="list">
+    <view>
+      <view>【参与投票】小河淌水诗朗诵</view>
+      <view>2019.09.09</view>
+    </view>
+    <view>+5</view>
+  </view>
+</view>

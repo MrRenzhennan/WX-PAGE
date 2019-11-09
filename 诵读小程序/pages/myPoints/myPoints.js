@@ -1,28 +1,25 @@
-// pages/commonProblems/commonProblems.js
+// pages/myPoints/myPoints.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    domArr:[true,false,false,false]
-  },
-  showDetail(e){
-    let index = e.currentTarget.dataset.index;
-    this.data.domArr.forEach((item,index)=>{
-      this.data.domArr[index] = false;
-    });
-    this.data.domArr[index] = !this.data.domArr[index];
-    this.setData({
-      domArr:this.data.domArr
-    })
+    userInfo: {}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.getUserInfo({
+      success: (res) => {
+        this.data.userInfo = res.userInfo;
+        this.setData({
+          userInfo: this.data.userInfo
+        })
+      }
+    })
   },
 
   /**

@@ -122,6 +122,41 @@
 					"pathName": "pages/changeUserInfo/changeUserInfo",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的积分",
+					"pathName": "pages/myPoints/myPoints",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "投票记录",
+					"pathName": "pages/votingRecord/votingRecord",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "消息通知",
+					"pathName": "pages/messageNotice/messageNotice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "消息通知详情",
+					"pathName": "pages/messageNoticeDetail/messageNoticeDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "作品管理",
+					"pathName": "pages/workManagement/workManagement",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

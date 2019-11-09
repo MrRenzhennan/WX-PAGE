@@ -71,7 +71,7 @@
   </view>
   <view class="line-blod"></view>
   <view class="list-box">
-    <navigator url='' hover-class="none">
+    <navigator url='/pages/myPoints/myPoints' hover-class="none">
       <view class="list-item">
         <text class="item-label">我的积分</text>
         <view class="item-right">

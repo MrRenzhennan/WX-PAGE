@@ -11,7 +11,12 @@
     "pages/changeEligibility/changeEligibility",
     "pages/reviewEligibility/reviewEligibility",
     "pages/commonProblems/commonProblems",
-    "pages/changeUserInfo/changeUserInfo"
+    "pages/changeUserInfo/changeUserInfo",
+    "pages/myPoints/myPoints",
+    "pages/votingRecord/votingRecord",
+    "pages/messageNotice/messageNotice",
+    "pages/messageNoticeDetail/messageNoticeDetail",
+    "pages/workManagement/workManagement"
   ],
   "window": {
     "navigationBarBackgroundColor": "#c4232b",

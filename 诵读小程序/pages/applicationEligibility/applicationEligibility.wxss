@@ -102,6 +102,8 @@ page {
 }
 
 .foot-btn {
+  position: fixed;
+  bottom: 0;
   width: 100%;
   font-size: 36rpx;
   color: #fff;

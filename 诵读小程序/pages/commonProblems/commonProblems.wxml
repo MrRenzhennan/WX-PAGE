@@ -1,2 +1,69 @@
 <!--pages/commonProblems/commonProblems.wxml-->
-<text>pages/commonProblems/commonProblems.wxml</text>
+
+<!-- list -->
+<view class="item">
+  <view class="list-item" bindtap="showDetail" data-index="0">
+    <text class="item-label">报名参赛必须要实名制才可以吗?</text>
+    <view class="item-right">
+      <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+    </view>
+  </view>
+  <view class="{{domArr[0] ? 'item-detal' : 'item-detal item-detal-none'}}" wx:if="true">
+    <view>第一步：登录小程序，进行注册</view>
+    <view>第二步：完成教师认证（前往个人中心>个人信息>教师资格认证，上传您的教师相关资料）</view>
+    <view>前往个人中心>作品发布>参赛作品，参赛类型选择，并上传您的参赛视频（参赛视频一经上传，不能够再次编辑修改，请您谨慎操作）</view>
+    <view>如有问题，请联络客服</view>
+  </view>
+</view>
+<view class="line-blod"></view>
+<!-- list -->
+<view class="item">
+  <view class="list-item" bindtap="showDetail" data-index="1">
+    <text class="item-label">报名参赛必须要实名制才可以吗?</text>
+    <view class="item-right">
+      <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+    </view>
+  </view>
+  <view class="{{domArr[1] ? 'item-detal' : 'item-detal item-detal-none'}}" wx:if="true">
+    <view>第一步：登录小程序，进行注册</view>
+    <view>第二步：完成教师认证（前往个人中心>个人信息>教师资格认证，上传您的教师相关资料）</view>
+    <view>前往个人中心>作品发布>参赛作品，参赛类型选择，并上传您的参赛视频（参赛视频一经上传，不能够再次编辑修改，请您谨慎操作）</view>
+    <view>如有问题，请联络客服</view>
+  </view>
+</view>
+<view class="line-blod"></view>
+<!-- list -->
+<view class="item">
+  <view class="list-item" bindtap="showDetail" data-index="2">
+    <text class="item-label">报名参赛必须要实名制才可以吗?</text>
+    <view class="item-right">
+      <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+    </view>
+  </view>
+  <view class="{{domArr[2] ? 'item-detal' : 'item-detal item-detal-none'}}" wx:if="true">
+    <view>第一步：登录小程序，进行注册</view>
+    <view>第二步：完成教师认证（前往个人中心>个人信息>教师资格认证，上传您的教师相关资料）</view>
+    <view>前往个人中心>作品发布>参赛作品，参赛类型选择，并上传您的参赛视频（参赛视频一经上传，不能够再次编辑修改，请您谨慎操作）</view>
+    <view>如有问题，请联络客服</view>
+    <view>第一步：登录小程序，进行注册</view>
+    <view>第二步：完成教师认证（前往个人中心>个人信息>教师资格认证，上传您的教师相关资料）</view>
+    <view>前往个人中心>作品发布>参赛作品，参赛类型选择，并上传您的参赛视频（参赛视频一经上传，不能够再次编辑修改，请您谨慎操作）</view>
+    <view>如有问题，请联络客服</view>
+  </view>
+</view>
+<view class="line-blod"></view>
+<!-- list -->
+<view class="item">
+  <view class="list-item" bindtap="showDetail" data-index="3">
+    <text class="item-label">报名参赛必须要实名制才可以吗?</text>
+    <view class="item-right">
+      <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+    </view>
+  </view>
+  <view class="{{domArr[3] ? 'item-detal' : 'item-detal item-detal-none'}}" wx:if="true">
+    <view>第一步：登录小程序，进行注册</view>
+    <view>第二步：完成教师认证（前往个人中心>个人信息>教师资格认证，上传您的教师相关资料）</view>
+    <view>前往个人中心>作品发布>参赛作品，参赛类型选择，并上传您的参赛视频（参赛视频一经上传，不能够再次编辑修改，请您谨慎操作）</view>
+    <view>如有问题，请联络客服</view>
+  </view>
+</view>
