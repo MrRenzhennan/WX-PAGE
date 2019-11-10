@@ -41,9 +41,11 @@
   width: 100%;
   display: flex;
 }
-
-.col .col-item{
+.col navigator{
   width: 33%;
+}
+.col .col-item{
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;

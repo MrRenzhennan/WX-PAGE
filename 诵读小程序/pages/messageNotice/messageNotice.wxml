@@ -1,2 +1,66 @@
 <!--pages/messageNotice/messageNotice.wxml-->
-<text>pages/messageNotice/messageNotice.wxml</text>
+
+<!-- clear -->
+<view class="clear">
+  <image src="/static/imgs/icon_clear.png"></image>
+  <text>一键已读</text>
+</view>
+
+<!-- msg-list -->
+<navigator url="/pages/messageNoticeDetail/messageNoticeDetail" hover-class="none">
+  <view class="list">
+    <view class="c1-icon bj">
+      <image class="activity-tab1" src="/static/imgs/activity-tab1.png"></image>
+    </view>
+    <view>
+      <view>
+        <text>您的参赛资格已经申请通过</text>
+        <text>8分钟前</text>
+      </view>
+      <view class="ellipsis">
+        您在《语文名师杯原创资源评选大赛》中，上传的您在《语文名师杯原创资源评选大赛》中，上传的
+      </view>
+    </view>
+  </view>
+</navigator>
+
+
+<navigator url="/pages/messageNoticeDetail/messageNoticeDetail" hover-class="none">
+  <view class="list">
+    <view class="c3-icon bj">
+      <image class="activity-tab3" src="/static/imgs/activity-tab3.png"></image>
+    </view>
+    <view>
+      <view>
+        <text>您的参赛资格已经申请通过</text>
+        <text>8分钟前</text>
+      </view>
+      <view class="ellipsis">
+        您在《语文名师杯原创资源评选大赛》中，上传的您在《语文名师杯原创资源评选大赛》中，上传的
+      </view>
+    </view>
+  </view>
+</navigator>
+
+
+<navigator url="/pages/messageNoticeDetail/messageNoticeDetail" hover-class="none">
+  <view class="list">
+    <view class="c2-icon bj">
+      <image class="activity-tab2" src="/static/imgs/activity-tab2.png"></image>
+    </view>
+    <view>
+      <view>
+        <text>您的参赛资格已经申请通过</text>
+        <text>8分钟前</text>
+      </view>
+      <view class="ellipsis">
+        您在《语文名师杯原创资源评选大赛》中，上传的您在《语文名师杯原创资源评选大赛》中，上传的
+      </view>
+    </view>
+  </view>
+</navigator>
+
+
+
+<!-- 底部留白 -->
+<view class="foot"></view>

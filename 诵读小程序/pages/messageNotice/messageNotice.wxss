@@ -1,1 +1,140 @@
 /* pages/messageNotice/messageNotice.wxss */
+
+page {
+  background: #f5f5f5;
+}
+
+.clear {
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear image {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 20rpx;
+}
+
+.clear text {
+  font-size: 28rpx;
+  color: #999;
+  letter-spacing: 2rpx;
+}
+
+.list {
+  width: 100%;
+  height: 150rpx;
+  box-sizing: border-box;
+  padding: 30rpx 30rpx 0 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+.foot{
+  height: 100rpx;
+  width: 100%;
+  background: #fff;
+}
+
+.list > view:first-child {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.list > view:last-child {
+  flex-grow: 1;
+  height: 100%;
+  margin-left: 30rpx;
+  border-bottom: 1rpx solid #f5f5f5;
+  padding-bottom: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list > view:last-child view:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list > view:last-child view:last-child{
+  font-size: 24rpx;
+  color: #999;
+  width: 570rpx;
+  margin-top: 10rpx;
+}
+
+.list > view:last-child view:first-child text:first-child {
+  font-size: 30rpx;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 2rpx;
+  font-family: PingFang-SC-Medium;
+}
+
+.list > view:last-child view:first-child text:last-child {
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 标记小红点 */
+.bj::after{
+  content: '';
+  position: absolute;
+  top: -2rpx;
+  right: -2rpx;
+  width: 20rpx;
+  height: 20rpx;
+  background: #c4232b;
+  border:1rpx solid #fff;
+  border-radius: 50%;
+}
+
+/* 左侧图片底色 */
+.c1-icon {
+  background: #d3b17d;
+}
+.c2-icon {
+  background: #4c8cad;
+}
+.c3-icon {
+  background: #75878a;
+}
+
+
+/* 图片大小 */
+.activity-tab1 {
+  width: 33rpx;
+  height: 44rpx;
+}
+
+.activity-tab2 {
+  width: 39rpx;
+  height: 44rpx;
+}
+
+.activity-tab3 {
+  width: 49rpx;
+  height: 44rpx;
+}
+
+.activity-tab4 {
+  width: 45rpx;
+  height: 43rpx;
+}
+
+/* 省略号 */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -16,18 +16,24 @@
   </view>
 
   <view class="col">
-    <view class="col-item right-line">
-      <text>5</text>
-      <text>消息通知</text>
-    </view>
-    <view class="col-item right-line">
-      <text>100</text>
-      <text>我的积分</text>
-    </view>
-    <view class="col-item">
-      <text>28</text>
-      <text>作品管理</text>
-    </view>
+    <navigator url="/pages/messageNotice/messageNotice" hover-class="none">
+      <view class="col-item right-line">
+        <text>5</text>
+        <text>消息通知</text>
+      </view>
+    </navigator>
+    <navigator url="/pages/myPoints/myPoints" hover-class="none">
+      <view class="col-item right-line">
+        <text>100</text>
+        <text>我的积分</text>
+      </view>
+    </navigator>
+    <navigator url="/pages/workManagement/workManagement" hover-class="none">
+      <view class="col-item">
+        <text>28</text>
+        <text>作品管理</text>
+      </view>
+    </navigator>
   </view>
 
   <!-- line -->
@@ -52,7 +58,7 @@
         </view>
       </view>
     </navigator>
-    <navigator url='' hover-class="none">
+    <navigator url='/pages/workManagement/workManagement' hover-class="none">
       <view class="list-item">
         <text class="item-label">作品管理</text>
         <view class="item-right">
@@ -60,7 +66,7 @@
         </view>
       </view>
     </navigator>
-    <navigator url='' hover-class="none">
+    <navigator url='/pages/votingRecord/votingRecord' hover-class="none">
       <view class="list-item">
         <text class="item-label">投票记录</text>
         <view class="item-right">

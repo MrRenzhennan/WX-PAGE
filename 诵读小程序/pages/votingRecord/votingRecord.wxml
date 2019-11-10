@@ -1,2 +1,12 @@
 <!--pages/votingRecord/votingRecord.wxml-->
-<text>pages/votingRecord/votingRecord.wxml</text>
+<view class="list" wx:for="{{10}}">
+  <view>全国统编版小学语文四年级上册《爬山虎的脚》课文朗诵</view>
+  <view>
+    <view>
+      <text>中华经典诵读评选大赛</text>
+      <text>作品编号：00454788</text>
+    </view>
+    <view>已投票1次</view>
+  </view>
+</view>
+
