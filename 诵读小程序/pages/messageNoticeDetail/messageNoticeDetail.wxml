@@ -1,2 +1,16 @@
 <!--pages/messageNoticeDetail/messageNoticeDetail.wxml-->
-<text>pages/messageNoticeDetail/messageNoticeDetail.wxml</text>
+<!-- msg-list -->
+<view class="list">
+  <view class="c1-icon">
+    <image class="activity-tab1" src="/static/imgs/activity-tab1.png"></image>
+  </view>
+  <view>
+    <view>
+      <text>您的参赛资格已经申请通过</text>
+      <text>8分钟前</text>
+    </view>
+    <view>
+     您在《语文名师杯原创资源评选大赛》中，上传的”观潮语文课件+教案+同步练习“经审核准予入围参选，作品编号为：00454788，
+    </view>
+  </view>
+</view>

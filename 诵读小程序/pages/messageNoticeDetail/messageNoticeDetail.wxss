@@ -1,1 +1,94 @@
 /* pages/messageNoticeDetail/messageNoticeDetail.wxss */
+
+page {
+  background: #f5f5f5;
+}
+.list:first-child{
+  margin-top: 40rpx;
+}
+.list {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+}
+
+.list > view:first-child {
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.list > view:last-child {
+  flex-grow: 1;
+  height: 100%;
+  margin-left: 30rpx;
+  padding-bottom: 10rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list > view:last-child view:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list > view:last-child view:last-child{
+  font-size: 24rpx;
+  color: #999;
+  width: 570rpx;
+  margin-top: 10rpx;
+  line-height: 40rpx;
+}
+
+.list > view:last-child view:first-child text:first-child {
+  font-size: 30rpx;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 2rpx;
+  font-family: PingFang-SC-Medium;
+}
+
+.list > view:last-child view:first-child text:last-child {
+  font-size: 24rpx;
+  color: #999;
+}
+/* 左侧图片底色 */
+.c1-icon {
+  background: #d3b17d;
+}
+.c2-icon {
+  background: #4c8cad;
+}
+.c3-icon {
+  background: #75878a;
+}
+
+
+/* 图片大小 */
+.activity-tab1 {
+  width: 33rpx;
+  height: 44rpx;
+}
+
+.activity-tab2 {
+  width: 39rpx;
+  height: 44rpx;
+}
+
+.activity-tab3 {
+  width: 49rpx;
+  height: 44rpx;
+}
+
+.activity-tab4 {
+  width: 45rpx;
+  height: 43rpx;
+}
