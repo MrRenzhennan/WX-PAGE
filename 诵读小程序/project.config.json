@@ -157,6 +157,13 @@
 					"pathName": "pages/workManagement/workManagement",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": 16,
+					"name": "活动详情",
+					"pathName": "pages/activityDetail/activityDetail",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

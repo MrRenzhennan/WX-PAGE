@@ -16,7 +16,8 @@
     "pages/votingRecord/votingRecord",
     "pages/messageNotice/messageNotice",
     "pages/messageNoticeDetail/messageNoticeDetail",
-    "pages/workManagement/workManagement"
+    "pages/workManagement/workManagement",
+    "pages/activityDetail/activityDetail"
   ],
   "window": {
     "navigationBarBackgroundColor": "#c4232b",

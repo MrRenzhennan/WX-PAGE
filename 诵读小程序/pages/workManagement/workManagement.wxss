@@ -1,1 +1,88 @@
 /* pages/workManagement/workManagement.wxss */
+
+page {
+  background: #f5f5f5;
+  font-family: PingFang-SC-Medium;
+}
+
+.list:first-child {
+  margin-top: 40rpx;
+}
+
+.list {
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+
+.title {
+  font-size: 28rpx;
+  color: #000;
+  font-family: PingFang-SC-Medium;
+  letter-spacing: 2rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+
+.list > view:nth-child(2) {
+  font-size: 24rpx;
+  color: rgb(153, 153, 153);
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1rpx solid #f5f5f5;
+  padding-bottom: 20rpx;
+}
+
+.list > view:nth-child(2) text {
+  margin-bottom: 10rpx;
+}
+
+.list > view:nth-child(2) text:nth-child(2n+1) {
+  width: 60%;
+}
+
+.list > view:nth-child(2) text:nth-child(2n) {
+  width: 40%;
+}
+
+.list > view:last-child {
+  width: 100%;
+  padding-top: 15rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list > view:last-child text {
+  font-size: 24rpx;
+  color: rgb(153, 153, 153);
+}
+
+.list > view:last-child image {
+  margin-right: 10rpx;
+}
+
+.last-v {
+  display: flex;
+  align-items: center;
+}
+
+.list view text.success {
+  color: #0da056;
+}
+
+.list view text.fail {
+  color: #c4232b;
+}
+
+.icon_shanchu {
+  width: 29rpx;
+  height: 30rpx;
+}
+
+.icon_xiugai {
+  width: 30rpx;
+  height: 30rpx;
+}
