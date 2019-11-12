@@ -17,7 +17,8 @@
     "pages/messageNotice/messageNotice",
     "pages/messageNoticeDetail/messageNoticeDetail",
     "pages/workManagement/workManagement",
-    "pages/activityDetail/activityDetail"
+    "pages/activityDetail/activityDetail",
+    "pages/screening/screening"
   ],
   "window": {
     "navigationBarBackgroundColor": "#c4232b",

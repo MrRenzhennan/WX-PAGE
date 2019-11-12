@@ -164,6 +164,13 @@
 					"pathName": "pages/activityDetail/activityDetail",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "筛选",
+					"pathName": "pages/screening/screening",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

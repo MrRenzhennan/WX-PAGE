@@ -1,0 +1,19 @@
+<!--pages/screening/screening.wxml-->
+<view class="title">
+  选择赛区
+</view>
+<view class="arr">
+  <view class="{{item.active ? 'active' : ''}}" wx:for="{{provinces}}" bindtap="choose" data-index="{{idx}}" wx:for-index="idx">
+    <text>{{item.label}}</text>
+    <i wx:if="{{item.active}}" class="icon iconfont iconduihao"></i>
+  </view>
+</view>
+
+<view class="foot">
+  <view bindtap="clear">清空选择</view>
+  <view>
+    <navigator url="/pages/production/production" hover-class="none">
+      确认提交
+    </navigator>
+  </view>
+</view>

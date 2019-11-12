@@ -21,10 +21,12 @@
         <view class="tab-item active">综合推荐</view>
         <view class="tab-item">最新参与</view>
         <view class="tab-item">得票最多</view>
-        <view class="tab-item">
-          <image src="/static/imgs/icon_filter.png " />
-          <text>筛选</text>
-        </view>
+        <navigator url="/pages/screening/screening" hover-class="none">
+          <view class="tab-item">
+            <image src="/static/imgs/icon_filter.png " />
+            <text>筛选</text>
+          </view>
+        </navigator>
       </view>
     </view>
 
@@ -33,7 +35,7 @@
 
   <!-- list -->
   <view class="list" wx:for="{{10}}">
-    <navigator url='/pages/activityDetail/activityDetail' hover-class="none" >
+    <navigator url='/pages/activityDetail/activityDetail' hover-class="none">
       <view class="list-item bottom-line flex">
         <view>
           <view>
