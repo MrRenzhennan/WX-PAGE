@@ -1,2 +1,82 @@
 <!--activityDetail/activityDetail.wxml-->
-<text>activityDetail/activityDetail.wxml</text>
+<view class="top">
+  <view class="title">
+    全国统编版小学语文四年级上册 《爬山虎的脚》课文朗诵
+  </view>
+
+  <view class="swiper-change">
+    <view class="{{idx == '0' ? 'active' : ''}}" bindtap="currentTab" data-current="0">作品展示</view>
+    <view class="{{idx == '1' ? 'active' : ''}}" bindtap="currentTab" data-current="1">作品信息</view>
+  </view>
+</view>
+
+
+<view style="height:calc(100vh - {{titleHeight + footHeight}}px)">
+  <swiper duration="{{ 500 }}" current="{{idx}}" bindchange="currentChange">
+    <swiper-item style="height:100%">
+      <scroll-view scroll-y="true" style="width:100%;height:100%">
+        <view class="{{shwoAll ? 'msg all' : 'msg' }}">
+          <view wx:for="{{10}}">
+            学校操场北边墙上满是爬山虎。我家也有爬山虎，从小院的西墙爬上去，在房顶上占了一大片地方。 爬山虎刚长出来的叶子是嫩红的，不几 爬山虎的脚触着墙的时候，六七根细丝的头上就变成小圆片，巴住墙。细丝原先是直的，现在弯曲了
+          </view>
+        </view>
+        <view class="shwo-all" bindtap="shwoAll" wx:if="{{!shwoAll}}">
+          <text>展开阅读全文</text>
+          <view>
+            <image src="/static/imgs/icon_down.png "></image>
+          </view>
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      <view class="author">
+        <view class="user-box">
+          <view class="info">
+
+            <view>
+              <image src="{{userInfo.avatarUrl}}"></image>
+            </view>
+            <view>
+              <view class="name">任世豪</view>
+              <view class="num">选手编号：12345678</view>
+            </view>
+          </view>
+
+          <view class="item">
+            <text>作品编号：</text>
+            <text>00324713</text>
+          </view>
+          <view class="item">
+            <text>大赛名城：</text>
+            <text>中华经典诵读评选大赛</text>
+          </view>
+          <view class="item">
+            <text>所属组别：</text>
+            <text>中学组</text>
+          </view>
+          <view class="item">
+            <text>所属赛区：</text>
+            <text>北京赛区</text>
+          </view>
+          <view class="item">
+            <text>指导教师：</text>
+            <text>银行已</text>
+          </view>
+          <view class="item">
+            <text>浏览总数：</text>
+            <text>50469</text>
+          </view>
+          <view class="item">
+            <text>得票总数：</text>
+            <text>50000</text>
+          </view>
+
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="foot-btn">
+  为TA投票
+</view>

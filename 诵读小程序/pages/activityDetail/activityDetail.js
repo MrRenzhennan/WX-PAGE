@@ -5,14 +5,56 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    idx: 0,
+    titleHeight:0,
+    footHeight:0,
+    shwoAll:false,
+    userInfo:{}
+  },
+  //tab切换
+  currentTab: function (e) {
+    let index = e.currentTarget.dataset.current;
+    this.setData({
+      idx: index
+    })
+  },
+  //swiper切换
+  currentChange: function (e) {
+    let index = e.detail.current
+    this.setData({
+      idx: index
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var query = wx.createSelectorQuery();
+    query.select('.top').boundingClientRect( (rect)=> {
+      this.setData({
+          titleHeight: rect.height
+        })
+    }).exec();
+    var query = wx.createSelectorQuery();
+    query.select('.foot-btn').boundingClientRect((rect) => {
+      this.setData({
+        footHeight: rect.height
+      })
+    }).exec();
+    wx.getUserInfo({
+      success: (res) => {
+        this.data.userInfo = res.userInfo;
+        this.setData({
+          userInfo: this.data.userInfo
+        })
+      }
+    })
+  },
+  shwoAll(){
+    this.setData({
+      shwoAll: true
+    })
   },
 
   /**
