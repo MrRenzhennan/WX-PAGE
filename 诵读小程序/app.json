@@ -18,7 +18,10 @@
     "pages/messageNoticeDetail/messageNoticeDetail",
     "pages/workManagement/workManagement",
     "pages/activityDetail/activityDetail",
-    "pages/screening/screening"
+    "pages/screening/screening",
+    "pages/currency/currency",
+    "pages/comment/comment",
+    "pages/commentDetail/commentDetail"
   ],
   "window": {
     "navigationBarBackgroundColor": "#c4232b",

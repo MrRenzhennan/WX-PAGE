@@ -1,0 +1,67 @@
+<!--pages/commentDetail/commentDetail.wxml-->
+<view class="table">
+  <view class="item">
+    <image class="Avatar" src="http://img3.imgtn.bdimg.com/it/u=3603761103,54769728&fm=26&gp=0.jpg"></image>
+    <view>
+      <view class="author">曾佳佳</view>
+      <view class="pl-text">遵循市场经济规律，在诸多业务领域中进行了卓有成效的探索。</view>
+      <view class="botm">
+        <view>
+          <text class="time">3月20日</text>
+          <text class="dian">·</text>
+          <text class="back">回复TA</text>
+        </view>
+        <view>
+          <image class="icon_zan" src="/static/imgs/icon_zan.png"></image>
+          <text class="zan-num">56</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- line -->
+<view class="line"></view>
+<view class="huif-all">25条回复</view>
+<view class="table">
+  <view class="item" wx:for="{{5}}">
+    <image class="Avatar" src="http://img3.imgtn.bdimg.com/it/u=3603761103,54769728&fm=26&gp=0.jpg"></image>
+    <view>
+      <view class="author">曾佳佳</view>
+      <view class="pl-text">遵循市场经济规律，在诸多业务领域中进行了卓有成效的探索。</view>
+      <view class="botm">
+        <view>
+          <text class="time">3月20日</text>
+          <text class="dian">·</text>
+          <text class="back">回复TA</text>
+        </view>
+        <view>
+          <image class="icon_zan" src="/static/imgs/icon_zan.png"></image>
+          <text class="zan-num">56</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="foot">
+  <view class="input-box" bindtap="comment">
+    <image src="/static/imgs/icon_compile.png "></image>
+    <text>发布评论...</text>
+    <!-- <input></input> -->
+  </view>
+  <image class="icon_weixin" src="/static/imgs/icon_weixin.png"></image>
+  <image class="icon_pengyouquan" src="/static/imgs/icon_pengyouquan.png"></image>
+</view>
+
+<view class="taxtArea-box" wx:if="{{textAreaShow}}" style="bottom:{{height}}px" >
+  <textarea 
+  bindblur="bindTextAreaBlur" 
+  auto-focus fixed="{{true}}" 
+  show-confirm-bar="{{fasle}}"
+  adjust-position="{{false}}"	
+  bindfocus="focus"
+  bindblur="blur"
+  placeholder="@曾佳佳12"
+  />
+  <view class="go">发布</view>
+</view>

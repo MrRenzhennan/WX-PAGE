@@ -13,7 +13,7 @@
 		"coverView": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
+	"libVersion": "2.9.3",
 	"appid": "wxc25575adab39badf",
 	"projectname": "%E8%AF%B5%E8%AF%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F",
 	"debugOptions": {
@@ -170,6 +170,26 @@
 					"name": "筛选",
 					"pathName": "pages/screening/screening",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "通用内用页",
+					"pathName": "pages/currency/currency",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评论",
+					"pathName": "pages/comment/comment",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "评论详情",
+					"pathName": "pages/commentDetail/commentDetail",
 					"scene": null
 				}
 			]

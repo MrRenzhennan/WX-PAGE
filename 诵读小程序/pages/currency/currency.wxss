@@ -1,0 +1,178 @@
+/* pages/currency/currency.wxss */
+
+page {
+  background: #fff;
+  font-family: PingFang-SC-Medium;
+}
+
+.title {
+  font-size: 48rpx;
+  color: #000;
+  box-sizing: border-box;
+  padding: 30rpx;
+  font-family: PingFang-SC-Bold;
+}
+
+.detail {
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.detail text {
+  margin-right: 20rpx;
+}
+
+.center {
+  width: 100%;
+  padding: 30rpx;
+  padding-bottom: 0;
+  box-sizing: border-box;
+}
+
+.center video {
+  width: 100%;
+}
+
+scroll-view .msg {
+  width: 100%;
+  height: calc(100% - 132rpx);
+  overflow: hidden;
+  color: #000;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  font-family: PingFang-SC-Medium;
+  letter-spacing: 2rpx;
+}
+
+scroll-view .msg.all {
+  height: max-content;
+}
+
+scroll-view .shwo-all {
+  width: 480rpx;
+  height: 72rpx;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 28rpx;
+  letter-spacing: 2rpx;
+  border-radius: 80rpx;
+  margin: 30rpx auto;
+}
+
+scroll-view .shwo-all view {
+  width: 25rpx;
+  height: 25rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #999;
+  margin-left: 20rpx;
+}
+
+scroll-view .shwo-all view image {
+  width: 12rpx;
+  height: 9rpx;
+}
+
+.foot {
+  width: 100%;
+  height: 160rpx;
+  padding: 20rpx 30rpx 30rpx 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-top: 1rpx solid #f5f5f5;
+}
+
+.foot .input-box {
+  width: 370rpx;
+  height: 55rpx;
+  display: flex;
+  align-items: center;
+  background: #f4f4f4;
+  border-radius: 55rpx;
+  box-sizing: border-box;
+}
+
+.foot .input-box image {
+  width: 34rpx;
+  height: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 20rpx;
+}
+
+.foot .input-box text {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.foot .pl {
+  display: flex;
+  align-items: center;
+}
+
+.foot .num {
+  font-size: 22rpx;
+  color: #999;
+  margin-left: 10rpx;
+}
+
+.icon_pinglun {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.icon_weixin {
+  width: 44rpx;
+  height: 36rpx;
+}
+
+.icon_pengyouquan {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+/* .foot .input-box input{
+  flex-grow: 1;
+  height: 100%;
+  font-size: 28rpx;
+} */
+
+
+.taxtArea-box{
+  width: 100%;
+  height: 220rpx;
+  padding: 30rpx;
+  background: #f5f5f5;
+  border-top: 1rpx solid #eaeaea;
+  border-bottom: 1rpx solid #eaeaea;
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+}
+.taxtArea-box .go{
+  font-size: 26rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+  color: #c4232b;
+  letter-spacing: 2rpx;
+}
+.taxtArea-box textarea{
+  width: 615rpx;
+  height: 100%;
+  background: #fff;
+  font-size: 24rpx;
+  border: 1rpx solid #eaeaea;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+  padding: 20rpx;
+}

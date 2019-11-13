@@ -28,7 +28,7 @@
   <view class="list">
 
     <!-- 无图片置顶样式 -->
-    <navigator url='' hover-class="none">
+    <navigator url='/pages/currency/currency' hover-class="none">
 
 
       <view class="list-item bottom-line">
@@ -43,7 +43,7 @@
         </view>
       </view>
     </navigator>
-    <navigator url='' hover-class="none">
+    <navigator url='/pages/currency/currency' hover-class="none">
 
 
       <!-- 无图片样式 -->
@@ -76,7 +76,7 @@
         </view>
       </view>
     </navigator>
-    <navigator url='' hover-class="none">
+    <navigator url='/pages/currency/currency' hover-class="none">
       <!-- 图片靠左 -->
       <view class="list-item bottom-line flex">
         <view>
@@ -94,7 +94,7 @@
         </view>
       </view>
     </navigator>
-    <navigator url='' hover-class="none">
+    <navigator url='/pages/currency/currency' hover-class="none">
       <!-- 图片靠下 -->
       <view class="list-item">
         <view>
