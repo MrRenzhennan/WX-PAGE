@@ -84,6 +84,13 @@
   font-family: PingFang-SC-Medium;
 }
 
+.list-box .list-item .weui-input {
+  font-size: 30rpx;
+  color: rgb(153, 153, 153);
+  text-align: right;
+  padding-right: 10rpx;
+}
+
 .item-right text {
   font-size: 26rpx;
   color: rgb(153, 153, 153);

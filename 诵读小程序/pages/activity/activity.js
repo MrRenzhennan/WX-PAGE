@@ -5,14 +5,37 @@ Page({
    * 页面的初始数据
    */
   data: {
-    swiperList: ["/static/imgs/swiper-02.png", "/static/imgs/swiper-02.png"]
+    swiperList: ["/static/imgs/swiper-02.png", "/static/imgs/swiper-02.png"],
+    tabArray: ['中华经典诵读', '我用统编版', '中小学读书梦', '中华经典诵读', '我用统编版', '中小学读书梦'],
+    activeIdx: 0,
+    titleHeight: 0,
+    toView:'tab0'
   },
-
+  //tab切换
+  currentTab: function (e) {
+    let index = e.currentTarget.dataset.index;
+    this.setData({
+      activeIdx: index
+    })
+  },
+  //swiper切换
+  currentChange: function (e) {
+    let index = e.detail.current
+    this.setData({
+      activeIdx: index,
+      toView:'tab' + index
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var query = wx.createSelectorQuery();
+    query.select('.top').boundingClientRect((rect) => {
+      this.setData({
+        titleHeight: rect.height
+      })
+    }).exec();
   },
 
   /**

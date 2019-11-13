@@ -1,112 +1,123 @@
 <!--index.wxml-->
 <view class="container">
-  <!-- swiper -->
-  <view class="swip-top">
-    <view class="swiper-box">
-      <swiper indicator-dots="{{ true }}" autoplay="{{ true }}" interval="3000" duration="{{ 1000 }}" circular="{{ true }}" indicator-color="#fff" indicator-active-color="rgba(255,255,255,0.5)">
-        <swiper-item wx:for="{{ swiperList }}" wx:key="{{ id }}">
-          <image src="{{ item }}" lazy-load />
-        </swiper-item>
-      </swiper>
+
+  <view class="top">
+
+    <!-- swiper -->
+    <view class="swip-top">
+      <view class="swiper-box">
+        <swiper indicator-dots="{{ true }}" autoplay="{{ true }}" interval="3000" duration="{{ 1000 }}" circular="{{ true }}" indicator-color="#fff" indicator-active-color="rgba(255,255,255,0.5)">
+          <swiper-item wx:for="{{ swiperList }}" wx:key="{{ id }}">
+            <image src="{{ item }}" lazy-load />
+          </swiper-item>
+        </swiper>
+      </view>
     </view>
-  </view>
-  <!-- tab -->
-  <view class="tab-box">
-    <view class="tab-sub">
-      <view class="tab-item active">综合推荐</view>
-      <view class="tab-item">官方公告</view>
-      <view class="tab-item">消息公告</view>
-      <view class="tab-item">精品资源</view>
+    <!-- tab -->
+    <view class="tab-box">
+      <view class="tab-sub">
+        <view wx:for="{{tabArray}}" class="{{ activeIdx == idx ? 'tab-item active' : 'tab-item'}}" bindtap="currentTab" data-index="{{idx}}" wx:for-index="idx">
+          {{item}}
+        </view>
+      </view>
     </view>
+
   </view>
+
+
   <!-- list -->
-  <view class="list">
+  <view class="list" style="height:calc(100vh - {{titleHeight}}px)">
+    <swiper duration="{{ 500 }}" current="{{activeIdx}}" bindchange="currentChange" style="height:100%">
+      <swiper-item style="height:100%" wx:for="{{tabArray}}">
+        <scroll-view scroll-y="true" style="width:100%;height:100%">
+          <!-- 无图片置顶样式 -->
+          <navigator url='/pages/currency/currency' hover-class="none">
+            <view class="list-item bottom-line">
+              <view>
+                <view class="top-btn">置顶</view>
+                <text class="new-text">2019年全国中华经典诵写讲大赛诗词讲解复赛作品各省市名单公布</text>
+              </view>
+              <view class="btm">
+                <text>热门资讯</text>
+                <text>10浏览</text>
+                <text>8分钟前</text>
+              </view>
+            </view>
+          </navigator>
 
-    <!-- 无图片置顶样式 -->
-    <navigator url='/pages/currency/currency' hover-class="none">
+          <navigator url='/pages/currency/currency' hover-class="none">
+            <!-- 无图片样式 -->
+            <view class="list-item bottom-line">
+              <view>
+                <text class="new-text">2019年全国中华经典诵写讲大赛诗词讲解复赛作品各省市名单公布</text>
+              </view>
+              <view class="btm">
+                <text>热门资讯</text>
+                <text>10浏览</text>
+                <text>8分钟前</text>
+              </view>
+            </view>
+          </navigator>
+
+          <navigator url='' hover-class="none">
+            <!-- 视频 -->
+            <view class="list-item bottom-line">
+              <view>
+                <text class="new-text">2019年全国中华经典诵写讲大赛诗词讲解复赛作品各省市名单公布</text>
+              </view>
+              <view class="video-box">
+                <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"></video>
+              </view>
+              <view class="btm">
+                <text>热门资讯</text>
+                <text>10浏览</text>
+                <text>8分钟前</text>
+              </view>
+            </view>
+          </navigator>
+
+          <navigator url='/pages/currency/currency' hover-class="none">
+            <!-- 图片靠左 -->
+            <view class="list-item bottom-line flex">
+              <view>
+                <view>
+                  <text class="new-text">2019年全国中华经典诵写讲大赛诗词讲解复赛作品各省市名单公布</text>
+                </view>
+                <view class="btm">
+                  <text>热门资讯</text>
+                  <text>10浏览</text>
+                  <text>8分钟前</text>
+                </view>
+              </view>
+              <view class="item-img">
+                <image src="/static/imgs/new-picture.png" />
+              </view>
+            </view>
+          </navigator>
+
+          <navigator url='/pages/currency/currency' hover-class="none">
+            <!-- 图片靠下 -->
+            <view class="list-item">
+              <view>
+                <text class="new-text">2019年全国中华经典诵写讲大赛诗词讲解复赛作品各省市名单公布</text>
+              </view>
+              <view class="bim-img">
+                <image src="/static/imgs/new-picture.png" />
+                <image src="/static/imgs/new-picture.png" />
+                <image src="/static/imgs/new-picture.png" />
+              </view>
+              <view class="btm">
+                <text>热门资讯</text>
+                <text>10浏览</text>
+                <text>8分钟前</text>
+              </view>
+            </view>
+          </navigator>
+        </scroll-view>
+      </swiper-item>
+    </swiper>
 
 
-      <view class="list-item bottom-line">
-        <view>
-          <view class="top-btn">置顶</view>
-          <text class="new-text">2019年全国中华经典诵写讲大赛诗词讲解复赛作品各省市名单公布</text>
-        </view>
-        <view class="btm">
-          <text>热门资讯</text>
-          <text>10浏览</text>
-          <text>8分钟前</text>
-        </view>
-      </view>
-    </navigator>
-    <navigator url='/pages/currency/currency' hover-class="none">
-
-
-      <!-- 无图片样式 -->
-      <view class="list-item bottom-line">
-        <view>
-          <text class="new-text">2019年全国中华经典诵写讲大赛诗词讲解复赛作品各省市名单公布</text>
-        </view>
-        <view class="btm">
-          <text>热门资讯</text>
-          <text>10浏览</text>
-          <text>8分钟前</text>
-        </view>
-      </view>
-    </navigator>
-    <navigator url='' hover-class="none">
-
-
-      <!-- 视频 -->
-      <view class="list-item bottom-line">
-        <view>
-          <text class="new-text">2019年全国中华经典诵写讲大赛诗词讲解复赛作品各省市名单公布</text>
-        </view>
-        <view class="video-box">
-          <video id="myVideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"></video>
-        </view>
-        <view class="btm">
-          <text>热门资讯</text>
-          <text>10浏览</text>
-          <text>8分钟前</text>
-        </view>
-      </view>
-    </navigator>
-    <navigator url='/pages/currency/currency' hover-class="none">
-      <!-- 图片靠左 -->
-      <view class="list-item bottom-line flex">
-        <view>
-          <view>
-            <text class="new-text">2019年全国中华经典诵写讲大赛诗词讲解复赛作品各省市名单公布</text>
-          </view>
-          <view class="btm">
-            <text>热门资讯</text>
-            <text>10浏览</text>
-            <text>8分钟前</text>
-          </view>
-        </view>
-        <view class="item-img">
-          <image src="/static/imgs/new-picture.png" />
-        </view>
-      </view>
-    </navigator>
-    <navigator url='/pages/currency/currency' hover-class="none">
-      <!-- 图片靠下 -->
-      <view class="list-item">
-        <view>
-          <text class="new-text">2019年全国中华经典诵写讲大赛诗词讲解复赛作品各省市名单公布</text>
-        </view>
-        <view class="bim-img">
-          <image src="/static/imgs/new-picture.png" />
-          <image src="/static/imgs/new-picture.png" />
-          <image src="/static/imgs/new-picture.png" />
-        </view>
-        <view class="btm">
-          <text>热门资讯</text>
-          <text>10浏览</text>
-          <text>8分钟前</text>
-        </view>
-      </view>
-    </navigator>
   </view>
 
 

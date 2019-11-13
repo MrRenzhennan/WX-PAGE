@@ -9,6 +9,7 @@ page {
   font-size: 48rpx;
   color: #000;
   box-sizing: border-box;
+  font-weight: 600;
   padding: 30rpx;
   font-family: PingFang-SC-Bold;
 }

@@ -1,8 +1,7 @@
 <!--pages/comment/comment.wxml-->
 
 <view class="top">
-  <view class="title">
-    教育部语用司语信司年轻干部理论学习小组开展集中理论学习和经典诵读活动实践
+  <view class="title">教育部语用司语信司年轻干部理论学习小组开展集中理论学习和经典诵读活动实践
   </view>
   <view class="detail">
     <text>媒体报道</text>

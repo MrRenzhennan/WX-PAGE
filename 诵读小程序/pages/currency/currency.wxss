@@ -10,6 +10,7 @@ page {
   color: #000;
   box-sizing: border-box;
   padding: 30rpx;
+  font-weight: 600;
   font-family: PingFang-SC-Bold;
 }
 
