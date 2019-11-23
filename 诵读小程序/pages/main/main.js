@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userInfo:{}
+    userInfo:{},
+    isLogin:false
   },
 
   /**
@@ -19,6 +20,11 @@ Page({
           userInfo: this.data.userInfo
         })
       }
+    })
+  },
+  login:function(){
+    this.setData({
+      isLogin: true
     })
   },
 

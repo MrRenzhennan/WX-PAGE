@@ -190,6 +190,7 @@
 					"id": -1,
 					"name": "评论详情",
 					"pathName": "pages/commentDetail/commentDetail",
+					"query": "",
 					"scene": null
 				}
 			]

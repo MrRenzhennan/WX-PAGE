@@ -2,7 +2,7 @@
 <view class="contain">
 
   <!-- user -->
-  <view class="user-card">
+  <view class="user-card" wx:if="{{isLogin}}">
     <view class="card-t">
       <image class="heard" src="{{userInfo.avatarUrl}}"></image>
       <image class="card-icon" src="/static/imgs/icon_code.png"></image>
@@ -13,6 +13,11 @@
         <image class="icon-right" src="/static/imgs/icon_right.png"></image>
       </navigator>
     </view>
+  </view>
+
+  <view class="user-card login-none" wx:if="{{!isLogin}}">
+    <image class="icon_login_none" src="/static/imgs/icon_login_none.png"></image>
+    <view class="login-go" bindtap="login">未登录，点击登录</view>
   </view>
 
   <view class="col">
@@ -36,105 +41,108 @@
     </navigator>
   </view>
 
-  <!-- line -->
-  <view class="line-blod"></view>
+  <view wx:if="{{isLogin}}">
+    <!-- line -->
+    <view class="line-blod"></view>
 
-  <!-- list -->
-  <view class="list-box">
-    <navigator url='/pages/applicationEligibility/applicationEligibility' hover-class="none">
-      <view class="list-item">
-        <text class="item-label">参赛资格申请</text>
-        <view class="item-right">
-          <text>未申请</text>
-          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+    <!-- list -->
+    <view class="list-box">
+      <navigator url='/pages/applicationEligibility/applicationEligibility' hover-class="none">
+        <view class="list-item">
+          <text class="item-label">参赛资格申请</text>
+          <view class="item-right">
+            <text>未申请</text>
+            <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+          </view>
         </view>
-      </view>
-    </navigator>
-    <navigator url='/pages/eligibility/eligibility' hover-class="none">
-      <view class="list-item">
-        <text class="item-label">报名参赛</text>
-        <view class="item-right">
-          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </navigator>
+      <navigator url='/pages/eligibility/eligibility' hover-class="none">
+        <view class="list-item">
+          <text class="item-label">报名参赛</text>
+          <view class="item-right">
+            <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+          </view>
         </view>
-      </view>
-    </navigator>
-    <navigator url='/pages/workManagement/workManagement' hover-class="none">
-      <view class="list-item">
-        <text class="item-label">作品管理</text>
-        <view class="item-right">
-          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </navigator>
+      <navigator url='/pages/workManagement/workManagement' hover-class="none">
+        <view class="list-item">
+          <text class="item-label">作品管理</text>
+          <view class="item-right">
+            <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+          </view>
         </view>
-      </view>
-    </navigator>
-    <navigator url='/pages/votingRecord/votingRecord' hover-class="none">
-      <view class="list-item">
-        <text class="item-label">投票记录</text>
-        <view class="item-right">
-          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </navigator>
+      <navigator url='/pages/votingRecord/votingRecord' hover-class="none">
+        <view class="list-item">
+          <text class="item-label">投票记录</text>
+          <view class="item-right">
+            <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+          </view>
         </view>
-      </view>
-    </navigator>
-  </view>
-  <view class="line-blod"></view>
-  <view class="list-box">
-    <navigator url='/pages/myPoints/myPoints' hover-class="none">
-      <view class="list-item">
-        <text class="item-label">我的积分</text>
-        <view class="item-right">
-          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </navigator>
+    </view>
+    <view class="line-blod"></view>
+    <view class="list-box">
+      <navigator url='/pages/myPoints/myPoints' hover-class="none">
+        <view class="list-item">
+          <text class="item-label">我的积分</text>
+          <view class="item-right">
+            <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+          </view>
         </view>
-      </view>
-    </navigator>
-    <navigator url='' hover-class="none">
-      <view class="list-item">
-        <text class="item-label">知识测试</text>
-        <view class="item-right">
-          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </navigator>
+      <navigator url='' hover-class="none">
+        <view class="list-item">
+          <text class="item-label">知识测试</text>
+          <view class="item-right">
+            <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+          </view>
         </view>
-      </view>
-    </navigator>
-  </view>
-  <view class="line-blod"></view>
-  <view class="list-box">
-    <navigator url='/pages/commonProblems/commonProblems' hover-class="none">
-      <view class="list-item">
-        <text class="item-label">常见问题</text>
-        <view class="item-right">
-          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </navigator>
+    </view>
+    <view class="line-blod"></view>
+    <view class="list-box">
+      <navigator url='/pages/commonProblems/commonProblems' hover-class="none">
+        <view class="list-item">
+          <text class="item-label">常见问题</text>
+          <view class="item-right">
+            <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+          </view>
         </view>
-      </view>
-    </navigator>
-    <navigator url='' hover-class="none">
-      <view class="list-item">
-        <text class="item-label">联系客服</text>
-        <view class="item-right">
-          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </navigator>
+      <navigator url='' hover-class="none">
+        <view class="list-item">
+          <text class="item-label">联系客服</text>
+          <view class="item-right">
+            <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+          </view>
         </view>
-      </view>
-    </navigator>
-    <navigator url='' hover-class="none">
-      <view class="list-item">
-        <text class="item-label">添加到我的小程序</text>
-        <view class="item-right">
-          <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+      </navigator>
+      <navigator url='' hover-class="none">
+        <view class="list-item">
+          <text class="item-label">添加到我的小程序</text>
+          <view class="item-right">
+            <image class="icon-right" src="/static/imgs/icon_right.png"></image>
+          </view>
         </view>
-      </view>
-    </navigator>
-  </view>
+      </navigator>
+    </view>
 
-  <!-- 技术支持 -->
-  <view class="foot">
-    <image class="icon_slt-main" src="/static/imgs/icon_slt-main.png"></image>
-    <view class="te">
-      <text>由</text>
-      <view class="kh">
-        <image class="icon-right" src="/static/imgs/icon_kuo.png "></image>
-        集合天成
-        <image class="icon-right" src="/static/imgs/icon_kuo.png "></image>
+    <!-- 技术支持 -->
+    <view class="foot">
+      <image class="icon_slt-main" src="/static/imgs/icon_slt-main.png"></image>
+      <view class="te">
+        <text>由</text>
+        <view class="kh">
+          <image class="icon-right" src="/static/imgs/icon_kuo.png "></image>
+          集合天成
+          <image class="icon-right" src="/static/imgs/icon_kuo.png "></image>
+        </view>
+        <text>提供技术支持</text>
       </view>
-      <text>提供技术支持</text>
     </view>
   </view>
+
 
 
 
