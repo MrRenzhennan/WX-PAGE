@@ -11,28 +11,19 @@
 </view>
 
 
-<view class="center" style="height:calc(100vh - {{titleHeight + footHeight}}px)">
-  <scroll-view scroll-y="true" style="width:100%;height:100%">
-    <view class="{{shwoAll ? 'msg all' : 'msg' }}">
-      <video id="Video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"></video>
-      <view wx:for="{{10}}">
-        学校操场北边墙上满是爬山虎。我家也有爬山虎，从小院的西墙爬上去，在房顶上占了一大片地方。 爬山虎刚长出来的叶子是嫩红的，不几 爬山虎的脚触着墙的时候，六七根细丝的头上就变成小圆片，巴住墙。细丝原先是直的，现在弯曲了
-      </view>
+<view class="center">
+  <view class="msg">
+    <video id="Video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"></video>
+    <view wx:for="{{10}}">
+      学校操场北边墙上满是爬山虎。我家也有爬山虎，从小院的西墙爬上去，在房顶上占了一大片地方。 爬山虎刚长出来的叶子是嫩红的，不几 爬山虎的脚触着墙的时候，六七根细丝的头上就变成小圆片，巴住墙。细丝原先是直的，现在弯曲了
     </view>
-    <view class="shwo-all" bindtap="shwoAll" wx:if="{{!shwoAll}}">
-      <text>展开阅读全文</text>
-      <view>
-        <image src="/static/imgs/icon_down.png "></image>
-      </view>
-    </view>
-  </scroll-view>
+  </view>
 </view>
 
 <view class="foot">
   <view class="input-box" bindtap="comment">
     <image src="/static/imgs/icon_compile.png "></image>
     <text>发布评论...</text>
-    <!-- <input></input> -->
   </view>
   <navigator url="/pages/comment/comment" hover-class="none">
     <view class="pl">
@@ -46,15 +37,7 @@
 </view>
 
 
-<view class="taxtArea-box" wx:if="{{textAreaShow}}" style="bottom:{{height}}px" >
-  <textarea 
-  bindblur="bindTextAreaBlur" 
-  auto-focus fixed="{{true}}" 
-  show-confirm-bar="{{fasle}}"
-  adjust-position="{{false}}"	
-  bindfocus="focus"
-  bindblur="blur"
-  placeholder="@曾佳佳12"
-  />
+<view class="taxtArea-box" wx:if="{{textAreaShow}}" style="bottom:{{height}}px">
+  <textarea bindblur="bindTextAreaBlur" auto-focus fixed="{{true}}" show-confirm-bar="{{fasle}}" adjust-position="{{false}}" bindfocus="focus" bindblur="blur" placeholder="@曾佳佳12" />
   <view class="go">发布</view>
 </view>

@@ -97,19 +97,19 @@
   <view class="list-item">
     <text class="item-label">指导教师姓名</text>
     <view class="item-right">
-      <input class="weui-input" placeholder="请输入指导教师姓名" />
+      <input class="weui-input" placeholder-class="placeholderClass" cursor-spacing="{{30}}" placeholder="请输入指导教师姓名" />
     </view>
   </view>
   <view class="list-item">
     <text class="item-label">联系电话</text>
     <view class="item-right">
-      <input class="weui-input" placeholder="请输入联系电话" />
+      <input class="weui-input" placeholder-class="placeholderClass" cursor-spacing="{{30}}" placeholder="请输入联系电话" />
     </view>
   </view>
   <view class="list-item">
     <text class="item-label">所在院校</text>
     <view class="item-right">
-      <input class="weui-input" placeholder="请输入所在院校" />
+      <input class="weui-input" placeholder-class="placeholderClass" cursor-spacing="{{30}}" placeholder="请输入所在院校" />
     </view>
   </view>
 </view>

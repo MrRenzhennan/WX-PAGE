@@ -10,17 +10,14 @@
     </view>
     <!-- button-group -->
     <view class="button-group">
-      <view class="active">小学组</view>
-      <view>初中组</view>
-      <view>高中组</view>
-      <view>大学组</view>
+      <scroll-view scroll-x="true">
+        <view wx:for="{{tabArray}}" class="{{ activeIdx == idx ? 'active' : ''}}" bindtap="currentTab" data-index="{{idx}}" wx:for-index="idx">{{item}}</view>
+      </scroll-view>
     </view>
     <!-- tab -->
     <view class="tab-box">
       <view class="tab-sub">
-        <view class="tab-item active">综合推荐</view>
-        <view class="tab-item">最新参与</view>
-        <view class="tab-item">得票最多</view>
+        <view wx:for="{{searchArray}}" class="{{ searchIdx == idx ? 'tab-item active' : 'tab-item'}}" bindtap="searchTab" data-index="{{idx}}" wx:for-index="idx">{{item}}</view>
         <navigator url="/pages/screening/screening" hover-class="none">
           <view class="tab-item">
             <image src="/static/imgs/icon_filter.png " />
@@ -32,32 +29,40 @@
 
   </view>
 
-
-  <!-- list -->
-  <view class="list" wx:for="{{10}}">
-    <navigator url='/pages/activityDetail/activityDetail' hover-class="none">
-      <view class="list-item bottom-line flex">
-        <view>
-          <view>
-            <text class="new-text">全国统编版小学语文四年级上册《爬山虎的脚》课文朗诵</text>
+  <view style="height:calc(100vh - {{titleHeight}}px)">
+    <swiper duration="{{ 500 }}" current="{{searchIdx}}" bindchange="currentChange" style="height:100%">
+      <swiper-item style="height:100%" wx:for="{{searchArray}}">
+        <scroll-view scroll-y="true" style="width:100%;height:100%">
+          <!-- list -->
+          <view class="list" wx:for="{{10}}">
+            <navigator url='/pages/activityDetail/activityDetail' hover-class="none">
+              <view class="list-item bottom-line flex">
+                <view>
+                  <view>
+                    <text class="new-text">全国统编版小学语文四年级上册《爬山虎的脚》课文朗诵</text>
+                  </view>
+                  <view class="btm">
+                    <text>北京市</text>
+                    <text>人嗜好</text>
+                    <text>作品编号：123456</text>
+                  </view>
+                </view>
+                <view class="rt-tp">
+                  <view class="tp">
+                    投票
+                  </view>
+                  <view class="num">
+                    50077
+                  </view>
+                </view>
+              </view>
+            </navigator>
           </view>
-          <view class="btm">
-            <text>北京市</text>
-            <text>人嗜好</text>
-            <text>作品编号：123456</text>
-          </view>
-        </view>
-        <view class="rt-tp">
-          <view class="tp">
-            投票
-          </view>
-          <view class="num">
-            50077
-          </view>
-        </view>
-      </view>
-    </navigator>
+        </scroll-view>
+      </swiper-item>
+    </swiper>
   </view>
+
 
 
 

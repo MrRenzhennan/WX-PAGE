@@ -56,3 +56,7 @@ page{
   width: 13rpx;
   height: 22rpx;
 }
+.placeholderClass{
+  font-size: 26rpx;
+  color: rgb(153, 153, 153);
+}

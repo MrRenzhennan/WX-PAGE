@@ -131,7 +131,7 @@ swiper image {
 .top-btn {
   width: 64rpx;
   height: 30rpx;
-  font-size: 16rpx;
+  font-size: 18rpx;
   letter-spacing: 1px;
   color: #fff;
   background: rgb(196, 35, 43);

@@ -31,21 +31,25 @@
 .button-group {
   width: 100%;
   margin: 40rpx 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-
+.button-group scroll-view{
+  white-space: nowrap;
+  display: flex;
+}
 .button-group view {
+  display: inline-block;
   width: 160rpx;
   height: 72rpx;
   font-size: 30rpx;
+  text-align: center;
+  line-height: 72rpx;
+  margin-right: 15rpx;
   color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 8rpx;
   background: rgb(231, 230, 230);
+}
+.button-group view:last-child{
+   margin-right: 0rpx;
 }
 
 .button-group view.active {

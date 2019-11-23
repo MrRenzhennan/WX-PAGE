@@ -2,7 +2,7 @@
 <view class="contain">
 
   <!-- user -->
-  <view class="user-card" style="background-image:url(https://img.tuguaishou.com/ips_templ_preview/c1/89/f3/lg_2413277_1571627412_5dad2194da6ea.jpg!w1024_w?auth_key=2205675893-0-0-e2864a90fa132c52e1b114820e6e3110)">
+  <view class="user-card">
     <view class="card-t">
       <image class="heard" src="{{userInfo.avatarUrl}}"></image>
       <image class="card-icon" src="/static/imgs/icon_code.png"></image>
