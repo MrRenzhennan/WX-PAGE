@@ -41,6 +41,13 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAArIAAAFUCAMA
   font-size: 36rpx;
   margin-top: 48rpx;
   color: #999999;
+  background: rgba(255,255,255,0);
+  border:none;
+  padding: 0;
+}
+.login-none .login-go::after{
+  width: 0;
+  height: 0;
 }
 .user-card .card-t {
   display: flex;

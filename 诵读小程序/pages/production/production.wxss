@@ -102,8 +102,11 @@
 .list .list-item.flex {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
-
+.list .list-item > view:first-child{
+  width: 540rpx;
+}
 .new-text {
   font-size: 30rpx;
   color: #000;
@@ -118,7 +121,7 @@
 }
 
 .rt-tp {
-  width: 180rpx;
+  width: 116rpx;
   height: 116rpx;
   border-radius: 5rpx;
   border: 1px solid rgb(196, 35, 43);

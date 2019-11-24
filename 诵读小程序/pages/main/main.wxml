@@ -17,7 +17,7 @@
 
   <view class="user-card login-none" wx:if="{{!isLogin}}">
     <image class="icon_login_none" src="/static/imgs/icon_login_none.png"></image>
-    <view class="login-go" bindtap="login">未登录，点击登录</view>
+    <button class="login-go" bindtap="login">未登录，点击登录</button>
   </view>
 
   <view class="col">
