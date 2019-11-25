@@ -65,7 +65,7 @@
 </view>
 <!-- btn -->
 <navigator url='/pages/changeEligibility/changeEligibility' hover-class="none">
-  <view class="foot-btn">
+  <button class="foot-btn">
     确认提交
-  </view>
+  </button>
 </navigator>

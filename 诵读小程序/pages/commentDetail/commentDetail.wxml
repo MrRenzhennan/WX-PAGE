@@ -49,8 +49,12 @@
     <text>发布评论...</text>
     <!-- <input></input> -->
   </view>
-  <image class="icon_weixin" src="/static/imgs/icon_weixin.png"></image>
-  <image class="icon_pengyouquan" src="/static/imgs/icon_pengyouquan.png"></image>
+  <!-- 分享微信 -->
+  <button class="icon_weixin"></button>
+  <!-- <image class="icon_weixin" src="/static/imgs/icon_weixin.png"></image> -->
+  <!-- 分享朋友圈 -->
+  <button class="share"></button>
+  <!-- <image class="icon_pengyouquan" src="/static/imgs/icon_pengyouquan.png"></image> -->
 </view>
 
 <view class="taxtArea-box" wx:if="{{textAreaShow}}" style="bottom:{{height}}px">

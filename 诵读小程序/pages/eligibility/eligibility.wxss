@@ -121,12 +121,14 @@
 }
 
 .foot-btn {
+  padding: 0;
+  border-radius: 0;
+  box-sizing:unset;
   width: 100%;
   font-size: 36rpx;
   color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  line-height: 90rpx;
   background: #c4232b;
   height: 90rpx;
   padding-bottom: 60rpx;

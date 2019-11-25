@@ -7,7 +7,15 @@ page{
   width: 100%;
   padding-top: 30rpx;
 }
-
+.card-t > view:first-child{
+  display: flex;
+  align-items: center;
+}
+.card-t > view:first-child text{
+  font-size: 36rpx;
+  font-family: PingFang-SC-Heavy;
+  margin-left: 16rpx;
+}
 .user-card {
   width: 690rpx;
   height: 340rpx;

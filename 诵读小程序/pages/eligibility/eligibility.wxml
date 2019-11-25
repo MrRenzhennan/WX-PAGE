@@ -126,7 +126,7 @@
 </view>
 <!-- btn -->
 <navigator url='' hover-class="none">
-  <view class="foot-btn">
+  <button class="foot-btn">
     提交作品
-  </view>
+  </button>
 </navigator>

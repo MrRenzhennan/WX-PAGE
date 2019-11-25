@@ -31,7 +31,7 @@
 </view>
 
 <navigator url="/pages/eligibility/eligibility" hover-class="none">
-  <view class="foot-btn">
+  <button class="foot-btn">
     立即保存
-  </view>
+  </button>
 </navigator>

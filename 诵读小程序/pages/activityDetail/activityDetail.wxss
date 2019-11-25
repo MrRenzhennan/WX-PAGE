@@ -139,13 +139,11 @@ swiper scroll-view .shwo-all view image{
   font-size: 30rpx;
   position: fixed;
   bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 160rpx;
+  text-align: center;
+  line-height: 90rpx;
+  height: 90rpx;
   width: 100%;
-  box-sizing: border-box;
-  padding-bottom: 40rpx;
+  padding-bottom: 60rpx;
   background: #c4232b;
   color: #fff;
 }
