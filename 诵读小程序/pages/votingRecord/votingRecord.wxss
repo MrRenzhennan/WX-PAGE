@@ -17,6 +17,7 @@ page{
   margin-top: 40rpx;
 }
 .list > view:first-child{
+  font-family: PingFang-SC-Bold;
   font-size: 30rpx;
   font-weight: 600;
   letter-spacing: 2rpx;

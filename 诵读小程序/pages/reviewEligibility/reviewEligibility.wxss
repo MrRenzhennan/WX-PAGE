@@ -7,6 +7,7 @@ page {
 .bx {
   width: 100%;
   height: 100vh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,16 +17,23 @@ page {
 image {
   width: 93rpx;
   height: 80rpx;
-  margin-bottom: 40rpx;
+  margin-top: -130rpx;
 }
 
 .bx text {
-  font-size: 40rpx;
   color: #000;
+  margin-top: 49rpx;
+  font-family: PingFang-SC-Bold;
+	font-size: 48rpx;
+	font-weight: normal;
+	font-stretch: normal;
 }
 
 .bx text:last-child {
   font-size: 30rpx;
   color: rgb(153, 153, 153);
-  margin-top: 30rpx;
+  margin-top: 39rpx;
+  font-family: PingFang-SC-Medium;
+	font-weight: normal;
+	font-stretch: normal;
 }

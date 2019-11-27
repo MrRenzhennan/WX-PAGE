@@ -58,6 +58,6 @@
 </view>
 
 <view class="taxtArea-box" wx:if="{{textAreaShow}}" style="bottom:{{height}}px">
-  <textarea bindblur="bindTextAreaBlur" auto-focus fixed="{{true}}" show-confirm-bar="{{fasle}}" adjust-position="{{false}}" bindfocus="focus" bindblur="blur" placeholder="请输入留言内容" placeholder-class="placeholderClass" />
-  <view class="go">发布</view>
+  <textarea bindblur="bindTextAreaBlur" bindinput="changeButtonStyle" auto-focus fixed="{{true}}" show-confirm-bar="{{fasle}}" adjust-position="{{false}}" bindfocus="focus" bindblur="blur" placeholder="请输入留言内容" placeholder-class="placeholderClass" />
+  <view  class="{{releaseClass ? 'go releaseClass' : 'go'}}">发布</view>
 </view>

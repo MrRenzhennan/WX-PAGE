@@ -7,6 +7,7 @@ Page({
   data: {
     textAreaShow: false,
     height: 0,//键盘高度
+    releaseClass: false
   },
   comment() {
     this.setData({
@@ -29,6 +30,12 @@ Page({
   },
   go() {
 
+  },
+  //改变发布按钮类名
+  changeButtonStyle(e) {
+    this.setData({
+      releaseClass: true
+    })
   },
 
   /**

@@ -10,6 +10,7 @@ Page({
     footHeight: 0,
     textAreaShow: false,
     height: 0,//键盘高度
+    releaseClass:false
   },
 
   /**
@@ -55,7 +56,8 @@ Page({
   },
   blur() {
     this.setData({
-      textAreaShow: false
+      textAreaShow: false,
+      releaseClass: false
     });
     this.setData({
       height: 0
@@ -63,6 +65,12 @@ Page({
   },
   go() {
 
+  },
+  //改变发布按钮类名
+  changeButtonStyle(e){
+      this.setData({
+        releaseClass: true
+      })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
