@@ -270,6 +270,10 @@ page {
   color: #999;
   margin-top: 20rpx;
 }
+.taxtArea-box .go::after{
+  width: 0;
+  height: 0;
+}
 .taxtArea-box .releaseClass{
   background: #c4232b;
   color: #fff;
