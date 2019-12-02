@@ -86,7 +86,9 @@ page {
   color: #999;
   margin-left: 10rpx;
 }
-
+.zan-num-active{
+  color: #c4232b;
+}
 .back {
   font-size: 25rpx;
   color: #999;

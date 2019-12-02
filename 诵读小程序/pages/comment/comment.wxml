@@ -29,9 +29,9 @@
           <text class="dian">·</text>
           <text class="back">回复TA</text>
         </view>
-        <view>
-          <image class="icon_zan" src="/static/imgs/icon_zan.png"></image>
-          <text class="zan-num">56</text>
+        <view bindtap="changeZan">
+          <image class="icon_zan" src="{{isZan ?'/static/imgs/icon_zan_active.png': '/static/imgs/icon_zan.png'}}"></image>
+          <text class="{{isZan ? 'zan-num zan-num-active' :'zan-num'}}">56</text>
         </view>
       </view>
     </view>
@@ -63,9 +63,9 @@
           <text class="dian">·</text>
           <text class="back">回复TA</text>
         </view>
-        <view>
-          <image class="icon_zan" src="/static/imgs/icon_zan.png"></image>
-          <text class="zan-num">56</text>
+        <view bindtap="changeZan">
+          <image class="icon_zan" src="{{isZan ?'/static/imgs/icon_zan_active.png': '/static/imgs/icon_zan.png'}}"></image>
+          <text class="{{isZan ? 'zan-num zan-num-active' :'zan-num'}}">56</text>
         </view>
       </view>
     </view>

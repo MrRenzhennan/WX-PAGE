@@ -7,7 +7,13 @@ Page({
   data: {
     textAreaShow:false,
     height:0,//键盘高度
-    releaseClass: false
+    releaseClass: false,
+    isZan: false
+  },
+  changeZan() {
+    this.setData({
+      isZan: true
+    })
   },
   comment(){
     this.setData({
