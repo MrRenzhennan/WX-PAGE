@@ -12,7 +12,28 @@
   <view>
     <view>
       <text>作品状态：</text>
-      <text class="success">审核通过</text>
+      <text>审核通过</text>
+    </view>
+    <view class="last-v">
+      <image class="icon_shanchu" src="/static/imgs/icon_shanchu.png"></image>
+      <text>删除</text>
+    </view>
+  </view>
+</view>
+
+<!-- list -->
+<view class="list" wx:for="{{2}}">
+  <view class="title">全国统编版小学语文四年级上册《爬山虎的脚》课文朗诵</view>
+  <view>
+    <text>作品编号：00454788</text>
+    <text>上传时间：2019.09.15</text>
+    <text>获得票数：50469票</text>
+    <text>当前排名：16名票</text>
+  </view>
+  <view>
+    <view>
+      <text>作品状态：</text>
+      <text class="success">审核中</text>
     </view>
     <view class="last-v">
       <image class="icon_shanchu" src="/static/imgs/icon_shanchu.png"></image>

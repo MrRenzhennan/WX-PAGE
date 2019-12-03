@@ -119,7 +119,9 @@
   font-size: 30rpx;
   color: rgb(153, 153, 153);
 }
-
+.checkbox text{
+  color:#c4232b;
+}
 .foot-btn {
   z-index: 10;
   position: fixed;
