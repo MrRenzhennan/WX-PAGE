@@ -1,0 +1,43 @@
+<!--pages/reviewPass/reviewPass.wxml-->
+
+<view class="top">
+  <image src="/static/imgs/icon_shenhe.png"></image>
+  <text>参赛资格已通过审核</text>
+  <text>若您的参赛资格信息需要修改，请联系人工客服!</text>
+</view>
+
+
+<view class="author">
+  <view class="user-box">
+    <view class="info">
+      <view>
+        <image src="http://inews.gtimg.com/newsapp_match/0/10769303005/0.jpg"></image>
+      </view>
+      <view>
+        <view class="name">
+          <text>任世豪</text>
+          <image src="/static/imgs/icon_female.png"></image>
+          <image src="/static/imgs/icon_male.png"></image>
+        </view>
+        <view class="num">选手编号：12345678</view>
+      </view>
+    </view>
+
+    <view class="item">
+      <text>身份证号：</text>
+      <text>211322111111111111</text>
+    </view>
+    <view class="item">
+      <text>所属赛区：</text>
+      <text>广东省广东市珠海区</text>
+    </view>
+    <view class="item">
+      <text>手机号码：</text>
+      <text>13333333333</text>
+    </view>
+    <view class="item">
+      <text>通讯地址：</text>
+      <text class="address">黑龙江省鸡西市鸡冠区跃进路187号中学三层教导处</text>
+    </view>
+  </view>
+</view>

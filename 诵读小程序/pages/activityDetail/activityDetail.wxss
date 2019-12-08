@@ -44,7 +44,7 @@ swiper scroll-view .msg{
   box-sizing: border-box;
   padding: 30rpx;
   width: 100%;
-  height: calc(100% - 132rpx);
+  height: max-content;
   overflow: hidden;
   color: #000;
   font-size: 30rpx;
@@ -52,35 +52,27 @@ swiper scroll-view .msg{
   font-family: PingFang-SC-Medium;
   letter-spacing: 2rpx;
 }
-swiper scroll-view .msg.all{
-  height: max-content;
+swiper scroll-view .msg .image-box{
+  width: 100%;
+  text-align: center;
+  margin-top: 20rpx;
 }
-swiper scroll-view .shwo-all{
-  width: 480rpx;
-  height: 72rpx;
-  background: #f4f4f4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #999;
-  font-size: 28rpx;
-  letter-spacing: 2rpx;
-  border-radius: 80rpx;
-  margin: 30rpx auto;
+swiper scroll-view .msg .image-box image{
+  width: 100%;
+  margin-bottom: 10rpx;
 }
-swiper scroll-view .shwo-all view{
-  width: 25rpx;
-  height: 25rpx;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #999;
-  margin-left: 20rpx;
+.video-box {
+  margin-top: 10rpx;
 }
-swiper scroll-view .shwo-all view image{
-  width: 12rpx;
-  height: 9rpx;
+.video-box video{
+  width: 100%;
+}
+.audio-box{
+  width: 100%;
+  text-align: center;
+}
+.audio-box audio{
+  width: 100%;
 }
 .author{
   width: 100%;
@@ -97,43 +89,58 @@ swiper scroll-view .shwo-all view image{
   display: flex;
   align-items: center;
   font-family: PingFang-SC-Medium;
-  border-bottom: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #e4e4e4;
   margin-bottom: 10rpx;
+  padding-bottom: 38rpx;
 }
 .info image{
-  width: 120rpx;
-  height: 120rpx;
+  width: 90rpx;
+  height: 90rpx;
   border-radius: 50%;
-  margin-right: 20rpx;
+  margin-right: 43rpx;
   margin-left: 10rpx;
 }
 .name{
-  font-size: 38rpx;
-  color: #000;
-  font-weight: 600;
-  letter-spacing: 2rpx;
+  font-family: PingFang-SC-Heavy;
+	font-size: 36rpx;
+	font-weight: 600;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+  display: flex;
+  align-items: center;
+}
+.name image{
+  width: 26rpx;
+  height: 25rpx;
+  border-radius: 0;
+  margin: 0;
+  margin-left: 20rpx;
 }
 .num{
-  font-size: 26rpx;
-  color: #999;
-  letter-spacing: 2rpx;
-  margin-top: 10rpx;
+  font-family: PingFang-SC-Medium;
+	font-size: 24rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #999999;
+  margin-top: 18rpx;
 }
 .item{
   width: 100%;
-  padding: 15rpx 0;
   display: flex;
-  align-items: center;
   padding-left: 10rpx;
   box-sizing: border-box;
+  line-height: 72rpx;
 }
 .item text:first-child{
   font-size: 30rpx;
-  color: #000;
+  font-family: PingFang-SC-Medium;
+  color: #999999;
 }
 .item text:last-child{
-  font-size: 28rpx;
-  color: #999;
+  font-size: 30rpx;
+  font-family: PingFang-SC-Medium;
 }
 .foot-btn{
   font-size: 30rpx;

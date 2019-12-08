@@ -8,7 +8,6 @@ Page({
     idx: 0,
     titleHeight:0,
     footHeight:0,
-    shwoAll:false,
     userInfo:{}
   },
   //tab切换
@@ -51,12 +50,6 @@ Page({
       }
     })
   },
-  shwoAll(){
-    this.setData({
-      shwoAll: true
-    })
-  },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -1,4 +1,7 @@
 <!--pages/reviewEligibility/reviewEligibility.wxml-->
+<navigator url="/pages/reviewPass/reviewPass">
+  <button>去审核通过页面</button>
+</navigator>
 <view class="bx">
     <image src="/static/imgs/ico-dfkdd.png " />
     <text>系统正在审核中</text>

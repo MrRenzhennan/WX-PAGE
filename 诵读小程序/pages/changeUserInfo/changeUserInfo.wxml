@@ -8,7 +8,7 @@
     <view class="list-item">
       <text class="item-label">头像</text>
       <view class="item-right">
-        <image class="user-head" src="{{userInfo.avatarUrl}}"></image>
+        <image class="user-head" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575479555357&di=b4a7e7d771350bcc7e42b4fdf11115d7&imgtype=0&src=http%3A%2F%2Fku.90sjimg.com%2Felement_origin_min_pic%2F18%2F07%2F28%2F88723ef6ae8ef759f0f0ea5a0f882a1e.jpg%2521%2Ffwfh%2F804x804%2Fquality%2F90%2Funsharp%2Ftrue%2Fcompress%2Ftrue"></image>
         <image class="icon-right" src="/static/imgs/icon_right.png"></image>
       </view>
     </view>

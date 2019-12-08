@@ -192,6 +192,12 @@
 					"pathName": "pages/commentDetail/commentDetail",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "审核通过",
+					"pathName": "pages/reviewPass/reviewPass",
+					"scene": null
 				}
 			]
 		}

@@ -21,7 +21,8 @@
     "pages/screening/screening",
     "pages/currency/currency",
     "pages/comment/comment",
-    "pages/commentDetail/commentDetail"
+    "pages/commentDetail/commentDetail",
+    "pages/reviewPass/reviewPass"
   ],
   "window": {
     "navigationBarBackgroundColor": "#c4232b",
