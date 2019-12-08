@@ -16,8 +16,8 @@
       <view>
         <view class="name">
           <text>任世豪</text>
-          <image src="/static/imgs/icon_female.png"></image>
-          <image src="/static/imgs/icon_male.png"></image>
+          <!-- <image src="/static/imgs/icon_female.png"></image>
+          <image src="/static/imgs/icon_male.png"></image> -->
         </view>
         <view class="num">选手编号：12345678</view>
       </view>

@@ -90,15 +90,19 @@ swiper scroll-view .msg .image-box image{
   align-items: center;
   font-family: PingFang-SC-Medium;
   border-bottom: 1rpx solid #e4e4e4;
-  margin-bottom: 10rpx;
-  padding-bottom: 38rpx;
+  margin-bottom: 25rpx;
+  padding-bottom: 40rpx;
+}
+.info > view:first-child{
+  width: 90rpx;
+  height: 90rpx;
+   margin-right: 43rpx;
+   border-radius: 50%;
 }
 .info image{
   width: 90rpx;
   height: 90rpx;
   border-radius: 50%;
-  margin-right: 43rpx;
-  margin-left: 10rpx;
 }
 .name{
   font-family: PingFang-SC-Heavy;
@@ -107,8 +111,7 @@ swiper scroll-view .msg .image-box image{
 	font-stretch: normal;
 	letter-spacing: 0px;
 	color: #000000;
-  display: flex;
-  align-items: center;
+  margin-top: -5rpx;
 }
 .name image{
   width: 26rpx;
@@ -124,7 +127,7 @@ swiper scroll-view .msg .image-box image{
 	font-stretch: normal;
 	letter-spacing: 0px;
 	color: #999999;
-  margin-top: 18rpx;
+  margin-top: 10rpx;
 }
 .item{
   width: 100%;
