@@ -58,7 +58,7 @@
     <label class="checkbox">
       <checkbox value="1" checked="true" color="#c4232b" />
       <navigator url='' hover-class="none">
-        我已经阅读并同意《中华经典诵读评选大赛》参赛规则
+        我已阅读并同意<text>《中华经典诵读参赛规则》</text>
       </navigator>
     </label>
   </checkbox-group>
