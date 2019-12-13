@@ -9,8 +9,13 @@ page{
   padding: 30rpx;
   font-weight: 600;
   font-family: PingFang-SC-Bold;
+  text-align: justify;
 }
-
+title::after{
+  width: 100%;
+  display: inline-block;
+  content: '';
+}
 .swiper-change{
   width: 100%;
   display: flex;
