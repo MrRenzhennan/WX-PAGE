@@ -10,3 +10,9 @@
   </view>
 </view>
 
+
+<view class="bx">
+    <image src="/static/imgs/icon_wenjianjia.png" />
+    <text>这里空空如也</text>
+    <text>未投票任何作品，快去活动区参与投票吧！</text>
+</view>

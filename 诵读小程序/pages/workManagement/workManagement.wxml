@@ -65,3 +65,11 @@
 
   </view>
 </view>
+
+
+
+<view class="bx">
+    <image src="/static/imgs/icon_wenjianjia.png" />
+    <text>这里空空如也</text>
+    <text>未发布任何作品，快去报名参赛发布作品吧！</text>
+</view>

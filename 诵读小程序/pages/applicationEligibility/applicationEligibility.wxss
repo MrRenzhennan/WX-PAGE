@@ -77,7 +77,16 @@ page {
   color: rgb(153, 153, 153);
   margin-right: 10rpx;
 }
-
+.item-right button{
+  padding: 0;
+  font-size: 30rpx;
+  color: rgb(153, 153, 153);
+  line-height: normal;
+background: none;
+}
+.item-right button::after{
+border: none;
+}
 .icon-right {
   width: 13rpx;
   height: 22rpx;

@@ -40,8 +40,10 @@
   <view class="list-item">
     <text class="item-label">手机号</text>
     <view class="item-right">
-      <input class="weui-input" placeholder-class="placeholderClass"  placeholder="请输入手机号" />
+      <!-- <input class="weui-input" placeholder-class="placeholderClass"  placeholder="请输入手机号" /> -->
       <!-- <image class="icon-right" src="/static/imgs/icon_right.png"></image> -->
+      <button>点击绑定手机号</button>
+      <!-- <text>点击绑定手机号</text> -->
     </view>
   </view>
   <view class="list-item">
