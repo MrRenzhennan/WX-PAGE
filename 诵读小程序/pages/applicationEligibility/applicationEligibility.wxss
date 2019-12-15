@@ -71,7 +71,12 @@ page {
   display: flex;
   align-items: center;
 }
-
+.item-right.grow{
+ flex-grow: 2;
+}
+.item-right.grow > .weui-input{
+  width: 100%;
+}
 .item-right text {
   font-size: 30rpx;
   color: rgb(153, 153, 153);

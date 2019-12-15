@@ -48,7 +48,7 @@
   </view>
   <view class="list-item">
     <text class="item-label">通讯地址</text>
-    <view class="item-right">
+    <view class="item-right grow">
       <input class="weui-input" placeholder-class="placeholderClass"  placeholder="请输入通讯地址" />
       <!-- <image class="icon-right" src="/static/imgs/icon_right.png"></image> -->
     </view>
